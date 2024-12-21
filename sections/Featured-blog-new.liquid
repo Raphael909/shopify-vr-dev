@@ -1,0 +1,155 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-card-blog.css' | asset_url | stylesheet_tag }}
+{{ 'component-article-card-blog.css' | asset_url | stylesheet_tag }}
+{{ 'section-featured-blog-card.css' | asset_url | stylesheet_tag }}
+
+<style>
+  div#shopify-section-template--16225477132358__featured_blog_new_VaaPnp {
+    background: #F3F4F4;
+  }
+.feature-blog-title .button {
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    margin-top: 15px;
+    display: none;
+}
+  a.blog_view_all
+  {
+    display: none;
+  }
+  /* Show the View All button in mobile view */
+  @media screen and (max-width: 749px) {
+.feature-blog-title .button {
+    display: block;
+  line-height: 3;
+  width: 30px;
+}
+    a.blog_view_all
+  {
+    display: block;
+    width: 30px;
+      line-height: 3;
+    margin: 0 auto;
+    padding-left: 80px;
+  }
+  }
+</style>
+
+<div class="feature-blog-controls-main{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}">
+    <div class="feature-blog-control">
+        <div class="feature-blog-box">
+            <div class="feature-blog-box-head">
+                <div class="feature-blog-box--header">
+                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/Frame_93_2.png?v=1723703841" alt="Small Image"
+                        class="section-small-image">
+                </div>
+                <div class="feature-blog-title">
+                   <span>{{ section.settings.text }}</span>
+                    <h2 class="feature-blog-head">{{ section.settings.title }}</h2>
+                </div>
+                <div class="feature-blog-arrows-main">
+                </div>
+            </div>
+        </div>
+        <div class="feature-blog-box-list">
+          {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+            <div class="feature-blog-box-main">
+              {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+                  <div class="feature-blog-box-card blog__posts">
+                        {% render 'article-card-blog',
+                          blog: section.settings.blog,
+                          article: article,
+                          media_aspect_ratio: 1.66,
+                          show_image: section.settings.show_image,
+                          show_date: section.settings.show_date,
+                          show_author: section.settings.show_author,
+                          show_excerpt: true
+                        %}
+                  </div>
+                {% endfor %}
+            </div>
+             {% if section.settings.button != blank %}
+                      <a class="blog_view_all button" href="{{ section.settings.link }}">{{ section.settings.button }}</a>
+                    {% endif %}
+            {% endif %}
+           
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Feature Blog New",
+  "class": "feature-blog-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "What our customer say"
+    },
+    {
+      "type": "text",
+      "label": "Sub Text",
+      "id": "text",
+      "default": "Testimonial"
+    },
+    {
+       "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.featured-blog.settings.post_limit.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_image.label",
+      "info": "t:sections.featured-blog.settings.show_image.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.featured-blog.settings.show_author.label"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "text",
+      "label": "Button",
+      "id": "button",
+      "default": "Explore All"
+    },
+    {
+      "type": "url",
+      "label": "Link",
+      "id": "link"
+    },
+  ],
+  "presets": [
+    {
+    "name": "Feature Blog New"
+    }
+  ]
+}
+{% endschema %}

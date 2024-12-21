@@ -1,0 +1,26 @@
+<!-- snippets/background-video.liquid -->
+<div class="background-video">
+  <video autoplay muted loop playsinline>
+    <source src="{{ video }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<style>
+  .background-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* .background-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  } */
+</style>

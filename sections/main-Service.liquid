@@ -1,0 +1,378 @@
+<product-info
+  id="MainProduct-{{ section.id }}"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
+  data-section="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-update-url="true"
+  data-url="{{ product.url }}"
+  {% if section.settings.image_zoom == 'hover' %}
+    data-zoom-on-hover
+  {% endif %}
+>
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+  {% unless product.has_only_default_variant %}
+    {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
+    {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
+    {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
+  {% endunless %}
+  {%- if product.quantity_price_breaks_configured? -%}
+    {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+
+      }
+    }
+  .metafield
+    {
+      line-height: 1.2
+    }
+    .product-description-container {
+  position: relative;
+}
+
+.short-description {
+  overflow: hidden;
+  max-height: 5.5em; /* Adjust as necessary to limit to approximately 3 lines */
+  line-height: 1.5em;
+  transition: max-height 0.3s ease;
+}
+
+.read-more {
+  color: #B16E39;
+  border: none;
+  /* padding: 10px; */
+  cursor: pointer;
+  display: block;
+  /* margin-top: 10px; */
+   font-family: Helvetica;
+}
+
+.read-more:focus {
+  outline: none;
+}
+a
+    {
+      cursor: pointer;
+      font-family: Helvetica;
+    }
+div#Quantity-Form-template--16225477296198__main {
+    display: flex;
+}
+    span
+    {
+       cursor: pointer;
+      font-family: Helvetica;
+    }
+    .product-description-container
+    {
+     margin-top: -28px;
+    }
+    .head{
+    display: flex;
+    gap: 24px;
+    margin-top: 4%;
+        border-bottom: 1px solid #e9dada;
+    border-top: 1px solid #e9dada;
+    }
+    .meta1
+    {
+      display: flex;
+    gap: 113px;
+    }
+.metafield {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.metafield.active {
+  font-weight: bold;
+}
+.product-description-meta {
+  display: none;
+}
+
+.product-description-meta.active {
+  display: block;
+}
+@media (max-width: 767px) {
+  .head {
+    display: block;
+    border-bottom: none; 
+  }
+
+  .meta1 {
+    display: block;
+  }
+
+  .metafield {
+    cursor: pointer;
+    border-bottom: 1px solid #d7cece;
+    padding-bottom: 12px;
+  }
+}
+
+    .meta{
+  width: 85%;
+    margin-left: 9%;
+      padding-bottom: 75px;
+}
+    lable
+    {
+      font-family: 'Helvetica';
+    }
+    .feather-video
+    {
+      position: relative;
+      top: 4px;
+       margin: 0 10px;
+}
+    a
+    {
+      font-family: 'Quisksand';
+      color: black;
+      text-decoration: none;
+     
+    }
+  {%- endstyle -%}
+
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  {%- if product.quantity_price_breaks_configured? -%}
+    <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+<div class="meta">
+  <div class="head">
+     {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'text' -%}
+     {% if block.settings.text != blank %}
+    <p class="metafield active" data-target="gold_14k_">{{- block.settings.text6 -}}</p>
+       {% endif %}
+        {% if block.settings.text2 != blank %}
+    <p class="metafield" data-target="diamonds">{{- block.settings.text7 -}}</p>
+          {% endif %}
+          {% if block.settings.text3 != blank %}
+    <p class="metafield" data-target="gemstones">{{- block.settings.text8 -}}</p>
+            {% endif %}
+            {% if block.settings.text4 != blank %}
+    <p class="metafield" data-target="buy-online">{{- block.settings.text9 -}}</p>
+              {% endif %}
+              {% if block.settings.text5 != blank %}
+    <p class="metafield" data-target="shop">{{- block.settings.text10 -}}</p>
+                {% endif %}
+  {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="meta1">
+    <div class="product-description-meta active" data-content="gold_14k_">
+      {%- for block in section.blocks -%}
+            {%- case block.type -%}
+      {%- when 'text' -%}
+                <p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text -}}
+                </p>
+      {%- endcase -%}
+             {%- endfor -%} 
+    </div>
+    <div class="product-description-meta" data-content="diamonds">
+       {%- for block in section.blocks -%}
+            {%- case block.type -%}
+      {%- when 'text' -%}
+ <p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text2 -}}
+                </p>
+      {%- endcase -%}
+             {%- endfor -%} 
+    </div>
+    <div class="product-description-meta" data-content="gemstones">
+      {%- for block in section.blocks -%}
+            {%- case block.type -%}
+      {%- when 'text' -%}
+                <p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text3 -}}
+                </p>
+      {%- endcase -%}
+             {%- endfor -%} 
+    </div>
+    <div class="product-description-meta" data-content="buy-online">
+      {%- for block in section.blocks -%}
+            {%- case block.type -%}
+      {%- when 'text' -%}
+<p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text4 -}}
+                </p>
+      {%- endcase -%}
+             {%- endfor -%} 
+    </div>
+    <div class="product-description-meta" data-content="shop">
+      {%- for block in section.blocks -%}
+            {%- case block.type -%}
+      {%- when 'text' -%}
+                <p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text5 -}}
+                </p>
+      {%- endcase -%}
+             {%- endfor -%} 
+    </div>
+  </div>
+</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const metafieldElements = document.querySelectorAll('.metafield');
+      const descriptionElements = document.querySelectorAll('.product-description-meta');
+
+      metafieldElements.forEach(element => {
+        element.addEventListener('click', function() {
+          const target = this.getAttribute('data-target');
+
+          // Hide all descriptions and remove active class from all labels
+          descriptionElements.forEach(desc => {
+            desc.classList.remove('active');
+          });
+
+          metafieldElements.forEach(label => {
+            label.classList.remove('active');
+          });
+
+          // Show the clicked metafield's description and add active class to the label
+          const targetDescription = document.querySelector(`.product-description-meta[data-content="${target}"]`);
+          if (targetDescription) {
+            targetDescription.classList.add('active');
+          }
+
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
+</product-info>
+
+{% schema %}
+{
+  "name": "Service",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    
+    {
+      "type": "text",
+      "name": "t:sections.main-product.blocks.text.name",
+      "settings": [
+         {
+          "type": "inline_richtext",
+          "id": "text6",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Complimentary Shipping"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "text7",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text2",
+          "label": "Complimentary returns and exchanges"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "text8",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text3",
+          "label": "Complimentary Gift Wrapping"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "text9",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text4",
+          "label": "Buy online and Pick up In Store"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "text10",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text5",
+          "label": "Vasundhara Shop Easy"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    
+  ],
+  "presets": [
+    {
+      "name": "Service"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,384 @@
+<!-- Testimonial -->
+<!-- section name => testimonial-section -->
+<style>
+  
+  .testimonial-control {
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 40px 0;
+}
+.testimonial-box {
+  width: 100%;
+}
+
+.testimonial-box-main {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+  h2.testimonial-head {
+    font-family: 'BodoniFLF Regular',serif;
+}
+.testimonial-box-card {
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .testimonial-box-main {
+    width: 100%; /* Ensure full width */
+  }
+
+  .testimonial-box-card {
+    width: 100%;
+  }
+
+  .testimonial-arrows {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-box-body {
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .testimonial-control {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .testimonial-box {
+  width: 100%;
+}
+
+.testimonial-box-main {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-box-card {
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .testimonial-box-main {
+    width: 100%; /* Ensure full width */
+  }
+
+  .testimonial-box-card {
+    width: 100%;
+  }
+
+  .testimonial-arrows {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-box-body {
+    z-index: 0;
+  }
+}
+
+}
+
+.testimonial-box { width: calc(30% - 20px); }
+.testimonial-box-list { width: calc(70% - 20px); }
+.testimonial-box-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonial-box-card {
+  position: relative;
+  width: 95%;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.testimonial-controls-main {
+  overflow: visible;
+  /* width: 100%; */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.testimonial-box-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.testimonial-box-card-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.testimonial-box-body {
+  padding: 0 0px;
+  z-index: 0;
+  transition: all 0.5s ease;
+  background: #fff;
+}
+
+.testimonial-box-card:hover .testimonial-box-card-img {
+  z-index: 0;
+}
+
+.testimonial-box-card:hover .testimonial-box-body {
+  z-index: 1;
+  bottom: 0;
+}
+
+.testimonial-head {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.testimonial-arrows-main {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 10px;
+}
+
+.testimonial-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.testimonial-box-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.testimonial-box-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .testimonial-box {
+    width: 100%;
+  }
+/* .testimonial-arrows.testimonial-arrows-next.slick-arrow {
+    position: relative;
+    bottom: 367px;
+    left: 30px;
+} */
+  .testimonial-box-list {
+    width: 100%;
+  }
+
+  .testimonial-control {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .testimonial-box-head {
+    max-width: unset;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-box-card {
+    margin-bottom: 10px;
+  }
+
+  .testimonial-box-main {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .testimonial-img {
+    width: 100%;
+  }
+}
+
+</style>
+<div class="testimonial-controls-main">
+    <div class="testimonial-control">
+        <div class="testimonial-box">
+            <div class="">
+                <div class="section-header">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/Frame_93_2.png?v=1723703841" alt="Small Image"
+                        class="section-small-image"> -->
+                </div>
+                <div class="testimonial-title">
+                    <h2 class="testimonial-head">{{ section.settings.title }}</h2>
+                    <span>{{ section.settings.text }}</span>
+                </div>
+          
+            </div>
+
+            <div class="banner__buttons{% if section.settings.button_label_1 != blank %} banner__buttons--multiple{% endif %}"
+                 {{ section.shopify_attributes }}>
+                {%- if section.settings.button_label_1 != blank -%}
+                    <a target="_blank"
+                       {% if section.settings.button_link_1 == blank %}
+                           role="link" aria-disabled="true"
+                       {% else %}
+                           href="{{ section.settings.button_link_1 }}"
+                       {% endif %}
+                       class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">
+                        {{- section.settings.button_label_1 | escape -}}
+                    </a>
+                {%- endif -%}
+            </div>
+        </div>
+
+        <div class="testimonial-box-list">
+            {% if section.blocks.size > 0 %}
+            <div class="testimonial-box-main">
+                {% for block in section.blocks %}
+                <div class="testimonial-box-card">
+                    {% if block.settings.image != blank %}
+                    <div class="testimonial-box-card-img">
+                        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="block_img" class="testimonial-img"/>
+                    </div>
+                    {% endif %}
+                    <div class="testimonial-box-body">
+                        {% if block.settings.title != blank %} <h5 class="testimonial-box-title">{{ block.settings.title }}</h5> {% endif %}
+                        {% if block.settings.text != blank %} <p class="testimonial-box-text">{{ block.settings.text }}</p> {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function () {
+    function initializeSlick() {
+        // Check if the slick slider is already initialized
+        if ($(".testimonial-box-main").hasClass('slick-initialized')) {
+            $(".testimonial-box-main").slick('unslick');  // Destroy previous instance
+        }
+
+        // Initialize the Slick carousel
+        $(".testimonial-box-main").slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: $(window).width() <= 749 ? 1 : 3,  // Show 1 slide on mobile, 3 on desktop
+            autoplay: true,
+            speed: 900,
+            nextArrow: $(".testimonial-arrows-next")
+        });
+    }
+
+    // Run the initialization on page load
+    if ($(".testimonial-box-main").length > 0) {
+        // Append the arrows manually to the testimonial-arrows-main div
+        var prevArrow = `
+            <div class="testimonial-arrows testimonial-arrows-previous">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                    <path d="M26.4617 15.5405L7.84366 15.5405L10.686 12.6945L9.846 11.8418L5.53833 16.1495L9.846 20.4571L10.686 19.6175L7.84366 16.7711H26.4617V15.5405Z" fill="#8D0509"></path>
+                </svg>
+            </div>
+        `;
+        
+        var nextArrow = `
+            <div class="testimonial-arrows testimonial-arrows-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                    <path d="M5.53834 15.5405L24.1563 15.5405L21.314 12.6945L22.154 11.8418L26.4617 16.1495L22.154 20.4571L21.314 19.6175L24.1563 16.7711H5.53834V15.5405Z" fill="#8D0509"></path>
+                </svg>
+            </div>
+        `;
+
+        // Append the arrows to the container
+        $(".testimonial-arrows-main").append(prevArrow).append(nextArrow);
+
+        // Call the initialize function for the slider
+        initializeSlick();
+
+        // Bind the resize event to reinitialize the slider on window resize
+        $(window).resize(function () {
+            initializeSlick();
+        });
+    }
+});
+
+</script>
+
+
+{% schema %}
+{
+"name": "Testimonial Section",
+"max_blocks": 12,
+"class": "testimonial-section",
+"settings": [
+    {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "What our customers say"
+    },
+    {
+        "type": "text",
+        "label": "Sub Text",
+        "id": "text",
+        "default": "Testimonial"
+    },
+    {
+        "type": "text",
+        "id": "button_label_1",
+        "default": "Button Label",
+        "label": "Button Label",
+        "info": "Button label info"
+    },
+    {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button Link"
+    }
+],
+"blocks": [
+    {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+            {
+                "type": "text",
+                "label": "Title",
+                "id": "title"
+            },
+            {
+                "type": "text",
+                "label": "Text",
+                "id": "text"
+            },
+            {
+                "type": "image_picker",
+                "label": "Image",
+                "id": "image"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "Testimonial Section"
+    }
+]
+}
+{% endschema %}

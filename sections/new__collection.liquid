@@ -1,0 +1,94 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.image_shape == 'blob' %}
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- unless section.settings.quick_add == 'none' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if section.settings.quick_add == 'standard' -%}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if section.settings.quick_add == 'bulk' -%}
+  <script src="{{ 'quick-add-bulk.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    
+  }
+{%- endstyle -%}
+
+{% assign selected_collection_handle = section.blocks.first.settings.selected_collection %}
+{% assign collection = collections[selected_collection_handle] %}
+
+{% if collection %}
+  <div class="collection-metafields">
+    <h3>Metafields for {{ collection.title }}</h3>
+
+    {% assign collection_metafields = collection.metafields.custom.collection %}
+
+      <ul>
+        {% for child_collection_handle in collection_metafields %}
+          {% assign child_collection = collections[child_collection_handle] %}
+          <li><strong>{{ child_collection.title }}</strong></li>
+          {% if child_collection.metafields.custom.some_other_metafield %}
+            <ul>
+              <li>Other Metafield: {{ child_collection.metafields.custom.some_other_metafield }}</li>
+            </ul>
+          {% endif %}
+        {% endfor %}
+      </ul>
+ 
+  </div>
+{% else %}
+  <p>No collection selected or collection not found.</p>
+{% endif %}
+
+{% schema %}
+{
+  "name": "New Collection list",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "collection_block",
+      "name": "Collection Block",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "selected_collection",
+          "label": "Select Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Collection list"
+    }
+  ]
+}
+{% endschema %}

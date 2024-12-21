@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "newsletter_banner_WEHNt9": {
+      "type": "Newsletter-banner",
+      "blocks": {
+        "heading_3RyMB9": {
+          "type": "heading",
+          "settings": {
+            "heading": "BE A PART OF THE JOURNEY",
+            "heading_size": "h1"
+          }
+        },
+        "text_HdHEdb": {
+          "type": "text",
+          "settings": {
+            "text": "Be the first of uncover our latest events, hidden gems and more.",
+            "text_style": "body"
+          }
+        },
+        "buttons_JpBUeW": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3RyMB9",
+        "text_HdHEdb",
+        "buttons_JpBUeW"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/PHOTO-2024-08-30-16-50-2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "image-mob": "shopify://shop_images/PHOTO-2024-08-30-16-50-2.jpg",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter_banner_WEHNt9"
+  ]
+}

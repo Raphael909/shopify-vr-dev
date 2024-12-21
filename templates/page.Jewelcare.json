@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "banner_slide_3UJyhL": {
+      "type": "banner-slide",
+      "blocks": {
+        "slide_bW3rne": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_12_1.png",
+            "heading": "About Us",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bW3rne"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "small_image": "shopify://shop_images/Frame_107.png",
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multirow_bL6z9p": {
+      "type": "multirow",
+      "blocks": {
+        "row_7K68py": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_144.png",
+            "caption": "",
+            "heading": "A high jewellery line in Uttarakhand celebrates timeless craftsmanship and cultural legacy",
+            "text": "<p>Vasundhra Raj–a fine jewellery label dedicated to crafting ornamental pieces offers contemporary and timeless heirloom designs</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_7K68py"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner_slide_3UJyhL",
+    "multirow_bL6z9p"
+  ]
+}

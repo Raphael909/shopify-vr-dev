@@ -1,0 +1,191 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_banner_mLzpeb": {
+      "type": "Collection-banner",
+      "settings": {
+        "accessibility_info": "",
+        "small_image": "shopify://shop_images/Frame_93_2.png"
+      }
+    },
+    "banner_slide_9B8yUP": {
+      "type": "banner-slide",
+      "blocks": {
+        "slide_cEzyUE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj0057.png",
+            "image-mob": "shopify://shop_images/11-04-2024_Vasundhra_Raj0317.png",
+            "heading": "Necklace",
+            "heading1": "Image slide",
+            "heading_size": "h1",
+            "subheading": "",
+            "subheading1": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cEzyUE"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "small_image": "shopify://shop_images/Frame_93.png",
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 100,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "logo_list_UtXBYK": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_eMMERF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_1.svg",
+            "link": "https://www.vogue.in/promotion/a-high-jewellery-line-in-uttarakhand-celebrates-timeless-craftsmanship-and-cultural-legacy"
+          }
+        },
+        "logo_image_kHAyfW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-svg.svg",
+            "link": "https://elle.in/raksha-bandhan-2024-gifting-guide/"
+          }
+        },
+        "logo_image_tekzgD": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/brides-today-logo.png",
+            "link": ""
+          }
+        },
+        "logo_image_c7KYUi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Header_logo.png",
+            "link": ""
+          }
+        },
+        "logo_image_mftpzX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_-removebg-preview_1.png",
+            "link": ""
+          }
+        },
+        "logo_image_HYnybk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.png",
+            "link": "https://www.deccanchronicle.com/lifestyle/fashion-beauty/masculine-elegance-1813197"
+          }
+        },
+        "logo_image_PXDQqT": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_213_1.png",
+            "link": ""
+          }
+        },
+        "logo_image_A6xiAn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/News18.svg",
+            "link": "https://www.news18.com/amp/lifestyle/best-gifts-on-rakhi-2024-9014551.html"
+          }
+        },
+        "logo_image_7cUheA": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.svg",
+            "link": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/"
+          }
+        },
+        "logo_image_DKgEfj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_213.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_eMMERF",
+        "logo_image_kHAyfW",
+        "logo_image_tekzgD",
+        "logo_image_c7KYUi",
+        "logo_image_mftpzX",
+        "logo_image_HYnybk",
+        "logo_image_PXDQqT",
+        "logo_image_A6xiAn",
+        "logo_image_7cUheA",
+        "logo_image_DKgEfj"
+      ],
+      "settings": {
+        "small_image": "shopify://shop_images/Frame_93_2.png",
+        "title": "As Seen In",
+        "logo_width": "200px",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "collection_banner_mLzpeb",
+    "banner_slide_9B8yUP",
+    "banner",
+    "product-grid",
+    "logo_list_UtXBYK"
+  ]
+}

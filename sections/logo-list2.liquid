@@ -1,0 +1,289 @@
+<div class="logoList--container1" style="padding-top: {{ section.settings.padding_top | append: "px" }}; padding-bottom: {{ section.settings.padding_bottom | append: "px" }}">
+  <h2 class="h1">{{ section.settings.title | escape }}</h2>
+  <ul>
+    {%- for block in section.blocks -%}
+      <li class="logoList--item1" {{ block.shopify_attributes }}>
+        {%- if block.settings.link != blank -%}
+          <a href="{{ block.settings.link }}">
+        {%- endif -%}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | img_url: '160x160', scale: 2 | img_tag: block.settings.image.alt }}
+          {%- else -%}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        {%- if block.settings.link != blank -%}
+          </a>
+        {%- endif -%}
+        {%- if block.settings.heading != blank -%}
+          <p class="logo-heading">{{ block.settings.heading | escape }}</p>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+    
+     <div
+              class="banner__buttons_1{% if section.settings.button_label_1 != blank %} banner__buttons--multiple{% endif %}"
+              {{ section.shopify_attributes }}
+            >
+    {%- if section.settings.button_label_1 != blank -%}
+                <a
+                  {% if section.settings.button_link_1 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link_1 }}"
+                  {% endif %}
+                  class="button1{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label_1 | escape -}}
+                </a>
+              {%- endif -%}
+     </div>
+  </ul>
+</div>
+
+<style>
+  @media screen and (min-width:750px)
+  {
+        a.button1.button--primary {
+    color: white;
+    background: maroon;
+           padding: 14px 10%;
+    margin: 0;
+                  font-family: 'Helvetica';
+}
+  .banner__buttons_1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 45rem;
+    word-break: break-word;
+    /* background: #B16E39; */
+    margin-bottom: 31px;
+}
+  .logoList--container1 {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    margin: auto;
+       /* background: #ffefef; */
+  }
+
+  .logoList--container1 ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 1rem; */
+    align-items: end;
+    padding-right: 70px;
+    padding: 0;
+        margin: 0;
+  }
+.logoList--container1.page-width {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  .logoList--item1 {
+    display: inline-block;
+    text-align:center;
+    max-width: 215px;
+  }
+
+  .logoList--item1 img {
+    width: 20%;
+  }
+
+  .logo-heading {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #870d0d;
+    font-weight: bold;
+    font-family: 'Helvetica',sans-serif;
+  }
+    div#shopify-section-template--16225477132358__logo_list2_FwVRUG {
+    height: 116px;
+}
+  }
+   @media screen and (max-width:749px)
+  {
+     a.button1.button--primary {
+    color: white;
+    background: maroon;
+    padding: 5px;
+    margin: 0;
+    font-family: 'Helvetica';
+}
+    .logoList--item1 img {
+    width: 40px;
+}
+    .banner__buttons_1 {
+        display: inline-flex
+;
+        flex-wrap: wrap;
+        /* gap: 1rem; */
+        /* max-width: 76rem; */
+        /* word-break: break-word; */
+        /* background: #B16E39; */
+        /* margin-bottom: 31px; */
+        margin: 0 0 0 140%;
+                width: 130%;
+    }
+  .logoList--container1 {
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    margin: auto;
+       /* background: #ffefef; */
+  }
+
+  .logoList--container1 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 1rem; */
+    justify-content: left;
+    width: 100%;
+           padding: 3px 0px;
+        margin: 0 auto;
+    margin-bottom: 15px;
+            padding-left: 16px;
+            align-items: end;
+
+    }
+    .logoList--container1.page-width {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  .logoList--item1 {
+        display: inline-block;
+        text-align: center;
+        /* max-width: 200px; */
+        width: 80%;
+    }
+
+  .logoList--item1 img {
+    width: 40px;
+  }
+
+  .logo-heading {
+    margin-top: 0.5rem;
+    font-size: 10px;
+    color: #870d0d;
+    font-weight: bold;
+    font-family: 'Helvetica',sans-serif;
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Logo list-2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Logo list"
+    },
+    {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "t:sections.image-banner.blocks.buttons.settings.button_label_1.default",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+      {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "First Button Url"
+          },
+    {
+      "type": "select",
+      "id": "logo_width",
+      "label": "Logo width",
+      "default": "160px",
+      "options": [
+        {
+          "label": "Extra Small",
+          "value": "50px"
+        },
+        {
+          "label": "Small",
+          "value": "100px"
+        },
+        {
+          "label": "Medium",
+          "value": "160px"
+        },
+        {
+          "label": "Large",
+          "value": "200px"
+        },
+        {
+          "label": "Extra Large",
+          "value": "400px"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 20,
+      "label": "Padding top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 20,
+      "label": "Padding bottom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo_image",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Logo Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo list-2",
+      "category": "Image",
+      "blocks": [
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

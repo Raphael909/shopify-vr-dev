@@ -1,0 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "new_rich_text_WypNBk": {
+      "type": "NEW-RICH-TEXT",
+      "blocks": {
+        "heading_6bgaj7": {
+          "type": "heading",
+          "settings": {
+            "heading": "JEWEL CARE",
+            "heading2": "How to Take Care of Our Jwellery? A guide.",
+            "heading_size": "h1"
+          }
+        },
+        "text_WWDqRD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cleaning and taking care of the jewellery is an important aspect for a buyer. Here are a few tips of jewel care that might come in handy:</strong></p>",
+            "text1": "<p>• Handle each piece with care as many settings are delicate and are prone to breakage if dropped or dealt with recklessly. Avoid wearing fine jewelry during physical exercise, cooking or any activity that could cause scratches or breakage.<br/>• Keep your jewelry away from direct sunlight and hesit to prevent chemical reactions that can fade gemstone colors and cause cracking.<br/>• Humidity can harm the delicate gold foil and gemstone inlay of jadau pieces. Always store your jewelry in a cool, dry place to prevent tarnishing or weakening of the materials.<br/>• Limit exposure to water. Avoid wearing jadau and pearl pieces in the rain, while swimming, or during bathing to protect<br/>the intricate lacquer work and gemstones.<br/>• Avoid using water or detergent for jadau jewelry as it may damage the traditional lac (wax) setting underneath the stones. Instead, use a clean, dry brush with soft bristles for hard-to-reach areas<br/>• Jadau jewelry is delicate, avoid rough handling that may loosen gemstones or damage the wax setting. Avoid wearing it during heavy tasks or strenuous activities.<br/>• Avoid soaking your jewelry in plain water for long periods. Instead, clean dirt from edges using a soft cloth and a soft toothbrush,<br/>• Delicate gemstones like opals, emeralds, and pearls should not be cleaned with water or detergent. Seek professional cleaning from an expert jeweler,<br/>• Refrain from using extremely hot or cold water. Instead, try sodium-free seltzer water or club soda to loosen dirt. Alternatively, professional cleaning solutions can be used.<br/>• While getting ready, Always wear jewelry last to prevent exposure to water and chemicals like perfumes, hairsprays, chlorine, or lotions.<br/>• Store jewelry in separate fabric pouches or cases to avoid unnecessary scratches or damage.<br/>• Regularly worn jewelry should be inspected every six months to check for loose gemstones.<br/>Avoid storing pearl jewelry in plastic bags or exposing it to chemicals such as ammonia, chlorine, and vinegar. Also, keep it away from steam.<br/>• Do not use ultrasonic cleaners or strong cleaning agents that can damage the gemstones and loosen the traditional settings.<br/>• When traveling, pack your jadau jewelry in individual padded pouches or jewelry boxes with separate compartments to prevent breakage or scratches.</p>",
+            "text3": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_6bgaj7",
+        "text_WWDqRD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width1": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_rich_text_WypNBk"
+  ]
+}

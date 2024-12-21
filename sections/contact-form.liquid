@@ -1,0 +1,258 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  
+  .contact.page-width.page-width--narrow.section-template--16225477197894__form-padding {
+    width: 100%;
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    <h2 id="SectionHeading-{{ section.id }}" class="collection-list-title inline-richtext" style="text-align: center;">
+      {{ section.settings.title }}
+    </h2>
+    
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext" style="font-size: 20px; line-height: 1; font-family: Helvetica;">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    
+    <div class="collection__description">
+      {{ section.settings.description -}}
+    </div>
+    
+    {%- if section.settings.heading1 != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext" style="font-size: 20px; line-height: 1; font-family: Helvetica;">
+        {{ section.settings.heading1 }}
+      </h2>
+    {%- endif -%}
+    
+    <div class="collection__description">
+      {{ section.settings.description1 -}}
+    </div>
+
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      <div class="contact__fields">
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-name"
+            name="contact[{{ 'templates.contact.form.name' | t }}]"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.name' | t }}"
+            required
+          >
+          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+        </div>
+
+        <div class="field field--with-error">
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            class="field__input"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+            {% endif %}
+            placeholder="{{ 'templates.contact.form.email' | t }}"
+            required
+          >
+          <label class="field__label" for="ContactForm-email">
+            {{- 'templates.contact.form.email' | t }}
+            <span aria-hidden="true">*</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <input
+          type="tel"
+          id="ContactForm-phone"
+          class="field__input"
+          autocomplete="tel"
+          name="contact[{{ 'templates.contact.form.phone' | t }}]"
+          pattern="^\+?[0-9\s\-]{7,15}$"
+          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.phone' | t }}"
+          required
+        >
+        <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+      </div>
+
+      <div class="field">
+        <textarea
+          rows="10"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+          placeholder="{{ 'templates.contact.form.comment' | t }}"
+          required
+        >
+          {{- form.body -}}
+        </textarea>
+        <label class="form__label field__label" for="ContactForm-body">
+          {{- 'templates.contact.form.comment' | t -}}
+        </label>
+      </div>
+
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+      
+      <!-- <div id="re-captcha"></div> -->
+      <input type="submit" id="contactFormSubmit" value="Send" class="button" />
+    {%- endform -%}
+  </div>
+</div>
+
+<script>
+  // var actCallback = function (response) {
+  //   document.getElementById('contactFormSubmit').disabled = false;
+  //   document.getElementById('re-captcha').style.display = 'none';
+  // };
+
+  // var expCallback = function() {
+  //   document.getElementById('contactFormSubmit').disabled = true;
+  // };
+
+  // var onloadCallback = function () {
+  //   grecaptcha.render(document.getElementById("re-captcha"), {
+  //     'sitekey' : "6LfmuSsqAAAAAPuyPfHLG3p_zPM0UDmWCxaI8Gda",
+  //     'theme': "light",
+  //     'callback' : actCallback,
+  //     'expired-callback': expCallback,
+  //   });
+  // };
+
+  document.getElementById('ContactForm').addEventListener('submit', function(e) {
+    const phoneInput = document.getElementById('ContactForm-phone');
+    const emailInput = document.getElementById('ContactForm-email');
+    const nameInput = document.getElementById('ContactForm-name');
+    const messageInput = document.getElementById('ContactForm-body');
+
+    const phonePattern = /^\+?[0-9\s\-]{7,15}$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Check if any field is empty
+    if (!nameInput.value.trim() || !emailInput.value.trim() || !phoneInput.value.trim() || !messageInput.value.trim()) {
+      alert('Please fill in all required fields.');
+      e.preventDefault();
+      return;
+    }
+
+    // Validate email format
+    if (!emailPattern.test(emailInput.value)) {
+      alert('Please enter a valid email address.');
+      e.preventDefault();
+      return;
+    }
+
+    // Validate phone number
+    if (!phonePattern.test(phoneInput.value)) {
+      alert('Please enter a valid phone number.');
+      e.preventDefault();
+      return;
+    }
+
+    // Ensure reCAPTCHA is completed
+    if (grecaptcha.getResponse().length === 0) {
+      alert('Please complete the reCAPTCHA.');
+      e.preventDefault();
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Contact Form",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Contact Us",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Have a Question?",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Form"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,198 @@
+<style>
+ul#HeaderMenu-MenuList-2 {
+    padding: 30px;
+}
+.header__submenu__parent {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0; /* Ensure no gaps between items */
+  padding: 0; /* Remove padding from the container */
+}
+
+.childlink-li {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+ 
+  margin: 0; /* Remove margin between items */
+  padding: 0; /* Remove padding */
+}
+
+.grandchildren_links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+  .header__menu-item2:hover
+  {
+    color: maroon;
+  }
+.header__menu-item2 {
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 2;
+    font-size: 14px;
+}
+.header__menu-item1 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #933b4bde;
+    text-decoration: none;
+    font-family: 'Helvetica', sans-serif;
+    padding: 0.8rem 0rem;
+    display: contents;
+}
+ul#HeaderMenu-MenuList-3 {
+    padding: 40px;
+}
+.header__menu-item1:hover {
+  text-decoration: none;
+  color: #000; /* Highlight on hover */
+}
+
+.header__submenu__parent img {
+  border-radius: 2px;
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  height: 250px;
+  width: 230px;
+  margin-bottom: 10px; /* Remove any extra margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .childlink-li {
+    width: 48%; /* Adjust to two images per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .childlink-li {
+    width: 100%; /* Adjust to one image per row */
+  }
+}
+</style>
+
+<nav class="header__inline-menu">
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- for link in section.settings.menu.links -%}
+      <li class="{% if link.links == blank %}no-submenu{% endif %}">
+        {%- if link.links != blank -%}
+          <header-menu>
+            <details id="Details-HeaderMenu-{{ forloop.index }}" style="position: static;">
+              <summary
+                id="HeaderMenu-{{ link.handle }}"
+                class="header__menu-item list-menu__item link focus-inset"
+              >
+                <a
+                  href="{{ link.url }}"
+                  class="header__menu-item link link--text focus-inset{% if link.current %} list-menu__item--active{% endif %}"
+                  {% if link.current %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  {{- link.title | escape -}}
+                </a>
+                {% render 'icon-caret' %}
+              </summary>
+              <ul
+                id="HeaderMenu-MenuList-{{ forloop.index }}"
+                class="header__submenu__parent header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
+                role="list"
+                tabindex="-1"
+              >
+                {%- for childlink in link.links -%}
+                  <li class="childlink-li">
+                    <a
+                      id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                      href="{{ childlink.url }}"
+                      class="child_parent-1 header__menu-item1 list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
+                      {% if childlink.current %}
+                        aria-current="page"
+                      {% endif %}
+                    >
+                      {{ childlink.title | escape }}
+                    </a>
+                    
+                    {%- if childlink.links != blank -%}
+                      <div class="grandchildren_links" id="Details-HeaderSubMenu-{{ link.handle }}-{{ childlink.handle }}">
+                        {%- for grandchildlink in childlink.links -%}
+                          <div>
+                            <a
+                              id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                              href="{{ grandchildlink.url }}"
+                              class="child_parent-1 header__menu-item2 list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                              {% if grandchildlink.current %}
+                                aria-current="page"
+                              {% endif %}
+                            >
+                              {{ grandchildlink.title | escape }}
+                            </a>
+                          </div>
+                        {%- endfor -%}
+                      </div>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </details>
+          </header-menu>
+        {%- else -%}
+          <a
+            id="HeaderMenu-{{ link.handle }}"
+            href="{{ link.url }}"
+            class="header__menu-item list-menu__item link link--text focus-inset{% if link.current %} list-menu__item--active{% endif %}"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+          >
+            {{- link.title | escape -}}
+          </a>
+        {%- endif %}
+      </li>
+      {% if menu == 'ABOUT' %}
+  <!-- Your specific HTML content for ABOUT menu -->
+  <div>
+    <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate">
+     <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/094A3296_1_1_-min.jpg?v=1732173953">
+    </div>
+  </div>
+{% endif %}
+    {%- endfor %}
+   
+
+  </ul>
+  
+</nav>
+
+<script>
+document.querySelectorAll(".header__inline-menu details").forEach(item => {
+  const submenu = item.querySelector("ul");
+
+  if (submenu) {
+    item.addEventListener("mouseenter", () => {
+      item.setAttribute("open", true);
+    });
+
+    item.addEventListener("mouseleave", () => {
+      item.removeAttribute("open");
+    });
+
+    submenu.addEventListener("mouseenter", () => {
+      item.setAttribute("open", true);
+    });
+
+    submenu.addEventListener("mouseleave", () => {
+      item.removeAttribute("open");
+    });
+  } else {
+    console.warn("No submenu found for:", item);
+  }
+});
+</script>

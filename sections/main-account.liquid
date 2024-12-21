@@ -1,0 +1,753 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  @media screen and (min-width: 750px){
+  input#AddressFirstNameNew {
+    width: 35%;
+}
+      button.btn-1 {
+    padding: 15px 45px;
+    background: white;
+    color: maroon;
+    border: 2px solid maroon;
+    font-size: 20px;
+    cursor: pointer;
+        margin: 20px 0;
+}
+    .input_type {
+    width: 35%;
+}
+input#AddressLastNameNew {
+    width: 35%;
+}
+input#AddressCompanyNew {
+    width: 71%;
+}
+  input#AddressAddress1New {
+    width: 35%;
+}
+input#AddressAddress2New {
+    width: 35%;
+}
+input#AddressCityNew {
+    width: 35%;
+}
+select#AddressCountryNew {
+    width: 35%;
+}
+input#AddressZipNew {
+    width: 35%;
+}
+input#register_phone_number {
+    width: 35%;
+} 
+  input {
+    text-transform: uppercase;
+}
+.input_type.com_add {
+    width: 71%;
+}
+
+  }
+    .account-container {
+    padding: 2rem;
+  }
+  .account__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .account__1 a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #007aff;
+  }
+
+  .tabs-container {
+    display: flex;
+    margin-top: 2rem;
+    gap: 20px;
+  }
+
+  .tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid maroon;
+  }
+
+  .tab {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .tab:hover {
+    background-color: #e8e8e8;
+  }
+
+  .tab.active {
+    color: maroon;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    flex: 3;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .content h2 {
+    margin: 0;
+    font-family: 'BodoniFLF Regular', serif;
+    color: maroon;
+    text-transform: uppercase;
+    font-size: 30px;
+        margin-top: 10px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .order-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+  }
+
+  .order-history th, .order-history td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid maroon;
+  }
+
+  .order-history th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: maroon;
+  }
+
+  .order-history td {
+    font-size: 14px;
+    color: black;
+  }
+
+  .order-history a {
+    text-decoration: none;
+  }
+
+  .order-history a:hover {
+    text-decoration: underline;
+  }
+
+  /* .order-history tr:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+
+  /* .order-history tr:hover {
+    background-color: #f1f1f1;
+  } */
+  .title {
+    margin: 6px 18px;
+    font-weight: 600;
+}
+  button.order-id-btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+  table.order-details-table {
+    border-collapse: collapse;
+}
+button#add-address-btn {
+    padding: 16px 30px;
+    background: none;
+    border: 2px solid maroon;
+    color: maroon;
+    font-size: 19px;
+    margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+  .input_type {
+    padding: 14px 30px;
+    margin: 10px 0;
+    border: 1px solid maroon;
+}
+
+  .btn-1:hover {
+    background: maroon;
+    color: white;
+    cursor: pointer;
+    
+}
+
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .order-history th,
+    .order-history td {
+      padding: 8px;
+              font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 750px)
+  {
+    .desk{
+      display: block;
+    }
+    .mobile
+    {
+      display: none;
+    }
+  }
+    @media screen and (max-width: 749px)
+  {
+    .desk{
+      display: none;
+    }
+    .mobile
+    {
+      display: block;
+    }
+  }
+{%- endstyle -%}
+
+<div class="account-container desk">
+  <!-- Tabs Section -->
+  <div class="tabs-container">
+    <div class="tabs">
+      <div class="title">MY ACCOUNT</div>
+      <div class="tab active" data-tab="tab1">ORDER HISTORY</div>
+          <div class="tab">
+          <a href="/account/addresses">VIEW ADDRESS</a>
+        </div>
+      <div class="tab">
+        <a href="{{ routes.account_logout_url }}" id="logout-link">LOG OUT</a>
+      </div>
+      <div class="tab" data-tab="tab5">SUPPORT</div>
+    </div>
+
+    <!-- Tab Contents -->
+<div class="tab-content">
+  <!-- Orders Tab -->
+  <div id="tab1" class="content">
+  <h2>{{ 'customer.orders.title' | t }}</h2>
+  {% if customer.orders.size > 0 %}
+    <table role="table" class="order-history">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col">{{ 'customer.orders.order_number' | t }}</th>
+          <th scope="col">{{ 'customer.orders.date' | t }}</th>
+          <th scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+          <th scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+          <th scope="col">{{ 'customer.orders.total' | t }}</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        {% for order in customer.orders %}
+          <tr>
+            <td>
+              <button 
+                class="order-id-btn" 
+                data-order-id="{{ order.id }}" 
+                onclick="toggleOrderDetails('{{ order.id }}')">
+                {{ order.name }}
+              </button>
+            </td>
+            <td>{{ order.created_at | date: "%d %b, %Y" }}</td>
+            <td>{{ order.financial_status_label }}</td>
+            <td>{{ order.fulfillment_status_label }}</td>
+            <td>{{ order.total_price | money_with_currency }}</td>
+          </tr>
+          <!-- Order Details Section -->
+          <tr class="order-details" id="details-{{ order.id }}" style="display: none;">
+            <td colspan="5">
+              <div>
+                <h3>{{ 'customer.order.title' | t: name: order.name }}</h3>
+                <p>{{ 'customer.order.date_html' | t: date: order.created_at | time_tag: format: 'date_at_time' }}</p>
+                {% if order.cancelled %}
+                  <p>{{ 'customer.order.cancelled_html' | t: date: order.cancelled_at | time_tag: format: 'date_at_time' }}</p>
+                  <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+                {% endif %}
+
+                <table role="table" class="order-details-table">
+                  <thead>
+                    <tr>
+                      <th>{{ 'customer.order.product' | t }}</th>
+                      <th>{{ 'customer.order.sku' | t }}</th>
+                      <th>{{ 'customer.order.price' | t }}</th>
+                      <th>{{ 'customer.order.quantity' | t }}</th>
+                      <th>{{ 'customer.order.total' | t }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for line_item in order.line_items %}
+                      <tr>
+                        <td>{{ line_item.title }}</td>
+                        <td>{{ line_item.sku }}</td>
+                        <td>{{ line_item.final_price | money }}</td>
+                        <td>{{ line_item.quantity }}</td>
+                        <td>{{ line_item.final_line_price | money }}</td>
+                      </tr>
+                    {% endfor %}
+                    <tr>
+                      <td colspan="4">{{ 'customer.order.subtotal' | t }}:</td>
+                      <td >{{ order.line_items_subtotal_price | money }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                 <div>
+        <h2>{{ 'customer.order.billing_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.payment_status' | t }}:</strong>
+          {{ order.financial_status_label }}
+        </p>
+        {{ order.billing_address | format_address }}
+      </div>
+      <div>
+        <h2>{{ 'customer.order.shipping_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong>
+          {{ order.fulfillment_status_label }}
+        </p>
+        {{ order.shipping_address | format_address }}
+      </div>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <script>
+  function toggleOrderDetails(orderId) {
+    // Get the order details row
+    const detailsRow = document.getElementById(`details-${orderId}`);
+    
+    // Toggle the display property
+    if (detailsRow.style.display === 'none' || detailsRow.style.display === '') {
+      // Hide all other details rows
+      document.querySelectorAll('.order-details').forEach(row => {
+        row.style.display = 'none';
+      });
+      
+      // Show the selected details row
+      detailsRow.style.display = 'table-row';
+    } else {
+      // Hide the selected details row
+      detailsRow.style.display = 'none';
+    }
+  }
+</script>
+  {% else %}
+    <p>{{ 'customer.orders.none' | t }}</p>
+  {% endif %}
+</div>
+</div>
+
+  </div>
+</div>
+
+
+<!-- Mobile Section -->
+<div class="account-container mobile">
+  <a href="{{ routes.account_logout_url }}" id="logout-link">LOG OUT</a>
+  <div class="title1">MY ACCOUNT</div>
+  <div class="title2">Welcome back, {{ customer.first_name }}!</div>
+  <div class="orders">MY ORDERS</div>
+  {% if customer.orders.size > 0 %}
+    <table role="table" class="order-history">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col">{{ 'customer.orders.order_number' | t }}</th>
+          <th scope="col">{{ 'customer.orders.date' | t }}</th>
+          <th scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+          <th scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+          <th scope="col">{{ 'customer.orders.total' | t }}</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        {% for order in customer.orders %}
+          <tr>
+            <td>
+              <button 
+                class="order-id-btn" 
+                data-order-id="{{ order.id }}" 
+                onclick="toggleOrderDetails1('{{ order.id }}')">
+                {{ order.name }}
+              </button>
+            </td>
+            <td>{{ order.created_at | date: "%d %b, %Y" }}</td>
+            <td>{{ order.financial_status_label }}</td>
+            <td>{{ order.fulfillment_status_label }}</td>
+            <td>{{ order.total_price | money_with_currency }}</td>
+          </tr>
+          <!-- Order Details Section -->
+          <tr class="order-details1" id="details1-{{ order.id }}" style="display: none;">
+            <td colspan="5">
+              <div>
+                <h3>{{ 'customer.order.title' | t: name: order.name }}</h3>
+                <p>{{ 'customer.order.date_html' | t: date: order.created_at | time_tag: format: 'date_at_time' }}</p>
+                {% if order.cancelled %}
+                  <p>{{ 'customer.order.cancelled_html' | t: date: order.cancelled_at | time_tag: format: 'date_at_time' }}</p>
+                  <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+                {% endif %}
+
+                <table role="table" class="order-details-table">
+                  <thead>
+                    <tr>
+                      <th>{{ 'customer.order.product' | t }}</th>
+                      <th>{{ 'customer.order.sku' | t }}</th>
+                      <th>{{ 'customer.order.price' | t }}</th>
+                      <th>{{ 'customer.order.quantity' | t }}</th>
+                      <th>{{ 'customer.order.total' | t }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for line_item in order.line_items %}
+                      <tr>
+                        <td>{{ line_item.title }}</td>
+                        <td>{{ line_item.sku }}</td>
+                        <td>{{ line_item.final_price | money }}</td>
+                        <td>{{ line_item.quantity }}</td>
+                        <td>{{ line_item.final_line_price | money }}</td>
+                      </tr>
+                    {% endfor %}
+                    <tr>
+                      <td colspan="4">{{ 'customer.order.subtotal' | t }}:</td>
+                      <td >{{ order.line_items_subtotal_price | money }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                 <div class="billing-address">
+        <h2>{{ 'customer.order.billing_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.payment_status' | t }}:</strong>
+          {{ order.financial_status_label }}
+        </p>
+        {{ order.billing_address | format_address }}
+      </div>
+      <div class="billing-address">
+        <h2>{{ 'customer.order.shipping_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong>
+          {{ order.fulfillment_status_label }}
+        </p>
+        {{ order.shipping_address | format_address }}
+      </div>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+     <script>
+  function toggleOrderDetails1(orderId) {
+    // Get the order details row
+    const detailsRow = document.getElementById(`details1-${orderId}`);
+    
+    // Toggle the display property
+    if (detailsRow.style.display === 'none' || detailsRow.style.display === '') {
+      // Hide all other details rows
+      document.querySelectorAll('.order-details1').forEach(row => {
+        row.style.display = 'none';
+      });
+      
+      // Show the selected details row
+      detailsRow.style.display = 'table-row';
+    } else {
+      // Hide the selected details row
+      detailsRow.style.display = 'none';
+    }
+  }
+</script>
+  {% else %}
+    <p>{{ 'customer.orders.none' | t }}</p>
+  {% endif %}
+   <div class="orders"> <a href="/account/addresses">VIEW ADDRESS</a></div>
+                </div>
+
+
+
+
+{%- javascript -%}
+ function toggleOrderDetails(orderId) {
+    // Get the order details row
+    const detailsRow = document.getElementById(`details-${orderId}`);
+    
+    // Toggle the display property
+    if (detailsRow.style.display === 'none' || detailsRow.style.display === '') {
+      // Hide all other details rows
+      document.querySelectorAll('.order-details').forEach(row => {
+        row.style.display = 'none';
+      });
+      
+      // Show the selected details row
+      detailsRow.style.display = 'table-row';
+    } else {
+      // Hide the selected details row
+      detailsRow.style.display = 'none';
+    }
+  }
+
+
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const orderLinks = document.querySelectorAll('.order-link');
+  const orderDetailsContainer = document.getElementById('order-details');
+  const orderTitle = document.getElementById('order-title');
+  const orderDate = document.getElementById('order-date');
+  const orderCancelled = document.getElementById('order-cancelled');
+  const orderItems = document.getElementById('order-items');
+
+  orderLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const orderData = JSON.parse(link.dataset.order);
+
+      // Populate order details
+      orderTitle.textContent = `Order: ${orderData.name}`;
+      orderDate.textContent = `Date: ${new Date(orderData.created_at).toLocaleDateString()}`;
+
+      if (orderData.cancelled) {
+        orderCancelled.textContent = `Cancelled on: ${new Date(orderData.cancelled_at).toLocaleDateString()}`;
+        orderCancelled.classList.remove('hidden');
+      } else {
+        orderCancelled.classList.add('hidden');
+      }
+
+      // Populate order items
+      orderItems.innerHTML = '';
+      orderData.line_items.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.title}</td>
+          <td>${item.sku || 'N/A'}</td>
+          <td>${item.price}</td>
+          <td>${item.quantity}</td>
+          <td>${item.total_price}</td>
+        `;
+        orderItems.appendChild(row);
+      });
+
+      // Show order details
+      orderDetailsContainer.classList.remove('hidden');
+    });
+  });
+});
+
+
+
+
+  
+ window.addEventListener('load', () => {
+    typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
+  });
+  
+document.addEventListener('DOMContentLoaded', function () {
+  const addAddressBtn = document.getElementById('edit-btn1');
+  const modal = document.getElementById('editModal');
+  const closeBtn = document.querySelector('.close-btn1');
+
+  // Check if the device is mobile
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    // Show modal on button click
+    addAddressBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    // Hide modal on close button click
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Hide modal on outside click
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  }
+});
+
+  
+document.addEventListener('DOMContentLoaded', function () {
+  const addAddressBtn = document.getElementById('add-address-btn1');
+  const modal = document.getElementById('addAddressModal');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Check if the device is mobile
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    // Show modal on button click
+    addAddressBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    // Hide modal on close button click
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Hide modal on outside click
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  }
+});
+// Handle the update form submission
+document.querySelectorAll('.btn-1').forEach(button => {
+  button.addEventListener('click', function(event) {
+    if (this.innerText === 'Update') {
+      event.preventDefault(); // Prevent the default form submission
+      
+      const form = this.closest('form');
+      const formData = new FormData(form);
+
+      // Send the update request using Fetch or AJAX
+      fetch(form.action, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert('Address updated successfully');
+          window.location.reload();  // Reload the page to show updated address
+        } else {
+          alert('There was an error updating the address');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Something went wrong while updating the address');
+      });
+    }
+  });
+});
+
+// Handle the delete button click
+document.querySelectorAll('.btn-1[data-confirm-message]').forEach(button => {
+  button.addEventListener('click', function(event) {
+    const confirmMessage = this.getAttribute('data-confirm-message');
+    const addressUrl = this.getAttribute('data-target');
+
+    if (confirm(confirmMessage)) {
+      // Send the delete request using Fetch or AJAX
+      fetch(addressUrl, {
+        method: 'DELETE'
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert('Address deleted successfully');
+          this.closest('li').remove();  // Remove the address from the DOM
+        } else {
+          alert('There was an error deleting the address');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Something went wrong while deleting the address');
+      });
+    }
+  });
+}); 
+    // JavaScript to toggle the visibility of the address edit form
+  document.querySelectorAll('.edit-button').forEach(button => {
+    button.addEventListener('click', function() {
+      const formId = this.getAttribute('data-address-id');
+      const formContainer = document.getElementById('EditAddress_' + formId);
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      // Toggle the aria-expanded state
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Show or hide the form
+      formContainer.classList.toggle('hidden', isExpanded);
+    });
+  });
+    document.getElementById('add-address-btn').addEventListener('click', function() {
+    var formContainer = document.getElementById('AddAddress');
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !expanded);
+    formContainer.classList.toggle('hidden', expanded);
+  });
+
+  
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.content');
+  const logoutLink = document.getElementById('logout-link');
+
+  // Tab switching logic
+  tabs.forEach(tab => {
+    tab.addEventListener('click', event => {
+      // Skip the logout tab
+      if (tab.contains(logoutLink)) {
+        return;
+      }
+
+      // Remove active class from all tabs
+      tabs.forEach(t => t.classList.remove('active'));
+      // Hide all contents
+      contents.forEach(content => content.classList.add('hidden'));
+
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      // Show corresponding content
+      const tabId = tab.getAttribute('data-tab');
+      if (tabId) {
+        document.getElementById(tabId).classList.remove('hidden');
+      }
+    });
+  });
+
+  // Prevent logout link from opening a blank tab
+  logoutLink.addEventListener('click', event => {
+    event.preventDefault(); // Prevent opening any blank tab
+    window.location.href = logoutLink.href; // Redirect to logout URL
+  });
+{%- endjavascript -%}
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

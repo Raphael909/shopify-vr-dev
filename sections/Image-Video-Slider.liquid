@@ -1,0 +1,233 @@
+<style>
+  @media only screen and (max-width: 768px) {
+    .image-video-slider-mobile-video {
+      display: block;
+    }
+    .image-video-slider-desktop-video {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .image-video-slider-mobile-video {
+      display: none;
+    }
+    .image-video-slider-desktop-video {
+      display: block;
+    }
+    .image-video-slider-text-content1 {
+    padding: 31px;
+}
+  }
+   @media only screen and (max-width: 768px) {
+    .image-video-slider-text-btn a {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.image-video-slider-content {
+    pointer-events: auto;
+}
+.image-video-slider-text-btn a {
+    pointer-events: auto;
+}
+.image-video-slider-text-btn a {
+    position: relative;
+    z-index: 10;
+}
+
+    @media only screen and (min-width: 750px) {
+      .image-video-slider-text-content1 {
+    font-style: italic;
+    font-size: 23px;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0;
+      line-height: normal;
+  
+}
+  span.Apostrophe2 {
+    font-size: 71px;
+    line-height: 0;
+    position: relative;
+    top: 30px;
+    color: black;
+}
+    }
+</style>
+
+<div class='image-video-slider {{ section.settings.custom_class }}'>
+  <div class='image-video-slider-container'>
+    {% for block in section.blocks %}
+      <div class='image-video-slider-content block_{{ block.id }}'>
+        <style>
+          .image-video-slider-content.block_{{ block.id }} .image-video-slider-text-btn a:after { background: {{ block.settings.text_color }}; }
+        </style>
+
+        {% if block.settings.video != blank or block.settings.image != blank or block.settings.video_mobile != blank %}
+          <div class='image-video-content'>
+            {% if block.settings.video != blank %}
+              <!-- Desktop Video -->
+              <div class="image-video-slider-image image-video-slider-height image-video-slider-desktop-video">
+                {{
+                  block.settings.video
+                  | video_tag:
+                    image_size: '1100x',
+                    autoplay: true,
+                    loop: section.settings.enable_video_looping,
+                    controls: true,
+                    muted: true
+                }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.video_mobile != blank %}
+              <!-- Mobile Video -->
+              <div class="image-video-slider-image image-video-slider-height image-video-slider-mobile-video">
+                {{
+                  block.settings.video_mobile
+                  | video_tag:
+                    image_size: '1100x',
+                    autoplay: true,
+                    loop: section.settings.enable_video_looping,
+                    controls: true,
+                    muted: true
+                }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.image != blank %}
+              <!-- Fallback Image -->
+              <div class="image-video-slider-image image-video-slider-height">
+                <img src="{{ block.settings.image | img_url: '2048x2048' }}" alt="Slider Image" />
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <div class='image-video-slider-text'>
+          {% if block.settings.logo_image != blank %}
+            <div class='image-video-slider-text-logo'>
+              <img src='{{ block.settings.logo_image | img_url: '2048x2048' }}' alt="Logo" />
+            </div>
+          {% endif %}
+
+          {% if block.settings.text != blank %}
+            <div class='image-video-slider-text-content' style='color:{{ block.settings.text_color }};'>{{ block.settings.text }}</div>
+          {% endif %}
+
+          {% if block.settings.description != blank %}
+            <div class='image-video-slider-description-content' style='color:{{ block.settings.text_color }};'>{{ block.settings.description }}</div>
+          {% endif %}
+
+          {% if block.settings.btn_first_text != blank or block.settings.btn_second_text != blank %}
+            <div class='image-video-slider-text-btn'>
+              {% if block.settings.btn_first_text != blank %}
+                <div class='image-v-slider-first-btn button button--primary'>
+                  <a href='{% if block.settings.btn_first_url != blank %}{{ block.settings.btn_first_url }}{% else %}#{% endif %}' style='color: {{ block.settings.text_color }};'>{{ block.settings.btn_first_text }}</a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.btn_second_text != blank %}
+                <div class='image-v-slider-second-btn button button--primary'>
+                  <a href='{% if block.settings.btn_second_url != blank %}{{ block.settings.btn_second_url }}{% else %}#{% endif %}' style='color: {{ block.settings.text_color }};'>{{ block.settings.btn_second_text }}</a>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {% if block.settings.text2 != blank %}
+            <div class='image-video-slider-text-content1' style='background: #ffefef;'>   <span class="Apostrophe ">“</span>&nbsp;&nbsp;{{ block.settings.text2 }}<span class="Apostrophe2">”</span></div>
+          {% endif %}
+  
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image and Video Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "img",
+        "name": "Image slide",
+        "settings": [
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Desktop Video"
+          },
+          {
+            "type": "video",
+            "id": "video_mobile",
+            "label": "Mobile Video"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Fallback Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Logo Image"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+             {
+            "type": "text",
+            "id": "text2",
+            "label": "Text"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "btn_first_text",
+            "label": "First Button Text"
+          },
+          {
+            "type": "url",
+            "id": "btn_first_url",
+            "label": "First Button Url"
+          },
+          {
+            "type": "text",
+            "id": "btn_second_text",
+            "label": "Second Button Text"
+          },
+          {
+            "type": "url",
+            "id": "btn_second_url",
+            "label": "Second Button Url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image and Video Slider"
+      }
+    ]
+  }
+{% endschema %}

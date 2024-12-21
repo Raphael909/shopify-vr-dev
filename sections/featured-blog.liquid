@@ -1,0 +1,225 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+        padding: 10px 80px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+          padding: 10px 80px;
+    }
+  }
+
+  h2#SectionHeading-template--16225477132358__featured_blog_EUkEyF {
+    text-align: left;
+  }
+
+  h1#SectionHeading-template--16225477132358__featured_blog_EUkEyF {
+    text-align: left;
+    line-height: 0;
+    font-size: 17px;
+  }
+
+  .blog.color-scheme-1.gradient {
+    background: #F3F4F4;
+  }
+
+  .card-blog {
+    padding: 25px;
+  }
+
+  .blog__posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .blog__post {
+    flex: 1 1 calc(100% / {{ section.settings.columns_desktop }} - 20px);
+  }
+
+  @media screen and (max-width: 749px) {
+    .blog__post {
+      flex: 1 1 calc(100% / 1 - 10px);
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign posts_displayed = section.settings.blog.articles_count
+  if section.settings.post_limit <= section.settings.blog.articles_count or section.settings.post_limit <= 4
+    assign posts_exceed_limit = true
+    assign posts_displayed = section.settings.post_limit
+  endif
+-%}
+
+<div class="blog gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
+  <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+    {% if section.settings.small_image %}
+      <div class="section-header">
+        <img src="{{ section.settings.small_image | img_url: 'medium' }}" alt="Small Image" class="section-small-image">
+      </div>
+    {% endif %}
+    
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--no-top-margin">
+        <h1 id="SectionHeading-{{ section.id }}" class="blog__title1 inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading1 }}
+        </h1>
+        <h2 id="SectionHeading-{{ section.id }}" class="blog__title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+
+        {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
+          <a href="{{ section.settings.blog.url }}" class="link underlined-link large-up-hide">
+            {{ 'sections.featured_blog.view_all' | t }}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+
+    <div class="blog__posts">
+      {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+        {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+          <div class="blog__post">
+            {% render 'article-card',
+              blog: section.settings.blog,
+              article: article,
+              media_aspect_ratio: 1.66,
+              show_image: section.settings.show_image,
+              show_date: section.settings.show_date,
+              show_author: section.settings.show_author,
+              show_excerpt: true
+            %}
+          </div>
+        {%- endfor -%}
+      {%- else -%}
+        <!-- Placeholder for when there are no articles -->
+        <div>No articles to show.</div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
+      <div class="blog__view-all center small-hide medium-hide">
+        <a href="{{ section.settings.blog.url }}" id="ViewAll-{{ section.id }}" class="blog__button button">
+          {{ 'sections.featured_blog.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Blog",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "small_image",
+      "label": "Small Image",
+      "info": "Select an image to display alongside the title."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading1",
+      "default": "Our Blog",
+      "label": "Subheading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Latest Articles",
+      "label": "Main Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h1", "label": "H1" }
+      ],
+      "default": "h1",
+      "label": "Heading Size"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "min": 2,
+      "max": 100,
+      "step": 1,
+      "default": 3,
+      "label": "Number of Posts"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Number of Columns (Desktop)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "Show Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "Show Date"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "Show Author"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "Show View All Button"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

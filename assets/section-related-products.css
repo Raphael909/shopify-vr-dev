@@ -1,0 +1,31 @@
+.related-products {
+  display: block;
+  
+}
+
+.related-products__heading {
+  margin: 0 0 3rem;
+    font-family: Helvetica;
+    font-weight: 500; 
+  font-size: 45px;
+      color: #545454;
+      display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+}
+    @media screen and (max-width: 749px) {
+.related-products__heading {
+  margin: 0 0 3rem;
+    font-family: Helvetica;
+    font-weight: 500; 
+  font-size: 25px;
+  text-align: center;
+}
+      h1#SectionHeading-template--16225477296198__related-products {
+    text-align: center;
+}
+      .title-image-wrapper {
+    margin-left: 40%;
+}
+    }

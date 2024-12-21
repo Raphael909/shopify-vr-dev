@@ -1,0 +1,1074 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "new_banner_CfprGJ": {
+      "type": "New-Banner",
+      "blocks": {
+        "heading_gYLAhB": {
+          "type": "heading",
+          "settings": {
+            "heading": "PRECIOUS METAL AND GEMSTONE",
+            "heading_size": "hxl"
+          }
+        },
+        "text_7R4kWM": {
+          "type": "text",
+          "settings": {
+            "text": "<em>At Vasundhra Raj Luxury, precious metal and gemstones become timeless stories of beauty and craft</em>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gYLAhB",
+        "text_7R4kWM"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/094A4515.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-right",
+        "image-mob": "shopify://shop_images/094A4515.jpg",
+        "show_text_box": true,
+        "desktop_content_alignment": "right",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "new_rich_text_aagzfz": {
+      "type": "New_rich_text",
+      "blocks": {
+        "text_eVPeQ6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The timeless and priceless metal, gold is prized for its beauty and spiritual significance. It is the most desired metal in the world which did not corrode and oxidized. The purity of gold is expressed in karats, which measures parts per 24. For example, 18-Karat gold means there are 18 parts gold out of 24 in the alloy, while 24-Karat gold is pure. It is mostly too soft to be worn.</p>",
+            "text1": "<p><em>The precious metals and gemstones that have been used for decoration and trade throughout human history have their origin in the rocks that surround us. Many of these began as mineral crystals that formed as a result of geological changes over millennia.</em></p>",
+            "text3": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_eVPeQ6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width1": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "new_image_with_text_RdJiKC": {
+      "type": "New-image-with-text",
+      "blocks": {
+        "text_ieALtA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Made with 58.4% pure gold (14 out of 24 parts), 14K gold has a subtle hue and is strong enough to securely hold diamonds and gemstones. It’s ideal for everyday wear as it resists scratches and doesn’t bend or wear out easily.</p>",
+            "heading2": "<em>14 Karat Gold (14K)</em> -",
+            "text_style": "body"
+          }
+        },
+        "text_qtyVP6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Containing 75% pure gold (18 out of 24 parts), 18K gold is also suitable for everyday wear. However, we prefer 14K gold in most designs due to its superior strength for securing gemstones.</p>",
+            "heading2": "<em>18 Karat Gold (18K)</em> -",
+            "text_style": "body"
+          }
+        },
+        "text_tPTYUm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With 91.67% pure gold (22 out of 24 parts), 22K gold is commonly used in our kundan-setting designs due to its higher purity and traditional appeal.</p>",
+            "heading2": "<em>22 Karat Gold (22K) - </em>",
+            "text_style": "body"
+          }
+        },
+        "text_eynVF7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At 99.9% purity, 24K gold is the purest form, making it highly malleable. It is used exclusively in kundan-setting designs as a gold foil.</p>",
+            "heading2": "<em>24 Karat Gold (24K) -</em>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_ieALtA",
+        "text_qtyVP6",
+        "text_tPTYUm",
+        "text_eynVF7"
+      ],
+      "settings": {
+        "image1": "shopify://shop_images/red_3.png",
+        "image": "shopify://shop_images/07-06-2024_Vasundhra_Raj5565-Photoroom.png",
+        "link2": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "new_banner_rrQGCh": {
+      "type": "New-Banner",
+      "blocks": {
+        "heading_jC7wCN": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIAMONDS",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jC7wCN"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/KEW6918_copy_1bfda107-7897-413d-bbe3-1af035f3d253.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "image-mob": "shopify://shop_images/KEW6918_copy_1bfda107-7897-413d-bbe3-1af035f3d253.jpg",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "right",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "new_rich_text_n7ceqB": {
+      "type": "New_rich_text",
+      "blocks": {
+        "text_raaDr8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The different cuts and colors of diamonds we use are :</p>",
+            "text1": "<p>Diamonds shine through the <em>Four C’s: Cut, Color, Clarity, and Carat</em>. With exceptional beauty lustre and sparkle, diamond is the most iconic of all precious stones.</p>",
+            "text3": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_raaDr8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width1": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "new_multirow_TCxYf7": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_V3jxdF": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/round-diamond-top.png",
+            "heading1": "ROUND CUT DIAMONDS",
+            "text": "<p>Looking down ward through the table of the brilliant cut diamond, the clarity of this stone and the reflectivity of it facets can be seen with 57 precisely arranged facets, this cut is the gold standard for white diamonds, showcasing the peak of gem cutting artistry. These dazzling stones illuminate every setting with unparallel brilliance.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_EHdzLz": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/calibratedrosecutdiamond-Photoroom_1_694ab97f-b8b6-47dc-b3d2-85af3765c94a.png",
+            "heading1": "ROSE CUT DIAMONDS",
+            "text": "<p>A jeweller’s classic favourite - The rose cut, a classic with centuries of history for its grace and understated beauty. Unlike the round brilliant cut, the rose cut features a flat-base and a domed-top, lending a unique architectural charm to any design. With 3-24 triangular facets, it is soft, subtle, sparkle makes it a refined choice.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_V3jxdF",
+        "row_EHdzLz"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_bW9rhA": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_CkrGEL": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/6-69517_cushion-cut-diamond-cushion-Photoroom_4d3dccef-3577-48a9-865d-0d09de4dc714.png",
+            "heading1": "CUSHION CUT DIAMONDS",
+            "text": "<p>Cushion cuts diamonds have a square or rectangular shape with rounded edges, resembling a pillow and giving them their name. Originally known as the \"old mine cut,\" it was the standard diamond shape before the advent of the modern round brilliant cut.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_d6Y6kk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/princess-diamond-side.png",
+            "heading1": "PRINCESS CUT DIAMONDS",
+            "text": "<p>A jeweller’s classic favourite - The rose cut, a classic with centuries of history for its grace and understated beauty. Unlike the round brilliant cut, the rose cut features a flat-base and a domed-top, lending a unique architectural charm to any design. With 3-24 triangular facets, it is soft, subtle, sparkle makes it a refined choice.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_CkrGEL",
+        "row_d6Y6kk"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_RGLCpJ": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_AmeBWA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/08-06-2024_Vasundhra_Raj5909_2_a2ef11b2-055d-460b-90e8-8fca2c47a592.jpg",
+            "heading1": "UNCUT DIAMONDS - POLKI",
+            "text": "<p>The raw beauty - Polki is a traditional, uncut diamond style that captures the essence of ancient craftsmanship. Polki diamonds retain their natural form, showcasing the raw, organic shapes. Polki jewellery is prized for its vintage charm, where the diamonds are set in gold, often using a technique called “kundan” to highlight their natural beauty.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_mXjQB4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/princess-diamond-side.png",
+            "heading1": "BAGUETTE CUT DIAMONDS",
+            "text": "<p>Sleek brilliance in every line - baguette diamonds, named after the slender french loaf. The term baguette is used to describe a diamond that is long, thin with a rectangular shape. The length should be atleast twice the width but at most, three times the width. It consists of 14 facets and its slim profile makes them perfect for versatility.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_AmeBWA",
+        "row_mXjQB4"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_myNhWq": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_Prnfwy": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/emerald-cut-diamond_1_1_1.jpg",
+            "heading1": "UNCUT DIAMONDS - POLKI",
+            "text": "<p>The raw beauty - Polki is a traditional, uncut diamond style that captures the essence of ancient craftsmanship. Polki diamonds retain their natural form, showcasing the raw, organic shapes. Polki jewellery is prized for its vintage charm, where the diamonds are set in gold, often using a technique called “kundan” to highlight their natural beauty.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_VpMrY6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/352-3524263_pear-diamond-stone-hd-png-download-Photoroom.png",
+            "heading1": "PEAR CUT DIAMONDS",
+            "text": "<p>The pear cut diamond also known as the tear drop cut is a combination of a round and a marquise shape, with a tapered point on one end. The diamond is always worn with the narrow end pointing toward the hand of the wearer. It aslo has 58 facets. Designed to maximum light reflection, the pear cut offers shine and slimming effect, making it a classic choice for statement jewellery.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Prnfwy",
+        "row_VpMrY6"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_banner_amgfMz": {
+      "type": "New-Banner",
+      "blocks": {
+        "heading_JTUkeF": {
+          "type": "heading",
+          "settings": {
+            "heading": "GEMSTONES",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JTUkeF"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/08-06-2024_Vasundhra_Raj6095_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "image-mob": "shopify://shop_images/08-06-2024_Vasundhra_Raj6095_1.jpg",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "right",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "new_rich_text_p8Ceg9": {
+      "type": "New_rich_text",
+      "blocks": {
+        "text_Lb79GW": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text1": "",
+            "text3": "<p>“GEMS OF THE EARTH, CRAFTED BY TIME, EACH ONE UNIQUE AND FULL OF BEAUTY.\"</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Lb79GW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width1": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "new_multirow_3zCcV6": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_bpNwJ6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.25_PM_3.jpg",
+            "heading1": "RUBY",
+            "text": "<p>Ruby is the red variety of the mineral corundum, and its color seemlessly picks up where pink sapphire stops. Only darker stones are generally called rubies. Ruby sometimes tinged with purple, and the most valued color is known as pegion blood red.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_t7L3nT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.27_PM_1.jpg",
+            "heading1": "EMERALD",
+            "text": "<p>One of the most desirable gemstones, emeralds are the rich green variety of peryl, the mineral found in ignious, metamorphic, and sedementary rocks. Most emeralds have numerous inclusions and internal flaws, and these imperfections are nique to each stone.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_bpNwJ6",
+        "row_t7L3nT"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_4y3cz9": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_AKaV7Q": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.10_PM.jpg",
+            "heading1": "MORGANITE",
+            "text": "<p>Morganite is the pink variety of beryl. It is colored pink, rose lilac, peach, orange or pinkish yellow by the presence of manganese, and its crystal sometimes show color banding, with a sequence from blue near the base to nearly colorless in the centre, to peach or pink at the tip. It is almost always faceted, and stones with a yellow or orange tinged are sometimes heat-treated to emphasize their pink tone.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_dYycH4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.07_PM.jpg",
+            "heading1": "TANZANITE",
+            "text": "<p>The name tanzanite name (after Tanzania) was introduced by the New York jeweller’s Tiffany & Co. In good quality the color is ultramarine to sapphire blue; in artificial light it appears more amethyst violet. Green tanzanite is rare.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_AKaV7Q",
+        "row_dYycH4"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_iiqWHz": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_kx4z7q": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.08_PM.jpg",
+            "heading1": "KUNZITE",
+            "text": "<p>Kunzite is named after the US gemologist G. F. Kunz, who first described this gem in 1902. The coloring agent is manganese. Stones are mostly light colored; colors can fade, brownish and green-violet types can be improved in color by heating to about 300 degrees F. There are frequently aligned inclusions such as tubes or fracture. The stone has a vivid vitreous lustre.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_HDNyAM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_4.21.00_PM.jpg",
+            "heading1": "PERIDOT",
+            "text": "<p>Peridot name is probably derived from the arabic word ‘faridat’ (gem). It can range from pale golden-green to brownish-green in color; Rich green is the most valued of all. It was the most popular stone during baroque period. popular table and step cut; sometimes also brilliant cut, specially when set in gold.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_kx4z7q",
+        "row_HDNyAM"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_QaTeB3": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_bRxkxP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.25_PM_1.jpg",
+            "heading1": "TOURMALINE",
+            "text": "<p>Tourmaline refers to a family of borosilicate minerals of variable composition all with the same basic crystal structure. There are more than thirty minerals species in the tourmaline group. The most dramatic tourmalines are the color-zoned gems called “watermelon tourmaline”, when sliced across the crystal, this variety shows a red or pink centre surrounded by a rim of green.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_AeK7QM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_4.19.59_PM.jpg",
+            "heading1": "TOPAZ",
+            "text": "<p>The name topaz is most probably derived from an island in the red sea, but formerly topazos, the ancient source of peridot. Colors of the gemstones that is today called topaz are rarely vivid. The most common color is yellow with a red tint; The most valuable is pink to reddish-orange. The coloring agents are iron and chromium. Some yellowish-brown varieties of certain deposits gradually fades in the sunlight.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_LTVNnf": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.27_PM_2.jpg",
+            "heading1": "SAPPHIRE",
+            "text": "<p>Both ruby and sapphire are variety of the same mineral, corundum, and aluminium oxide that is next to diamond in hardness. Although commonly thought of as blue, sapphire can also be colorless, green, yellow, orange, violet and pink.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_LLBqXx": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/png_3.png",
+            "heading1": "SPINEL",
+            "text": "<p>Gemstone spinel is a magnesium aluminium oxide, although the name is also given to a group of metal oxides, all of which have the same crystal structure. It if most familiar as a blue, purple, red and pink gem, buit it can occur in other colors .Its blood variety is sometimes called “ruby spinel”.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_bRxkxP",
+        "row_AeK7QM",
+        "row_LTVNnf",
+        "row_LLBqXx"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_6xBLiH": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_FNJecd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_4.19.58_PM.jpg",
+            "heading1": "AQUAMARINE",
+            "text": "<p>Aquamarine (Latin-water of the sea) is so named because of its seawater dark blue is the most desired color. The coloring agent is iron. Aquamarine can have either blue or green coloring. Much greenish-blue aquamarine is heated to produce an intense blue color that has become popular in modern jewellery</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_TtC3mD": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_4.20.00_PM.jpg",
+            "heading1": "AMETHYST",
+            "text": "<p>Amethyst is one of the most valued stone in the quartz group. Crystals are always grown onto a base. Prisms are usually not well developed, therefore are often found as crystal points (pointy amethyst). with the deepest colour. These parts are broken off at the base for further treatment.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_FNJecd",
+        "row_TtC3mD"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_CmmnRc": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_6dHWfq": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/png_55cfeeef-5f0b-4e45-8b22-6b0ecc258549.png",
+            "heading1": "JADE",
+            "text": "<p>Jade, named from the Spanish word piedra de hijada (\"stone for colic\"), has been valued for centuries and was called the \"stone of heaven\" in ancient China. It symbolizes immortality and the link between heaven and earth. Jadeite, a type of jade, comes in many colors like green, red, lavender, yellow, and more. Its green color comes from chromium, and red from iron.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_L4WUrT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.25_PM_2.jpg",
+            "heading1": "CITRINE",
+            "text": "<p>Citrine is a yellow-to-orange variety of quartz, with its color caused by trace amounts of iron impurities. It has a Mohs hardness of 7, making it durable for jewelry. Natural citrine is rare, and most commercial stones are created by heat-treating amethyst or smoky quartz to achieve the yellow hue. Citrine's crystal structure is hexagonal, and it exhibits a vitreous luster with good transparency, making it both practical and attractive..</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6dHWfq",
+        "row_L4WUrT"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_gUAfUY": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_9EdJ78": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.52.41_PM.jpg",
+            "heading1": "TURQUOISE",
+            "text": "<p>Turquoise is a historic gemstone valued for its blue-to-green colour, caused by copper and aluminum. It has been prized for thousands of years by cultures like the Egyptians, Persians, and Native Americans, who believed it brought protection and good fortune. With a Mohs hardness of 5–6, turquoise is soft compared to other gems and often shows unique veining, adding to its appeal.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_P9Be4z": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG-20241127-WA0003_1.jpg",
+            "heading1": "CORAL",
+            "text": "<p>Precious (red) coral is valued over other types of coral for its toughness and attractive pink to red hues. Coral ia the exoskeleton of the marine polyp-a small creature that secretes calcium carbonate to form branchlike structures. Coral has been used decoratively since prehistoric times.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_9EdJ78",
+        "row_P9Be4z"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_multirow_KqbeAN": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_8rVQJC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.14_PM_1.jpg",
+            "heading1": "OPAL",
+            "text": "<p>Opal is a captivating gemstone known for its stunning play of color, where flashes of vibrant hues-Such as red, blue, green, and yellow-dance across its surface. It’s composed of hydrated silica. The former displays highly prized rainbow iridescence with a white to dark body colour, while the latter has a strong, attractive body colour and no iridescence. Opals come in various types, including white, black, fire, and boulder opal</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_aGEN7x": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.09_PM_1.jpg",
+            "heading1": "GARNET",
+            "text": "<p>Garnets are generally thought of his red but they can also be orange, pink, green, black, and honey brown. All species of garnet have similar physical properties and crystal forms, but differ in chemical composition. There are over 15 garnet species of which six varieties are most commonly used as gems are pyrope, almandite, grossularite includes hessonite and tsavorite.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xfwKmK": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/png_2.png",
+            "heading1": "EVANCHURIAN",
+            "text": "<p>A metallic shiny plagiocase feltspar; named after a type of class that was discovered by chance around 1700. Typically, it has a red, more rarely a green or blue, glitter which is caused by light reflections from tiny hematite or gohthite platelets.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_pDHqa4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/png_1.png",
+            "heading1": "ONYX",
+            "text": "<p>Onyx is a banded variety of chalcedony, a microcrystalline quartz, typically black but also found with white or brown layers. With a hardness of 6.5-7 on the Mohs scale, it is durable and widely used in jewelry and carvings. Major sources include Brazil, India, and Mexico. Its smooth, polished appearance and striking color make it a popular decorative stone.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_8rVQJC",
+        "row_aGEN7x",
+        "row_xfwKmK",
+        "row_pDHqa4"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": false,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_banner_JHxG68": {
+      "type": "New-Banner",
+      "blocks": {
+        "heading_3zkzqG": {
+          "type": "heading",
+          "settings": {
+            "heading": "PEARLS",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zkzqG"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/07-06-2024_Vasundhra_Raj5397.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "image-mob": "shopify://shop_images/07-06-2024_Vasundhra_Raj5397.jpg",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "right",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "new_rich_text_CzWf6W": {
+      "type": "New_rich_text",
+      "blocks": {
+        "text_GQmY3x": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text1": "",
+            "text3": "<p>“PEARLS BORN FROM THE DEPTH OF THE SEA , THE GEM OF SEA”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_GQmY3x"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width1": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "new_multirow_FDA67f": {
+      "type": "New_multirow",
+      "blocks": {
+        "row_phwQUV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-28_at_11.51.28_AM.jpg",
+            "heading1": "SOUTHSEA PEARL",
+            "text": "<p>South Sea pearls are large, luxurious pearls primarily cultivated in the warm waters of Australia, Indonesia, and the Philippines. Known for their exceptional size (typically 10-16mm), smooth surface, and soft, satiny luster, they come in shades of white, silver, and golden. These pearls are prized for their rarity and natural beauty, making them some of the most valuable pearls in the world.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_bXMKgk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-28_at_11.51.26_AM.jpg",
+            "heading1": "FRESH WATER PEARL",
+            "text": "<p>Freshwater pearls are cultured in mussels. They are known for their wide variety of shapes, sizes, and colors, including white, pink, peach, and lavender. Typically smaller and less lustrous than saltwater pearls, they are more affordable but still valued for their natural beauty and versatility in jewellery.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_3TpBR4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-28_at_11.53.19_AM.jpg",
+            "heading1": "TAHITIAN PEARL",
+            "text": "<p>Tahitian pearls, often called black pearls, are cultivated in black-lipped oysters in the waters around French Polynesia. They are known for their natural dark colors, ranging from black and grey to green, blue, and purple, often with a metallic sheen. Typically 8-16mm in size, Tahitian pearls are prized for their unique hues and rich luster, making them a sought-after choice for fine jewellery.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_LQ3FFV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-28_at_11.51.27_AM.jpg",
+            "heading1": "JAPANESE CULTURED PEARL",
+            "text": "<p>Japanese cultured pearls, often referred to as Akoya pearls, are renowned for their classic beauty and high-quality luster. Cultivated in saltwater Akoya oysters, primarily in Japan, they are typically round, ranging in size from 6 to 9mm. These pearls are prized for their mirror-like shine and delicate colors, such as white, cream, or pink overtones</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_cFR47g": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-11-27_at_6.20.26_PM.jpg",
+            "heading1": "MOTHER OF PEARL",
+            "text": "<p>Mother of Pearl, also known as nacre, is the iridescent inner layer of mollusk shells, particularly those of pearl-producing oysters and abalones. It is made of calcium carbonate and organic substances, forming a smooth, reflective surface. Known for its shimmering, rainbow-like luster. Unlike pearls, it forms as a protective coating inside the shell rather than as a separate gem.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_phwQUV",
+        "row_bXMKgk",
+        "row_3TpBR4",
+        "row_LQ3FFV",
+        "row_cFR47g"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "full_width1": true,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "contact_banner_EaDYYb": {
+      "type": "contact-banner",
+      "blocks": {
+        "heading_f8peCR": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONNECT WITH US",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_f8peCR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "bottom-right",
+        "image-mob": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "logo_list2_izXBzq": {
+      "type": "logo-list2",
+      "blocks": {
+        "logo_image_AGJPMR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/video_calling_icon_6dfe0d90-07ba-4829-b9c5-11b8462db0f0.png",
+            "link": "",
+            "heading": "LIVE VIDEO-CALLING"
+          }
+        },
+        "logo_image_bRzR3m": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/book_an_appointment_icon_f6d8c42d-0032-4c84-a1d4-c07f99cd99c3.png",
+            "link": "",
+            "heading": "BOOK AN APPOINTMENT"
+          }
+        },
+        "logo_image_WQ3gEi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/personalized_customization_c1301195-e51f-4164-b578-5bfdd65df7b9.png",
+            "link": "",
+            "heading": "PERSONAL CUSTOMIZATION"
+          }
+        },
+        "logo_image_kjLBiq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/whatsapp-xxl_2bdf7756-20ae-4fcf-b373-73af8b4b8bb1.png",
+            "link": "",
+            "heading": "WHATSAPP"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_AGJPMR",
+        "logo_image_bRzR3m",
+        "logo_image_WQ3gEi",
+        "logo_image_kjLBiq"
+      ],
+      "settings": {
+        "title": "",
+        "button_label_1": "CONTACT US",
+        "button_link_1": "shopify://pages/contact",
+        "logo_width": "160px",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_banner_CfprGJ",
+    "new_rich_text_aagzfz",
+    "new_image_with_text_RdJiKC",
+    "new_banner_rrQGCh",
+    "new_rich_text_n7ceqB",
+    "new_multirow_TCxYf7",
+    "new_multirow_bW9rhA",
+    "new_multirow_RGLCpJ",
+    "new_multirow_myNhWq",
+    "new_banner_amgfMz",
+    "new_rich_text_p8Ceg9",
+    "new_multirow_3zCcV6",
+    "new_multirow_4y3cz9",
+    "new_multirow_iiqWHz",
+    "new_multirow_QaTeB3",
+    "new_multirow_6xBLiH",
+    "new_multirow_CmmnRc",
+    "new_multirow_gUAfUY",
+    "new_multirow_KqbeAN",
+    "new_banner_JHxG68",
+    "new_rich_text_CzWf6W",
+    "new_multirow_FDA67f",
+    "contact_banner_EaDYYb",
+    "logo_list2_izXBzq"
+  ]
+}

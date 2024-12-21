@@ -1,0 +1,951 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_video_slider_m4Vp9X": {
+      "type": "Image-Video-Slider",
+      "blocks": {
+        "img_dbVt8i": {
+          "type": "img",
+          "settings": {
+            "video": "shopify://files/videos/TeeleDharo_FashionFilm_Horizontal_Final.mp4",
+            "video_mobile": "shopify://files/videos/Copy of TeeleDharo_FashionFilm_Vertical_Final_H264.mp4",
+            "text_color": "",
+            "text": "",
+            "text2": "",
+            "description": "",
+            "btn_first_text": "",
+            "btn_first_url": "",
+            "btn_second_text": "",
+            "btn_second_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "img_dbVt8i"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {, .image-video-slider video {height: 686px; }}"
+      ],
+      "settings": {
+        "custom_class": ".image-video-slider { background: FFEFEF;}"
+      }
+    },
+    "collection_list_4JTCYd": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        ".collection-list-wrapper {padding-bottom: 15px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY COLLECTION",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "title_image": "shopify://shop_images/logo-blk-birds.png"
+      }
+    },
+    "slideshow_LJxjfw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_wtdabV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/mobile-teeledharo-image.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "a pahadi phrase that translates to, \"What an example you have set\"",
+            "button_label": "",
+            "link": "shopify://collections/teele-dharo",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_xwQTNw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KEW4208_copy_1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Where sunlight falls, Dreams take their Chance, Through Whispered calls.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_6rJaUF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KEW7683copy_1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "a story of rediscovery of our relation with nature and tradition",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qVAFC9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KEW6883_copy.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "it whispers of your arrival, calling all distant friends into its valleys",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_wtdabV",
+        "slide_xwQTNw",
+        "slide_6rJaUF",
+        "slide_qVAFC9"
+      ],
+      "custom_css": [
+        ".slideshow__slide {height: 80vh;}",
+        ".slideshow__media {height: 58rem;}",
+        ".slideshow__text {max-width: 77%;}",
+        "p {font-size: 1.4rem; letter-spacing: 0.02rem; line-height: 1.5rem; font-weight: unset;}",
+        ".slideshow__controls {display: none;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "collection_list_XHKfjF": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_gxDcKD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earring"
+          }
+        },
+        "featured_collection_YMiwLQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rings"
+          }
+        },
+        "featured_collection_ybCNCz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "featured_collection_TUVGnt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brooches"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_gxDcKD",
+        "featured_collection_YMiwLQ",
+        "featured_collection_ybCNCz",
+        "featured_collection_TUVGnt"
+      ],
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        ".collection-list-title {padding-bottom: 15px;}",
+        ".card__content {margin-top: -6rem; z-index: 999; width: 100%; display: grid; place-items: center;}",
+        ".card__information {padding: 0.4rem 0rem; background-color: #ffffff; width: 64%; opacity: 0.78;}",
+        ".card__inner {height: 30rem;}",
+        "@media screen and (max-width: 749px) {.grid {column-gap: 0; row-gap: 0; } li.collection-list__item.grid__item.scroll-trigger.animate--slide-in {width: 47%; height: 220px; }}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "title_image": "shopify://shop_images/logo-blk-birds.png"
+      }
+    },
+    "featured_collection_EpWyAg": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "earring",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_kFFQwq": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UdRTkg": {
+          "type": "heading",
+          "settings": {
+            "heading": "EAST MEETS WEST: CROSSING THE CULTURAL DIVIDE",
+            "heading2": "Our jewellry transcends borders, blending western lines with eastern curves- the birds in our logo and the sun in our name symbolise this harmonic fusion",
+            "heading_size": "h1"
+          }
+        },
+        "text_kkkrBL": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"/pages/about-us\" title=\"About US\">READ OUR STORY</a>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UdRTkg",
+        "text_kkkrBL"
+      ],
+      "custom_css": [
+        ".banner__heading {font-size: 17px; color: #fff !important; max-width: 77%;}",
+        "p {font-size: 14px; color: #636262; background: #fff; padding: 0 1rem; opacity: 0.7; border: 1px solid #636262;}",
+        ".banner__content-bottom {display: grid; place-items: center;}"
+      ],
+      "settings": {
+        "show_text_box-1": true,
+        "my_video_background_banner": "",
+        "show_social": false,
+        "image": "shopify://shop_images/KEW6426copy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "collection_list_dcThPw": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        ".collection-list-wrapper {padding-bottom: 15px;}"
+      ],
+      "settings": {
+        "title": "IN THE SPOTLIGHT",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "title_image": "shopify://shop_images/logo-blk-birds.png"
+      }
+    },
+    "new_arrival_Art8kc": {
+      "type": "New-arrival",
+      "custom_css": [
+        ".card__inner {background: #fff; border: 1px solid #636262;}"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "collection": "in-the-spotlight",
+        "newBadge": true,
+        "button": "",
+        "link": ""
+      }
+    },
+    "image_banner_9WaQXn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_8UNDB6": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHERE DREAMS ARE FORGED IN GOLD, AND ARTISTRY SHINES TIMELESS.",
+            "heading2": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_jxXLby": {
+          "type": "text",
+          "settings": {
+            "text": "READ MORE",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8UNDB6",
+        "text_jxXLby"
+      ],
+      "custom_css": [
+        ".banner__heading {font-size: 17px; color: #fff !important; max-width: 90%;}",
+        "p {font-size: 14px; color: #636262; background: #fff; padding: 0 1rem; opacity: 0.7; border: 1px solid #636262;}",
+        ".banner__content-bottom {display: grid; place-items: center;}"
+      ],
+      "settings": {
+        "show_text_box-1": true,
+        "my_video_background_banner": "",
+        "show_social": true,
+        "image": "shopify://shop_images/thegldnkrkhana-image.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "logo_list_dD44wk": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_Twziyy": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-svg.svg",
+            "link": ""
+          }
+        },
+        "logo_image_ACw9wp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/BA-1651142640_cac0eca0-da1d-4b55-ad39-c4b8a13cfcc1.png",
+            "link": ""
+          }
+        },
+        "logo_image_MtEgre": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_1.svg",
+            "link": ""
+          }
+        },
+        "logo_image_MyPG8r": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Harper_s_Bazaar_Logo_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_tAV7c3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/lifestyle_asia_2.png",
+            "link": ""
+          }
+        },
+        "logo_image_RnFb3h": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.svg",
+            "link": ""
+          }
+        },
+        "logo_image_h7TkeK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Header_logo.png",
+            "link": ""
+          }
+        },
+        "logo_image_zJ9cGR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/News18.svg",
+            "link": ""
+          }
+        },
+        "logo_image_gbA6r7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_1_c7ac054e-d79d-45a4-b27b-e69e2bf34d9a.png",
+            "link": ""
+          }
+        },
+        "logo_image_Q8Ycri": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_-removebg-preview.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_Twziyy",
+        "logo_image_ACw9wp",
+        "logo_image_MtEgre",
+        "logo_image_MyPG8r",
+        "logo_image_tAV7c3",
+        "logo_image_RnFb3h",
+        "logo_image_h7TkeK",
+        "logo_image_zJ9cGR",
+        "logo_image_gbA6r7",
+        "logo_image_Q8Ycri"
+      ],
+      "settings": {
+        "title": "",
+        "logo_width": "160px",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "image_banner_hGHXc6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_7x9cFT": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "heading2": "",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_nKceYz": {
+          "type": "text",
+          "settings": {
+            "text": "t",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7x9cFT",
+        "text_nKceYz"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_text_box-1": false,
+        "my_video_background_banner": "",
+        "show_social": false,
+        "image": "shopify://shop_images/about_us.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-e647b262-d543-469a-9189-468a72f65f37",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "new_collection_m3Rzxj": {
+      "type": "New-Collection",
+      "blocks": {
+        "collection_block_xgMwpA": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "earring"
+          }
+        },
+        "collection_block_Y6dQpE": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "nechlaces"
+          }
+        },
+        "collection_block_FRH46Q": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "rings"
+          }
+        },
+        "collection_block_nwb3b3": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "bracelets"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_xgMwpA",
+        "collection_block_Y6dQpE",
+        "collection_block_FRH46Q",
+        "collection_block_nwb3b3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "IN THE SPOTLIGHT",
+        "text": "Discover these evergreen  pieces, defying seasons.",
+        "button": "",
+        "link": ""
+      }
+    },
+    "new_arrival_7THUgd": {
+      "type": "New-arrival",
+      "disabled": true,
+      "settings": {
+        "title": "IN THE SPOTLIGHT",
+        "text": "Discover these evergreenpieces, defying seasons.",
+        "collection": "new-arrivals",
+        "newBadge": false,
+        "button": "READ MORE",
+        "link": "shopify://collections"
+      }
+    },
+    "image_banner_x7hREq": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_66M7tm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading2": "Teele Dharo, a pahadi phrase that translates to,\"What an example you have set\", carries a unique cultural significance.It is used to express admiration for beauty, things, bravery, people and all things that are exceptional, which set astandard and are exemplary.",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_JUKP6c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "SHOP THE TEELE DHARO COLLECTION",
+            "button_link_2": "shopify://collections/teele-dharo",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_66M7tm",
+        "buttons_JUKP6c"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_text_box-1": true,
+        "my_video_background_banner": "",
+        "show_social": false,
+        "small_image": "shopify://shop_images/teele_dharo_textt.svg",
+        "small_image1": "shopify://shop_images/vecteezy_youtube-logo-png-youtube-icon-transparent_18930747_0d6303cc-01ad-4246-8906-549efe4e7fe8.png",
+        "small_image2": "shopify://shop_images/instagram.png",
+        "small_image3": "shopify://shop_images/spotify.png",
+        "small_image4": "shopify://shop_images/pngwing.com.png",
+        "image": "shopify://shop_images/Copy_of__KEW2875_copy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "two_image_main_63nXbj": {
+      "type": "Two-image-main",
+      "blocks": {
+        "heading_7XWxRB": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE GOLDEN",
+            "heading2": "Karkhana",
+            "heading3": "TAKE A CLOSER LOOK AT OUR SONAR FAMILY.",
+            "heading_size": "h1"
+          }
+        },
+        "text_jei9c7": {
+          "type": "text",
+          "settings": {
+            "heading4": "",
+            "text_style": "body"
+          }
+        },
+        "button_chTrxW": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ MORE",
+            "button_link": "shopify://pages/karkhana",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7XWxRB",
+        "text_jei9c7",
+        "button_chTrxW"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/KEW3844_copy.jpg",
+        "link1": "",
+        "image2": "shopify://shop_images/KEW3824_copy_d8c6c2dc-9691-43f0-90b4-a5ac1b8d10cc.jpg",
+        "link2": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_EUkEyF": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading1": "Latest's Trends are here",
+        "heading": "Our Journal",
+        "heading_size": "h1",
+        "blog": "14k-gold",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "featured_blog_new_VaaPnp": {
+      "type": "Featured-blog-new",
+      "disabled": true,
+      "settings": {
+        "title": "Our Journal",
+        "text": "Latest trends are here",
+        "blog": "news",
+        "post_limit": 4,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "custom_class": "",
+        "button": "View All",
+        "link": "shopify://blogs/14k-gold"
+      }
+    },
+    "testimonial_LTRcFW": {
+      "type": "Testimonial",
+      "blocks": {
+        "slide_ir3EKQ": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“...A high jewellery line in Uttarakhand  celebrates...... timeless  heirloom designs....”",
+            "image": "shopify://shop_images/logo_1.svg"
+          }
+        },
+        "slide_kDBkKq": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“.....Enhanced with intricate  meenakari...... whimsical  charm to any ensemble.....”",
+            "image": "shopify://shop_images/Screenshot_28-11-2024_95914_44eb71cc-f9d3-4ea5-929b-f01627450b09.jpg"
+          }
+        },
+        "slide_FU49cw": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“...As seen in Bridal Asia’s 25th anniversary…….The modern lotus necklace.”",
+            "image": "shopify://shop_images/BA-1651142640_cac0eca0-da1d-4b55-ad39-c4b8a13cfcc1.png"
+          }
+        },
+        "slide_g8NtFf": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“....It is a Journey Through Time  and Tradition.... Jewellery  and the stories they hold...”",
+            "image": "shopify://shop_images/The_Indian_Express_logo_svg.png"
+          }
+        },
+        "slide_QLB8TX": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“...This collection takes you back to the fragrant  hills....... with their  tinkling ornaments....”",
+            "image": "shopify://shop_images/Header_logo.png"
+          }
+        },
+        "slide_7A9XUb": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“....Celebrate Raksha Bandhan with Vasundhra Raj’s....elegance and vibrant charm....”",
+            "image": "shopify://shop_images/News18.svg"
+          }
+        },
+        "slide_GCBwHm": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“....Take a look at our carefully  curated .....events on your  upcoming social calendar....”",
+            "image": "shopify://shop_images/logo_2.svg"
+          }
+        },
+        "slide_6xwX9A": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“....For men’s formal evening wear,  one can invest in a diamond-studded  or classic gold brooch...”",
+            "image": "shopify://shop_images/logo_1_c7ac054e-d79d-45a4-b27b-e69e2bf34d9a.png"
+          }
+        },
+        "slide_ePCWMz": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“.....For men’s formal evening wear,  one can invest in a diamond-studded  or classic gold brooch...”",
+            "image": "shopify://shop_images/Screenshot_26-11-2024_155030.jpg"
+          }
+        },
+        "slide_fMyQgQ": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "text": "“...Vasundhra Raj’s campaign blends  the state’s cultural...craftsmanship,  and the soul of the hills....”",
+            "image": "shopify://shop_images/Screenshot_26-11-2024_155127.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ir3EKQ",
+        "slide_kDBkKq",
+        "slide_FU49cw",
+        "slide_g8NtFf",
+        "slide_QLB8TX",
+        "slide_7A9XUb",
+        "slide_GCBwHm",
+        "slide_6xwX9A",
+        "slide_ePCWMz",
+        "slide_fMyQgQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "IN THE Press.",
+        "text": "",
+        "button_label_1": "READ MORE",
+        "button_link_1": "shopify://pages/web-press"
+      }
+    },
+    "contact_banner_KNxckM": {
+      "type": "contact-banner",
+      "blocks": {
+        "heading_wtQKTr": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONNECT WITH US",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_yrTQCb": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wtQKTr",
+        "buttons_yrTQCb"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-right",
+        "image-mob": "shopify://shop_images/Untitled_4d29619f-bf72-438c-9a56-37529f8a6a38.png",
+        "show_text_box": false,
+        "desktop_content_alignment": "right",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "17223258216364f381": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_Qk4Grq": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "margin_bottom": 35,
+            "background_color": "#ffffff",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_Qk4Grq"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "logo_list2_FwVRUG": {
+      "type": "logo-list2",
+      "blocks": {
+        "logo_image_AbFGiP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/video_calling_icon_0fac063d-de29-4892-a47a-cb1951446dc4.png",
+            "link": "https://wa.me/7279888888",
+            "heading": "LIVE VIDEO- CALLING"
+          }
+        },
+        "logo_image_jCcTcj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/book_an_appointment_icon_8a2f2dbf-a7ee-4176-aac7-387927ea999e.png",
+            "link": "https://wa.me/7279888888",
+            "heading": "BOOK AN APPOINTMENT"
+          }
+        },
+        "logo_image_zwVLMG": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/personalized_customization.png",
+            "link": "https://wa.me/7729888888",
+            "heading": "PERSONAL CUSTOMIZATION"
+          }
+        },
+        "logo_image_MeA8pp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/whatsapp-xxl.png",
+            "link": "https://wa.me/7279888888",
+            "heading": "WHATSAPP"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_AbFGiP",
+        "logo_image_jCcTcj",
+        "logo_image_zwVLMG",
+        "logo_image_MeA8pp"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "button_label_1": "CONTACT US",
+        "button_link_1": "shopify://pages/contact",
+        "logo_width": "160px",
+        "padding_top": 10,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "image_video_slider_m4Vp9X",
+    "collection_list_4JTCYd",
+    "slideshow_LJxjfw",
+    "collection_list_XHKfjF",
+    "featured_collection_EpWyAg",
+    "image_banner_kFFQwq",
+    "collection_list_dcThPw",
+    "new_arrival_Art8kc",
+    "image_banner_9WaQXn",
+    "logo_list_dD44wk",
+    "image_banner_hGHXc6",
+    "new_collection_m3Rzxj",
+    "new_arrival_7THUgd",
+    "image_banner_x7hREq",
+    "two_image_main_63nXbj",
+    "featured_blog_EUkEyF",
+    "featured_blog_new_VaaPnp",
+    "testimonial_LTRcFW",
+    "contact_banner_KNxckM",
+    "17223258216364f381",
+    "logo_list2_FwVRUG"
+  ]
+}

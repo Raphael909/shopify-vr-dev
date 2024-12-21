@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_cNKrYK": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<a href=\"/pages/about-us\" title=\"About US\">About Us</a>",
+            "menu": "footer"
+          }
+        },
+        "text_fyxaBW": {
+          "type": "text",
+          "settings": {
+            "heading": "Get In Touch",
+            "small_image1": "shopify://shop_images/logo_4b90cb2f-8323-419c-a89e-3f4b5a1f20f3.png",
+            "small_image2": "shopify://shop_images/logo______2_70ea89a6-5932-459d-acdf-e34583b4de1e.png",
+            "small_image3": "shopify://shop_images/logo______3.png",
+            "small_image4": "shopify://shop_images/vecteezy_twitter-x-black-and-white-logo-transparent-background_46853019_3e40c3cb-dcbf-4beb-8777-7d1249d2b8ca.png",
+            "small_image5": "shopify://shop_images/logo______1_5114dd60-8b65-49b4-a4b3-2e0cbd17ff56.png",
+            "small_image": "shopify://shop_images/2p_462895d4-8a20-41e7-b474-c66b3fa1fe03.png",
+            "subtext": "<p><a href=\"mailto:enquiry@vasundhraraj.com\" title=\"mailto:enquiry@vasundhraraj.com\">enquiry@vasundhraraj.com</a><br/><span style=\"text-decoration:underline\">+917279888888</span>, <span style=\"text-decoration:underline\">+917279888888</span><br/>Vasundhra Raj Luxury Jewellery, Omaxe Chowk, Chandni Chowk, New Delhi 110006<br/></p>",
+            "text": "",
+            "link": "",
+            "text_2": "",
+            "text_3": ""
+          }
+        },
+        "small_image_38XNEB": {
+          "type": "small_image",
+          "settings": {}
+        },
+        "link_list2_74JDUj": {
+          "type": "link_list2",
+          "settings": {
+            "heading2": "Help",
+            "menu2": "help"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_cNKrYK",
+        "text_fyxaBW",
+        "small_image_38XNEB",
+        "link_list2_74JDUj"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Our Newsletter",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

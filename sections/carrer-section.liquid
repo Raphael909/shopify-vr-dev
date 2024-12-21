@@ -1,0 +1,394 @@
+<div class="job-listing-section">
+  <div class="search-bar">
+    <label for="search-job">
+      {{ section.settings.search_label }}
+    </label>
+    <input
+      type="text"
+      id="search-job"
+      placeholder=""
+    />
+    <div class="search-results-count" style="margin-top: 0;"></div>
+    <div class="search-buttons">
+      <button class="search-button banner__buttons">{{ section.settings.search_button_label }}</button>
+      <button class="clear-button banner__buttons">{{ section.settings.clear_button_label }}</button>
+    </div>
+  </div>
+
+
+  <div class="job-listings">
+    {% for job in section.blocks %}
+    <div class="job-card">
+      <h3 class="card-title">{{ job.settings.title }}</h3>
+      <div class="job_details">
+        <div class="job_block">
+          {% if job.settings.small_image %}
+             <img src="{{ job.settings.small_image|  img_url: 'medium'}}" width="30px" height="30px">
+        {% endif %}
+      <p style="margin:0;"><strong>{{ job.settings.company }}</strong></p>
+        </div>
+         <div class="job_block">
+      {% if job.settings.small_image1 %}
+             <img src="{{ job.settings.small_image1|  img_url: 'medium'}}" width="30px" height="30px">
+        {% endif %}
+      <p  style="margin:0;"><strong>{{ job.settings.location }}</strong></p>
+         </div>
+         <div class="job_block">
+             {% if job.settings.small_image2 %}
+             <img src="{{ job.settings.small_image2|  img_url: 'medium'}}" width="30px" height="30px">
+        {% endif %}
+      <p style="margin:0;"><strong>{{ job.settings.experience }}</strong></p>
+         </div>
+         <div class="job_block">
+         {% if job.settings.small_image3 %}
+             <img src="{{ job.settings.small_image3|  img_url: 'medium'}}" width="30px" height="30px">
+        {% endif %}
+      <p style="margin:0;"> <strong>{{ job.settings.posted_time }}</strong></p>
+         </div>
+      </div>
+        <a
+                  {% if job.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ job.settings.button_link }}"
+                  {% endif %}
+                target="_blank"
+                >
+      <button class="apply-button">{{ job.settings.button_label }}</button>
+        </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .search-results-count {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #900;
+  margin-top: 10px;
+  display: none; /* Initially hide the results count */
+}
+
+  @media screen and (min-width: 750px)
+  {
+  .card-title
+  {
+        font-size: 20px;
+    font-family: 'Helvetica';
+    /* font-weight: 600; */
+    margin-top: 0;
+  }
+  .job_block {
+    display: flex;
+    gap:10px;
+}
+  .job_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+  button.banner__buttons {
+    padding: 17px;
+    width: 50%;
+    background: maroon;
+    color: white;
+    border: none;
+            text-align: center;
+}
+  label {
+    font-family: 'Helvetica';
+    /* font-weight: 600; */
+    font-size: 18px;
+}
+  input#search-job {
+    padding: 12px;
+    border: 2px solid maroon;
+    width: 100%;
+}
+  .job-listing-section {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+  padding: 5rem 0rem 5rem 3rem;
+    border: 1px solid #ccc;
+  }
+  .search-bar {
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    padding: 12px;
+    border: 2px solid maroon;
+    border-radius: 15px;
+    height: 400%;
+  }
+  .search-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
+  .job-card {
+    border: 1px solid #900;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .apply-button {
+    background-color: #900;
+    color: #fff;
+    padding: 17px 35px;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+        float: inline-end;
+  }
+  }
+   @media screen and (max-width: 749px)
+  {
+  .card-title
+  {
+        font-size: 20px;
+    font-family: 'Helvetica';
+    /* font-weight: 600; */
+    margin-top: 0;
+  }
+  .job_block {
+    display: flex;
+    gap:10px;
+}
+  .job_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+  button.banner__buttons {
+    padding: 17px;
+    width: 50%;
+    background: maroon;
+    color: white;
+    border: none;
+}
+  label {
+    font-family: 'Helvetica';
+    /* font-weight: 600; */
+    font-size: 18px;
+}
+  input#search-job {
+    padding: 12px;
+    border: 2px solid maroon;
+    width: 100%;
+}
+  .job-listing-section {
+    display: block;
+    /* flex-direction: column; */
+    gap: 20px;
+  padding: 1rem;
+    /* border: 1px solid #ccc; */
+  }
+  .search-bar {
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid maroon;
+    border-radius: 15px;
+    height: 400%;
+            margin-bottom: 20px;
+  }
+  .search-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .job-card {
+    border: 1px solid #900;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .apply-button {
+    background-color: #900;
+    color: #fff;
+    padding: 17px 35px;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+        float: inline-end;
+  }
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("search-job");
+  const jobCards = document.querySelectorAll(".job-card");
+  const searchButton = document.querySelector(".search-button");
+  const clearButton = document.querySelector(".clear-button");
+  const resultsCount = document.querySelector(".search-results-count");
+
+  // Function to filter jobs and update the count
+  function filterJobs() {
+    const searchValue = searchInput.value.toLowerCase();
+    let visibleCount = 0;
+
+    // Hide the default message once search is triggered
+    resultsCount.style.display = "none";
+
+    jobCards.forEach((card) => {
+      const jobTitle = card.querySelector(".card-title").textContent.toLowerCase();
+      if (jobTitle.includes(searchValue)) {
+        card.style.display = "block"; // Show matching job card
+        visibleCount++;
+      } else {
+        card.style.display = "none"; // Hide non-matching job card
+      }
+    });
+
+    // Update the results count
+    if (visibleCount > 0) {
+      resultsCount.textContent =
+        visibleCount > 1
+          ? `${visibleCount} results found`
+          : `1 result found`;
+      resultsCount.style.display = "block"; // Show the count when there are results
+    } else {
+      resultsCount.textContent = "No results found"; // Show when no results
+      resultsCount.style.display = "block"; // Ensure the "No results found" message is visible
+    }
+  }
+
+  // Trigger filtering when clicking the search button
+  searchButton.addEventListener("click", function () {
+    filterJobs();
+  });
+
+  // Clear search input, reset job list, and hide the result count
+  clearButton.addEventListener("click", function () {
+    searchInput.value = "";
+    jobCards.forEach((card) => {
+      card.style.display = "block"; // Show all job cards
+    });
+    resultsCount.textContent = ""; // Clear the results count text
+    resultsCount.style.display = "none"; // Hide the results count
+  });
+});
+
+</script>
+
+{% schema %}
+{
+  "name": "Job Listings",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "search_label",
+      "label": "Search Label",
+      "default": "Begin your search for greater opportunities"
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Search Placeholder",
+      "default": "Search jobs..."
+    },
+    {
+      "type": "text",
+      "id": "search_button_label",
+      "label": "Search Button Label",
+      "default": "SEARCH JOBS"
+    },
+    {
+      "type": "text",
+      "id": "clear_button_label",
+      "label": "Clear Button Label",
+      "default": "CLEAR"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "job",
+      "name": "Job",
+      "settings": [
+         {
+          "type": "image_picker",
+          "id": "small_image",
+          "label": "Icon"
+        },
+     {
+          "type": "image_picker",
+          "id": "small_image1",
+          "label": "Icon"
+        },
+     {
+          "type": "image_picker",
+          "id": "small_image2",
+          "label": "Icon"
+        },
+      {
+          "type": "image_picker",
+          "id": "small_image3",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Job Title",
+          "default": "Job Title"
+        },
+        {
+          "type": "text",
+          "id": "company",
+          "label": "Company Name",
+          "default": "Company Name"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "default": "City"
+        },
+        {
+          "type": "text",
+          "id": "experience",
+          "label": "Experience",
+          "default": "1 year +"
+        },
+        {
+          "type": "text",
+          "id": "posted_time",
+          "label": "Posted Time",
+          "default": "1 week ago"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "APPLY NOW"
+        },
+          {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.multirow.blocks.row.settings.button_link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Job Listings",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

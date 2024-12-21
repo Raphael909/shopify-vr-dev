@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_tb93UV": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_mGgdce": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING IN INDIA",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_mGgdce"
+      ],
+      "custom_css": [
+        "p {font-size: 9px; padding: 0; min-height: 0.625rem; fill: #f2f2f2; font-family: Quicksand;}"
+      ],
+      "settings": {
+        "show_on_device": "mobile--device",
+        "color_scheme": "scheme-1",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "featured_collection_XimdKD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "teele-dharo"
+          }
+        },
+        "featured_collection_ELmrec": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mahendrapur-haveli"
+          }
+        },
+        "featured_collection_UJj3Ub": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mon-ami"
+          }
+        },
+        "featured_collection_Kg8mkj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mori-kei"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_XimdKD",
+        "featured_collection_ELmrec",
+        "featured_collection_UJj3Ub",
+        "featured_collection_Kg8mkj"
+      ],
+      "custom_css": [],
+      "settings": {
+        "logo_position": "top-center",
+        "image3": "shopify://shop_images/094A3479.jpg",
+        "image4": "shopify://shop_images/Copy_of__KC00668_copy.jpg",
+        "title": "KNOW MORE",
+        "title2": "ABOUT VASUNDHRA RAJ LUXURY JEWELLERY",
+        "url1": "shopify://pages/about-us",
+        "title3": "",
+        "url2": "",
+        "title4": "",
+        "url3": "",
+        "text": "HELP",
+        "text2": "JEWEL CARE",
+        "url4": "shopify://pages/jewelcare",
+        "text3": "OUR MATERIAL",
+        "url5": "shopify://pages/material",
+        "text4": "",
+        "url6": "",
+        "text5": "BLOG",
+        "url7": "shopify://blogs/gold",
+        "menu": "main-menu-new",
+        "text-col": "OUR COLLECTIONS",
+        "text-col1": "MON AMI,MUSSOORIE",
+        "url8": "shopify://collections/mon-ami",
+        "text-col2": "MAHENDRAPUR HAVELI",
+        "url9": "shopify://collections/mahendrapur-haveli",
+        "text-col3": "MORI KEI",
+        "url10": "shopify://collections/mori-kei",
+        "text-col4": "TEELE DHARO",
+        "url11": "shopify://collections/teele-dharo",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_tb93UV",
+    "header"
+  ]
+}

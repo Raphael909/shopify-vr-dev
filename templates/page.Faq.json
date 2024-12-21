@@ -1,0 +1,300 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_faq_PLKcEJ": {
+      "type": "main-Faq",
+      "blocks": {
+        "category_GwieWU": {
+          "type": "category",
+          "settings": {
+            "category_title": "Shipping"
+          }
+        },
+        "faq_ynYy7N": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your standard making time?",
+            "answer": "Our designs are either made to order, in stock (ready to ship) or in the making.If our design is in stock we can dispatch it in a week's time and if the design is made to order it will take us approximately 15 days to make the designs - from the day the order is placed. We would request you to reach out to us on <span style=\"text-decoration:underline\">+917279888888</span> or mail us on <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> to know the availability of the designs or if you have a specific timeline.Note : Actual making timelines might vary subject to reasons beyond our control for example, delay in the availability of gemstones, delay from the artisan, etc. However, we try our best to not delay the orders beyond the given timeline."
+          }
+        },
+        "faq_FfjC8V": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will it take to get my order?",
+            "answer": "The time taken for delivery tends to vary according to the destination; however, we make our best efforts to ensure that the order is delivered within 4-5 working days from the day your order is dispatched. In exceptional conditions, we will also hand deliver in order to give you the best experience. For select pin codes and cities like Delhi, Mumbai, Hyderabad, Chennai and Bangalore the product will be delivered within two days. Note : Actual delivery timelines might vary subject to reasons beyond our control and we will ensure that we inform you as soon as we can in case of any such delays. Delivery details with a tracking link shall be provided on email as soon as your order is shipped."
+          }
+        },
+        "faq_NBRUDY": {
+          "type": "faq",
+          "settings": {
+            "question": "What shipping carriers do you use?",
+            "answer": "We use insured jewellery shipping carriers Sequel logistics and BVC Logistics for all deliveries within India."
+          }
+        },
+        "faq_4TNFdm": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the shipping insured?",
+            "answer": "Yes. All our shipments are insured. Will I have to pay additional shipping and taxes for my order? No additional shipping cost, Shipping within India is complimentary. The pricing on our website is inclusive of 3% GST .Can I edit my shipping address? You can get in touch with us on <span style=\"text-decoration:underline\">+917279888888</span> or mail us at <a href=\"mailto:usenquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\"> enquiry@vasundhraraj.com</span></a> if you face any difficulties in editing your shipping address. Kindly note that a change in shipping address may alter the delivery date of the product."
+          }
+        },
+        "faq_pniFAJ": {
+          "type": "faq",
+          "settings": {
+            "question": "Will I have to pay additional shipping and taxes for my order?",
+            "answer": "No additional shipping cost, Shipping within India is complimentary. The pricing on our website is inclusive of 3% GST."
+          }
+        },
+        "faq_EbG6eX": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I edit my shipping address?",
+            "answer": "You can get in touch with us on <span style=\"text-decoration:underline\">+917279888888</span> or mail us at <a href=\"mailto:usenquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\"> enquiry@vasundhraraj.com</span></a> if you face any difficulties in editing your shipping address. Kindly note that a change in shipping address may alter the delivery date of the product."
+          }
+        },
+        "faq_Jh98xg": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I track the status of my order?",
+            "answer": "We send out an order dispatch confirmation email which has the tracking link of your order. You can click on the same to track your order and you can get in touch with us on <span style=\"text-decoration:underline\">+917279888888</span> or mail us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> if you face any difficulties there."
+          }
+        },
+        "category_dTQXPR": {
+          "type": "category",
+          "settings": {
+            "category_title": "Product"
+          }
+        },
+        "faq_LGHrRq": {
+          "type": "faq",
+          "settings": {
+            "question": "What materials are used in my jewelry?",
+            "answer": "Please refer to our<span style=\"text-decoration:underline\"> material guide</span> for a better understanding of our product. We really appreciate your time and efforts, for further assistance regarding the materials we use, please reach out to us at <span style=\"text-decoration:underline\">+917279888888</span> or mail us at <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a>.  "
+          }
+        },
+        "faq_eX6393": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I find the size of the ring/bracelet?",
+            "answer": "You can refer to our <span style=\"text-decoration:underline\">size chart</span> to find your accurate ring or bracelet size. In case of any difficulties, you can get in touch with us on <span style=\"text-decoration:underline\">+917279888888</span> or mail us on <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> and we will assist you with measuring the accurate size."
+          }
+        },
+        "faq_E7fGNG": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I get my product personalized?",
+            "answer": "Kindly email any personalization requests to us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> and we will let you know on it."
+          }
+        },
+        "faq_Pir7Yx": {
+          "type": "faq",
+          "settings": {
+            "question": "Why does the product appear to be different on thewebsite than the original piece?",
+            "answer": "We try to capture the design in its utmost essence, with true to reality colors, though sometimes the result is subject to lighting and may appear different on each screen depending on the screen resolution. Since no two gemstones are the same in color and composition and are naturally sourced, Each product is unique as it is handcrafted which implies that no two pieces can be exact replicas. We strive towards putting all our efforts to match it to the specifications provided on the website and do not compromise on quality at any point."
+          }
+        },
+        "faq_hA44mi": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I take care of my jewelry?",
+            "answer": "You can read our<span style=\"text-decoration:underline\"> jewel care </span>for the above query. In case of any further questions, you can also get in touch with us on+917279888888 or mail us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a>."
+          }
+        },
+        "faq_tCNC3E": {
+          "type": "faq",
+          "settings": {
+            "question": "I see a different price than what I saw earlier for adesign, why is that?",
+            "answer": "We update our prices if there is a noticeable hike in the prevalent gold rates or other precious materials used in the design, this would be the only reason for the hike you see."
+          }
+        },
+        "faq_NFAEX3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have any stores or stockists? I would like to seethe product before buying it.",
+            "answer": "We have our store in Delhi. If you live elsewhere, we can help you with additional pictures and/or schedule a video call if that helps you understand the product better. We can also help you with home-viewing - subject to the availability of the designs you shortlist. You can reach out to us on<span style=\"text-decoration:underline\"> +917279888888</span> or mail us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> with your request and we will happily assist you."
+          }
+        },
+        "faq_FgwdCN": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the authenticity and quality of the gemstonesused in your designs?",
+            "answer": "All the gemstones we use are natural and responsibly sourced and are certified. They may have indentations, inclusions or other slight imperfections which are the identity and beauty of naturally occurring gemstones. To know more, you can get in touch with us on<span style=\"text-decoration:underline\"> +917279888888</span> or mail us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a>."
+          }
+        },
+        "category_rVYdTj": {
+          "type": "category",
+          "settings": {
+            "category_title": "Account"
+          }
+        },
+        "faq_WzA7ym": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I need to create an account to place an order?",
+            "answer": "No, you don’t need to create an account to place an order. You can checkout as a guest, but we will need you to fill in your email address and phone number at checkout  for communication related to order fulfilment and logistics."
+          }
+        },
+        "faq_A7qwW8": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I reset my password?",
+            "answer": "You can click on the forgot password, to receive a password reset link on your registered email ID."
+          }
+        },
+        "faq_qfwDdM": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you take customization orders?",
+            "answer": "For any personalization/customization requests kindly get in touch with us on <span style=\"text-decoration:underline\">+917279888888 </span>or mail us <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a>, we will review your request and get back to you."
+          }
+        },
+        "faq_emtTmM": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you provide a certificate?",
+            "answer": "We provide an In store certificate that has all the specifications of the design. For the diamonds we can give you an IGI certificate on request which will come at an additional cost. We stamp all our products and will honor our commitment in case of any manufacturing defects."
+          }
+        },
+        "category_6UByTE": {
+          "type": "category",
+          "settings": {
+            "category_title": "Sizing"
+          }
+        },
+        "faq_Mr3TG7": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I find my correct size?",
+            "answer": "We have laid out a simple and well illustrated <span style=\"text-decoration:underline\">size guide</span> which should help you ascertain your ring size or bracelet size. We would recommend you reach out to us on <span style=\"text-decoration:underline\">whatsapp</span> or call on <span style=\"text-decoration:underline\">+917279888888</span> if you need any assistance in finding your size, before placing an order."
+          }
+        },
+        "faq_P7tnea": {
+          "type": "faq",
+          "settings": {
+            "question": "What if the ring/bracelet size I ordered does not fit me?",
+            "answer": "In the case, where the size provided by you while placing an order, turns out to not fit you, we should be able to work it out for you. Additional costs may apply.Please reach out to us on whatsapp or call on <span style=\"text-decoration:underline\">+917279888888</span> or mail us at <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a>."
+          }
+        },
+        "faq_4pkNQL": {
+          "type": "faq",
+          "settings": {
+            "question": "Which is your recommended method to submit my ring size?",
+            "answer": "We would recommend method 1 from the sizing guide. The image of a ring neatly placed on a ruler is the clearest way for us to ascertain ring size."
+          }
+        },
+        "category_PT8M8N": {
+          "type": "category",
+          "settings": {
+            "category_title": "Repairs"
+          }
+        },
+        "faq_AJEWxN": {
+          "type": "faq",
+          "settings": {
+            "question": "What if I receive a damaged piece?",
+            "answer": "In the event of any defects or damages, please get in touch with us on <span style=\"text-decoration:underline\">+917279888888 </span>or mail us on <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> within<span style=\"text-decoration:underline\"> 24 hours</span> of receiving your product along with the video of the damaged product and the opening video highlighting the issue. Our team will respond back to remedy the situation. We shall then arrange a pickup for the damaged product to be sent to us. It has to be in its original condition and secure packaging."
+          }
+        },
+        "faq_zpp49R": {
+          "type": "faq",
+          "settings": {
+            "question": "I broke/damaged my jewelry while using it, can youhelp?",
+            "answer": "In the event of any defects or damages caused by use or natural wear and tear, please get in touch with us on +917279888888 or mail us on <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> along with the photographs of the product highlighting the issue. Our team will respond back as soon as possible, to help remedy the situation and we will offer our assistance in getting the best for you!Additional charges may apply."
+          }
+        },
+        "faq_3Gr7EE": {
+          "type": "faq",
+          "settings": {
+            "question": "Can all the rings be resized?",
+            "answer": "Every ring is made on order and we have a standard procedure that we follow to confirm the ring size which allows us to get an accurate size most of the time. We shall follow the provided measurement for crafting the ring. In case you need a size adjustment, a new piece will have to be crafted and sent to you, an additional token amount shall be applicable."
+          }
+        },
+        "category_8g7ntV": {
+          "type": "category",
+          "settings": {
+            "category_title": "Refunds and Exchange"
+          }
+        },
+        "faq_nDnNxP": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your returns and refund policy?",
+            "answer": "We generally have a 5-10% markdown on the value of the piece - on return (within 3 years from the date of purchase) and in case of a later duration - we can consider the then gold value and arrive at a decision."
+          }
+        },
+        "faq_ynMrbA": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I exchange my product?",
+            "answer": "Products can be exchanged at 95% buy back of the invoice value for a period of 1 year from the date of purchase. Kindly contact us at <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> and we shall review your request."
+          }
+        },
+        "faq_4p9kjw": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your return policy for customized/personalizeddesigns?",
+            "answer": "As a policy we do not accept returns on customized/personalized designs. In case you would like to return, you can get in touch with us on <span style=\"text-decoration:underline\">+917279888888</span> or e-mail us at <a href=\"mailto:enquiry@vasundhraraj.com\"><span style=\"text-decoration:underline\">enquiry@vasundhraraj.com</span></a> and we will review your request and get back to you."
+          }
+        }
+      },
+      "block_order": [
+        "category_GwieWU",
+        "faq_ynYy7N",
+        "faq_FfjC8V",
+        "faq_NBRUDY",
+        "faq_4TNFdm",
+        "faq_pniFAJ",
+        "faq_EbG6eX",
+        "faq_Jh98xg",
+        "category_dTQXPR",
+        "faq_LGHrRq",
+        "faq_eX6393",
+        "faq_E7fGNG",
+        "faq_Pir7Yx",
+        "faq_hA44mi",
+        "faq_tCNC3E",
+        "faq_NFAEX3",
+        "faq_FgwdCN",
+        "category_rVYdTj",
+        "faq_WzA7ym",
+        "faq_A7qwW8",
+        "faq_qfwDdM",
+        "faq_emtTmM",
+        "category_6UByTE",
+        "faq_Mr3TG7",
+        "faq_P7tnea",
+        "faq_4pkNQL",
+        "category_PT8M8N",
+        "faq_AJEWxN",
+        "faq_zpp49R",
+        "faq_3Gr7EE",
+        "category_8g7ntV",
+        "faq_nDnNxP",
+        "faq_ynMrbA",
+        "faq_4p9kjw"
+      ],
+      "custom_css": [],
+      "settings": {
+        "heading": "FAQs",
+        "icon_color": "#963232",
+        "hover_color": "#121212",
+        "question_color": "#121212",
+        "background_color": "#ffffff",
+        "answer_color": "#121212",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1.1
+      }
+    }
+  },
+  "order": [
+    "main_faq_PLKcEJ"
+  ]
+}

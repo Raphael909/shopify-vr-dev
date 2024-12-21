@@ -1,0 +1,117 @@
+<div class="collection-banner" aria-labelledby="collection-banner-title">
+  <div class="collection-banner__media">
+    {% if collection.image %}
+      {%- liquid
+        assign image_url = collection.image | img_url: '1600x'
+      -%}
+      <img src="{{ image_url }}" alt="{{ collection.title }}" loading="lazy" sizes="100vw" class="collection__img">
+    {% else %}
+      <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/Frame_118.png?v=1723718157" alt="Default image" loading="lazy" sizes="100vw">
+    {% endif %}
+  </div>
+  <div class="collection-banner__text-wrapper page-width">
+    {% if section.settings.small_image %}
+      <img src="{{ section.settings.small_image | img_url: 'medium' }}" alt="Small Image" class="collection-section-small-image section-small-image">
+    {% endif %}
+    <h1 class="collection-banner__title_1">
+      <span class="visually-hidden">{{ 'collections.general.collection_label' | t }}: </span>
+      {{ collection.title }}
+    </h1>
+  </div>
+</div>
+
+<style>
+h1.collection-banner__title_1 {
+    color: maroon;
+    margin-bottom: 0;
+}
+/* Basic styling for the collection banner */
+.collection-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-banner__media {
+  width: 100%;
+  height: auto;
+}
+
+.collection-banner__media img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.collection-banner__media {
+    display: none;
+}
+.collection-banner__text-wrapper {
+  /* position: absolute; */
+  bottom: 30px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+.collection-banner__title {
+  margin-bottom: 13rem;
+  color: white;
+  font-size: 5rem;
+  font-family: "Bon Vivant", serif;
+  text-align: center;
+  margin-top: -16px;
+}
+
+img.collection-section-small-image.section-small-image {
+  position: relative;
+  bottom: 1rem;
+  left: 3.5rem;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 749px) {
+  .collection-banner__media img {
+    height: 320px;
+  }
+
+  .collection-banner__title {
+    font-size: 3.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  img.collection-section-small-image.section-small-image {
+    bottom: 0.5rem;
+    left: 22%;
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Collection-Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "accessibility_info",
+      "label": "Accessibility Information",
+      "info": "Provide information for screen readers.",
+      "default": "Collection banner for our brand"
+    },
+    {
+      "type": "image_picker",
+      "id": "small_image",
+      "label": "Small Image",
+      "info": "Select an image to display alongside the title."
+    }
+  ]
+}
+{% endschema %}

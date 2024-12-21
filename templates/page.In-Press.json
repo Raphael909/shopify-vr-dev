@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "banner_slide_MdanhC": {
+      "type": "banner-slide",
+      "blocks": {
+        "slide_EtMnUa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj0593.png",
+            "image-mob": "shopify://shop_images/11-04-2024_Vasundhra_Raj0718.jpg",
+            "heading": "Press& Media Coverage",
+            "heading1": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "subheading1": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EtMnUa"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "small_image": "shopify://shop_images/Frame_93_2.png",
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "in_the_press_7qGCcJ": {
+      "type": "In-the-Press",
+      "blocks": {
+        "column_b9C9NF": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Video-2-VOGUE-1.mp4",
+            "title": "News18: Best Gifts on Rakhi 2024",
+            "text": "<p>Explore the<br/>perfect Rakhi gifts for 2024, featuring a curated selection of thoughtful and<br/>meaningful presents to celebrate the special bond between siblings.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NrwCGM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj1041.jpg",
+            "title": "Elle: Raksha Bandhan 2024 Gifting Guide",
+            "text": "<p>Discover<br/>Elle’s ultimate gifting guide for Raksha Bandhan 2024, showcasing elegant and<br/>unique gift ideas that will make this festive occasion unforgettable.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WHzt43": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj0472.jpg",
+            "title": "Deccan Chronicle: Masculine Elegance",
+            "text": "<p>Dive into<br/>the world of masculine elegance with a focus on sophisticated fashion and<br/>grooming choices that redefine classic style for the modern man.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BkNebG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024VasundhraRaj1000.jpg",
+            "title": "Vogue: A High Jewellery Line in UttarakhandCelebrates Timeless Craftsmanship and Cultural Legacy",
+            "text": "<p>Vogue highlights a high jewellery line in Uttarakhand that honors the region’s rich<br/>cultural legacy through exquisite craftsmanship and timeless designs.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DkGLqK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj0101.jpg",
+            "title": "Manifest Magazine: The Best Cocktail RingsYour Digits Deserve ATM",
+            "text": "<p>Manifest Magazine presents a selection of the most stunning cocktail rings currently<br/>available, perfect for adding a touch of glamour to your ensemble.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_b9C9NF",
+        "column_NrwCGM",
+        "column_WHzt43",
+        "column_BkNebG",
+        "column_DkGLqK"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_PgDtTK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PMtKCD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our quality promise",
+            "heading2": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_g3wMJb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PMtKCD",
+        "text_g3wMJb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner_slide_MdanhC",
+    "in_the_press_7qGCcJ",
+    "rich_text_PgDtTK"
+  ]
+}

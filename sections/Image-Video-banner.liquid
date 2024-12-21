@@ -1,0 +1,263 @@
+<style>
+  @media only screen and (max-width: 768px) {
+    .image-video-slider-text-btn a {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+    @media only screen and (max-width: 768px) {
+  svg#Capa_1 {
+   display: none;
+}
+      p.second_text
+      {
+        font-weight: 200; font-size: 14px; color: maroon; font-style: italic;
+      }
+  .image-with-text__text-bottom {
+    padding: 25px;
+}
+  .image-video-slider-content {
+      pointer-events: auto;
+  }
+  .image-video-slider-text-btn a {
+      pointer-events: auto;
+      position: relative;
+      z-index: 10;
+  }
+
+      h2.image-with-text-bottom-1{
+      margin: 0;font-weight: 200; font-size: 14px; color: black;text-align: center;font-family: 'BodoniFLF Regular', serif;
+}
+      
+    }
+    @media only screen and (min-width: 768px) {
+        h2.image-with-text-bottom.rte {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Helvetica';
+    /* font-weight: 600; */
+}
+       span.second_text
+      {
+        font-weight: 200; font-size: 50px; color: maroon;font-style: italic;
+      }
+  svg#Capa_1 {
+    position: relative;
+    top: 37px;
+    height: 103px;
+    width: 103px;
+}
+  .image-with-text__text-bottom {
+    padding: 77px;
+    padding-top: 0;
+}
+  .image-video-slider-content {
+      pointer-events: auto;
+  }
+  .image-video-slider-text-btn a {
+      pointer-events: auto;
+      position: relative;
+      z-index: 10;
+  }
+  h2.image-with-text-bottom.rte {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Helvetica';
+}
+h2.image-with-text-bottom-1{
+      margin: 0;font-weight: 200; font-size: 30px; color: black;text-align: center; font-family: 'BodoniFLF Regular', serif;
+}
+      span.second_text
+      {
+        font-weight: 200; font-size: 40px; color: maroon;
+      }
+    }
+</style>
+<div class="image-video-slider {{ section.settings.custom_class }}" style="display: none;">
+  <div class="image-video-slider-container">
+    {% for block in section.blocks %}
+      <div class="image-video-slider-content block_{{ block.id }}">
+        <style>
+          .image-video-slider-content.block_{{ block.id }} .image-video-slider-text-btn a:after {
+              background: {{ block.settings.text_color }};
+          }
+        </style>
+        
+        {% if block.settings.video != blank or block.settings.image != blank %}
+          <div class="image-video-content">
+            {% if block.settings.video != blank %}
+              <div class="image-video-slider-image image-video-slider-height">
+                {{ block.settings.video | video_tag: image_size: '1100x', autoplay: true, loop: section.settings.enable_video_looping, controls: true, muted: true }}
+              </div>
+            {% else %}
+              <div class="image-video-slider-image image-video-slider-height">
+                <img src="{{ block.settings.image | img_url: '2048x2048' }}" />
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+        
+        <div class="image-video-slider-text">
+          {% if block.settings.logo_image != blank %}
+            <div class="image-video-slider-text-logo">
+              <img src="{{ block.settings.logo_image | img_url: '2048x2048' }}" alt="logo_icon" />
+            </div>
+          {% endif %}
+      
+          {% if block.settings.text != blank %}
+            <div class="image-video-slider-text-content" style="color: {{ block.settings.text_color }};">{{ block.settings.text }}</div>
+          {% endif %}
+          
+          {% if block.settings.description != blank %}
+            <div class="image-video-slider-description-content" style="color: {{ block.settings.text_color }};">{{ block.settings.description }}</div>
+          {% endif %}
+          
+          {% if block.settings.btn_first_text != blank or block.settings.btn_second_text != blank %}
+          <div class="image-video-slider-text-btn">
+            {% if block.settings.btn_first_text != blank %}
+              <div class="image-v-slider-first-btn button button--primary">
+                <a href="{% if block.settings.btn_first_url != blank %}{{ block.settings.btn_first_url }}{% else %}#{% endif %}" style="color: {{ block.settings.text_color }};">{{ block.settings.btn_first_text }}</a>
+              </div>
+            {% endif %}
+            
+            {% if block.settings.btn_second_text != blank %}
+              <div class="image-v-slider-second-btn button button--primary">
+                <a href="{% if block.settings.btn_second_url != blank %}{{ block.settings.btn_second_url }}{% else %}#{% endif %}" style="color: {{ block.settings.text_color }};">{{ block.settings.btn_second_text }}</a>
+              </div>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      
+      {% if block.settings.text2 != blank %}
+        <div class="image-video-slider-text-content1" style="background: #ffefef;">{{ block.settings.text2 }}</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+  <div class="image-with-text__text-bottom">
+            <div class="image-with-text__content1 multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
+           {%- if section.settings.heading3 -%}
+                <h2 class="image-with-text-bottom-1{{ section.settings.heading_size }} rte" >
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 290.658 290.658" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect y="139.474" style="fill:#801414;" width="290.658" height="11.711"></rect> </g> </g> </g></svg>&nbsp;&nbsp;&nbsp;{{ section.settings.heading3 }}&nbsp;<span class="second_text">{{ section.settings.text }}</span>&nbsp;&nbsp;&nbsp;<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 290.658 290.658" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect y="139.474" style="fill:#801414;" width="290.658" height="11.711"></rect> </g> </g> </g></svg>
+                </h2>
+              {%- endif -%}
+              {%- if section.settings.heading1 -%}
+                <h2 class="image-with-text-bottom{{ section.settings.heading_size }} rte" style="font-weight: 200; color: maroon;">
+                  {{ section.settings.heading1 }}
+                </h2>
+              {%- endif -%}
+              {%- if section.settings.heading -%}
+                <h2 class="image-with-text-bottom{{ section.settings.heading_size }} rte">
+                  {{ section.settings.heading }}
+                </h2>
+              {%- endif -%}
+            </div>
+          </div>
+{% schema %}
+{
+  "name": "Image and Video banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "small_image",
+      "label": "Small Image"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading 1"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading1",
+      "label": "Heading 2"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "heading3",
+      "label": "Heading 3"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "img",
+      "name": "Image slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "text2",
+          "label": "Additional Text"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "btn_first_text",
+          "label": "First Button Text"
+        },
+        {
+          "type": "url",
+          "id": "btn_first_url",
+          "label": "First Button URL"
+        },
+        {
+          "type": "text",
+          "id": "btn_second_text",
+          "label": "Second Button Text"
+        },
+        {
+          "type": "url",
+          "id": "btn_second_url",
+          "label": "Second Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image and Video banner"
+    }
+  ]
+}
+{% endschema %}

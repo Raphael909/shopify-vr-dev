@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_banner_mLzpeb": {
+      "type": "Collection-banner",
+      "settings": {
+        "accessibility_info": ""
+      }
+    },
+    "banner_slide_9B8yUP": {
+      "type": "banner-slide",
+      "blocks": {
+        "slide_cEzyUE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/11-04-2024_Vasundhra_Raj0057.png",
+            "image-mob": "shopify://shop_images/11-04-2024_Vasundhra_Raj0317.png",
+            "heading": "Necklace",
+            "heading1": "Image slide",
+            "heading_size": "h1",
+            "subheading": "",
+            "subheading1": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cEzyUE"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "small_image": "shopify://shop_images/Frame_93.png",
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 100,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "contact_banner_FjXDaT": {
+      "type": "contact-banner",
+      "blocks": {
+        "heading_AJ6FWb": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONNECT WITH US",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AJ6FWb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-right",
+        "image-mob": "shopify://shop_images/Untitled_2b32175b-1c33-4678-8224-e7de7ba9502f.png",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "logo_list2_GY7WTA": {
+      "type": "logo-list2",
+      "blocks": {
+        "logo_image_NpgyFF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/video_calling_icon_0fac063d-de29-4892-a47a-cb1951446dc4.png",
+            "link": "",
+            "heading": "LIVE VIDEO- CALLING"
+          }
+        },
+        "logo_image_tgzPRw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/book_an_appointment_icon_8a2f2dbf-a7ee-4176-aac7-387927ea999e.png",
+            "link": "",
+            "heading": "BOOK AN APPOINTMENT"
+          }
+        },
+        "logo_image_ae9rfc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/personalized_customization.png",
+            "link": "",
+            "heading": "PERSONAL CUSTOMIZATION"
+          }
+        },
+        "logo_image_f73xNX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/whatsapp-xxl.png",
+            "link": "",
+            "heading": "WHATSAPP"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_NpgyFF",
+        "logo_image_tgzPRw",
+        "logo_image_ae9rfc",
+        "logo_image_f73xNX"
+      ],
+      "settings": {
+        "title": "",
+        "button_label_1": "CONTACT US",
+        "button_link_1": "shopify://pages/contact",
+        "logo_width": "100px",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "logo_list_UtXBYK": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_eMMERF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_1.svg",
+            "link": "https://www.vogue.in/promotion/a-high-jewellery-line-in-uttarakhand-celebrates-timeless-craftsmanship-and-cultural-legacy"
+          }
+        },
+        "logo_image_kHAyfW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-svg.svg",
+            "link": "https://elle.in/raksha-bandhan-2024-gifting-guide/"
+          }
+        },
+        "logo_image_tekzgD": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/brides-today-logo.png",
+            "link": ""
+          }
+        },
+        "logo_image_c7KYUi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Header_logo.png",
+            "link": ""
+          }
+        },
+        "logo_image_mftpzX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_-removebg-preview_1.png",
+            "link": ""
+          }
+        },
+        "logo_image_HYnybk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.png",
+            "link": "https://www.deccanchronicle.com/lifestyle/fashion-beauty/masculine-elegance-1813197"
+          }
+        },
+        "logo_image_PXDQqT": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_213_1.png",
+            "link": ""
+          }
+        },
+        "logo_image_A6xiAn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/News18.svg",
+            "link": "https://www.news18.com/amp/lifestyle/best-gifts-on-rakhi-2024-9014551.html"
+          }
+        },
+        "logo_image_7cUheA": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.svg",
+            "link": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/"
+          }
+        },
+        "logo_image_DKgEfj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_213.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_eMMERF",
+        "logo_image_kHAyfW",
+        "logo_image_tekzgD",
+        "logo_image_c7KYUi",
+        "logo_image_mftpzX",
+        "logo_image_HYnybk",
+        "logo_image_PXDQqT",
+        "logo_image_A6xiAn",
+        "logo_image_7cUheA",
+        "logo_image_DKgEfj"
+      ],
+      "settings": {
+        "title": "",
+        "logo_width": "200px",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "collection_banner_mLzpeb",
+    "banner_slide_9B8yUP",
+    "banner",
+    "product-grid",
+    "contact_banner_FjXDaT",
+    "logo_list2_GY7WTA",
+    "logo_list_UtXBYK"
+  ]
+}

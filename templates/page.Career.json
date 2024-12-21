@@ -1,0 +1,154 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "carrer_section_PNNyWf": {
+      "type": "carrer-section",
+      "blocks": {
+        "job_YqhiNJ": {
+          "type": "job",
+          "settings": {
+            "small_image": "shopify://shop_images/icons_career.png",
+            "small_image1": "shopify://shop_images/location-sign-svgrepo-com.svg",
+            "small_image2": "shopify://shop_images/icons_career2.png",
+            "small_image3": "shopify://shop_images/icons_career3.png",
+            "title": "WEBSITE MANAGER",
+            "company": "Vasundhra Raj Luxury",
+            "location": "Dehradun",
+            "experience": "1 year +",
+            "posted_time": "Posted 1 week ago",
+            "button_label": "APPLY NOW",
+            "button_link": "https://www.linkedin.com/company/vasundhra-raj/mycompany/"
+          }
+        },
+        "job_7YNpdh": {
+          "type": "job",
+          "settings": {
+            "small_image": "shopify://shop_images/icons_career.png",
+            "small_image1": "shopify://shop_images/location-sign-svgrepo-com.svg",
+            "small_image2": "shopify://shop_images/icons_career2.png",
+            "small_image3": "shopify://shop_images/icons_career3.png",
+            "title": "WEB MANAGER",
+            "company": "Vasundhra Raj Luxury",
+            "location": "Dehradun",
+            "experience": "1 year +",
+            "posted_time": "Posted 1 week ago",
+            "button_label": "APPLY NOW",
+            "button_link": "https://www.linkedin.com/company/vasundhra-raj/mycompany/"
+          }
+        }
+      },
+      "block_order": [
+        "job_YqhiNJ",
+        "job_7YNpdh"
+      ],
+      "settings": {
+        "search_label": "Begin your search for greater opportunities",
+        "search_placeholder": "Search jobs...",
+        "search_button_label": "SEARCH JOBS",
+        "clear_button_label": "CLEAR"
+      }
+    },
+    "contact_banner_PDGCNi": {
+      "type": "contact-banner",
+      "blocks": {
+        "heading_7TWcYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONNECT WITH US",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7TWcYC"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-right",
+        "image-mob": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "logo_list2_JJBBrp": {
+      "type": "logo-list2",
+      "blocks": {
+        "logo_image_yR9NRi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/video_calling_icon_6dfe0d90-07ba-4829-b9c5-11b8462db0f0.png",
+            "link": "",
+            "heading": "LIVE VIDEO-CALLING"
+          }
+        },
+        "logo_image_fcAXHa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/book_an_appointment_icon_f6d8c42d-0032-4c84-a1d4-c07f99cd99c3.png",
+            "link": "",
+            "heading": "BOOK AN APPOINTMENT"
+          }
+        },
+        "logo_image_PCcTnW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/personalized_customization_c1301195-e51f-4164-b578-5bfdd65df7b9.png",
+            "link": "",
+            "heading": "PERSONAL CUSTOMIZATION"
+          }
+        },
+        "logo_image_KrmaAf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/whatsapp-xxl_2bdf7756-20ae-4fcf-b373-73af8b4b8bb1.png",
+            "link": "",
+            "heading": "WHATSAPP"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_yR9NRi",
+        "logo_image_fcAXHa",
+        "logo_image_PCcTnW",
+        "logo_image_KrmaAf"
+      ],
+      "settings": {
+        "title": "",
+        "button_label_1": "CONTACT US",
+        "button_link_1": "shopify://pages/contact",
+        "logo_width": "160px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "carrer_section_PNNyWf",
+    "contact_banner_PDGCNi",
+    "logo_list2_JJBBrp"
+  ]
+}

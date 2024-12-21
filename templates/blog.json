@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_slide_3bkBi7": {
+      "type": "banner-slide",
+      "blocks": {
+        "slide_idjYye": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_12_2.png",
+            "image-mob": "shopify://shop_images/Frame_12_2.png",
+            "heading": "Our Blog",
+            "heading1": "",
+            "heading_size": "h1",
+            "subheading": "The Legacyof Elegance: Inside Vasundhra Raj Jewelry",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_idjYye"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "small_image": "shopify://shop_images/Frame_93_2.png",
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_HBUhGK": {
+      "type": "featured-blog",
+      "settings": {
+        "heading1": "",
+        "heading": "",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 100,
+        "columns_desktop": 4,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner_slide_3bkBi7",
+    "main",
+    "featured_blog_HBUhGK"
+  ]
+}
