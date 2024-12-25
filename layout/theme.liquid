@@ -7,36 +7,40 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     {{ 'flickity.css' | asset_url | stylesheet_tag }}
-{{ 'flickity.js' | asset_url | script_tag }}
+    {{ 'flickity.js' | asset_url | script_tag }}
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var readMoreButton = document.querySelector('.read-more');
-  var description = document.querySelector('.short-description');
+      document.addEventListener('DOMContentLoaded', function () {
+        var readMoreButton = document.querySelector('.read-more');
+        var description = document.querySelector('.short-description');
 
-  if (readMoreButton && description) {
-    readMoreButton.addEventListener('click', function() {
-      if (description.classList.contains('short-description')) {
-        description.classList.remove('short-description');
-        description.style.maxHeight = 'none';
-        readMoreButton.textContent = 'Read Less';
-      } else {
-        description.classList.add('short-description');
-        description.style.maxHeight = '4.5em'; // Adjust to match your CSS
-        readMoreButton.textContent = 'Read More';
-      }
-    });
-  }
-});
-
-</script>
+        if (readMoreButton && description) {
+          readMoreButton.addEventListener('click', function () {
+            if (description.classList.contains('short-description')) {
+              description.classList.remove('short-description');
+              description.style.maxHeight = 'none';
+              readMoreButton.textContent = 'Read Less';
+            } else {
+              description.classList.add('short-description');
+              description.style.maxHeight = '4.5em'; // Adjust to match your CSS
+              readMoreButton.textContent = 'Read More';
+            }
+          });
+        }
+      });
+    </script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-<!-- Slick Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -316,19 +320,20 @@ document.addEventListener('DOMContentLoaded', function() {
     <style>
       @font-face {
         font-family: 'BodoniFLF Regular';
-        src: url("https://cdn.shopify.com/s/files/1/0602/6926/4966/files/BodoniFLF_Regular.woff?v=1733456719") format("woff"),
-             url("https://cdn.shopify.com/s/files/1/0602/6926/4966/files/BodoniFLF_Regular_52232a5d-9d17-4a01-acc0-45fdee4df9be.ttf?v=1733463466") format("truetype");
+        src: url('https://cdn.shopify.com/s/files/1/0602/6926/4966/files/BodoniFLF_Regular.woff?v=1733456719')
+            format('woff'),
+          url('https://cdn.shopify.com/s/files/1/0602/6926/4966/files/BodoniFLF_Regular_52232a5d-9d17-4a01-acc0-45fdee4df9be.ttf?v=1733463466')
+            format('truetype');
         font-style: normal;
         font-weight: normal;
       }
-        @font-face {
+      @font-face {
         font-family: 'Helvetica';
-        src: url("https://cdn.shopify.com/s/files/1/0602/6926/4966/files/Helvetica.ttf?v=1734005755") format("truetype");
+        src: url('https://cdn.shopify.com/s/files/1/0602/6926/4966/files/Helvetica.ttf?v=1734005755') format('truetype');
         font-style: normal;
         font-weight: normal;
       }
     </style>
-
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
