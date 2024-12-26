@@ -42,12 +42,14 @@
             display: flex;
             justify-content: center;
             align-items: baseline;
+            margin-top:1rem;
          }
 
          .icons-footer >a img,
           .icons-footer >img {
-            width:40px;
-            height:40px;
+            width:20px;
+            height:20px;
+            margin-right: 10px;
          }
 
       /** Menu Accordian Styles */
@@ -91,6 +93,30 @@
       }
       .menu__container:hover {
         cursor: pointer;
+    }
+
+    .footer-text-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-block__heading {
+      font-size: 2rem;
+      margin:1rem 0;
+      color: #636262;
+      text-decoration: none solid rgb(99, 98, 98);
+    }
+    .footer-block__details-content {
+      margin-bottom: 2rem;
+      line-height: 2;
+    }
+
+    .footer-block__details-content.rte p {
+      color: #636262;
+      font-family: 'Quicksand', serif;
+      text-decoration: none solid rgb(99, 98, 98);
     }
 {%- endstyle -%}
 
@@ -251,7 +277,7 @@
                           {% endif %}
                         </div>
                         {%- if block.settings.heading != blank -%}
-                          <h2 class="footer-block__heading inline-richtext" style="text-align: center;">
+                          <h2 class="footer-block__heading inline-richtext">
                             {{- block.settings.heading -}}
                           </h2>
                         {%- endif -%}
@@ -301,7 +327,7 @@
                             </span>
                           </div>
                         {% endif %}
-                        <div class="footer-block__details-content rte" style="text-align: center;">
+                        <div class="footer-block__details-content rte">
                           {{ block.settings.subtext }}
                         </div>
                       </div>
