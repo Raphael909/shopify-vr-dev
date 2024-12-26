@@ -6,89 +6,92 @@
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-      .footer {
-        margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-      }
-
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-      }
-
-      .footer-block__small-image {
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      @media screen and (min-width: 750px) {
         .footer {
-          margin-top: {{ section.settings.margin_top }}px;
+          margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
         }
 
         .section-{{ section.id }}-padding {
-          padding-bottom: {{ section.settings.padding_bottom }}px;
+          padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+          padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
         }
+
+        .footer-block__small-image {
+          align-items: center;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        @media screen and (min-width: 750px) {
+          .footer {
+            margin-top: {{ section.settings.margin_top }}px;
+          }
+
+          .section-{{ section.id }}-padding {
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+          }
+        }
+
+      .shopify-policy__container {
+          max-width: 1260px;
+          margin: 0 auto;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 50px;
+      }
+      .icons-footer{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+         }
+
+         .icons-footer >a img,
+          .icons-footer >img {
+            width:40px;
+            height:40px;
+         }
+
+      /** Menu Accordian Styles */
+      .menu-accordion {
+        border-radius: 4px;
+        margin-bottom: 1rem;
       }
 
-    .shopify-policy__container {
-        max-width: 1260px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 50px;
-    }
-    .icons-footer{
-          display: flex;
-          justify-content: center;
-          align-items: baseline;
-       }
-
-       .icons-footer >a img,
-        .icons-footer >img {
-          width:40px;
-          height:40px;
-       }
-
-    /** Menu Accordian Styles */
-    .menu-accordion {
+    .menu-accordion-header {
+      width: 150px;
+      padding: 10px;
+      border:1px solid #cecece;
       border-radius: 4px;
-      margin-bottom: 1rem;
-    }
-
-  .menu-accordion-header {
-    width: 150px;
-    padding: 10px;
-    border:1px solid #cecece;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    text-align: center;
-    cursor: pointer;
-  }
-  .menu-accordion-header h2 {
-    margin: 0;
-    opacity: 0.8;
-    > span {
-      opacity: 0.7;
-    }
-  }
-  .meta-info-wrapper {
-    display: flex;
-    justify-content: space-around;
-    column-gap: 100px;
-    margin-top: 20px;
-  }
-
-  .menu-accordion-content {
-    padding: 1rem;
-  }
-  .menu__container {
-    float: inline-start;
-    font-family: 'BodoniFLF Regular', serif;
-    }
-    .menu__container:hover {
+      background-color: #f9f9f9;
       cursor: pointer;
+    }
+    .menu-accordion-header h2 {
+      margin: 0;
+      opacity: 0.8;
+    }
+    .menu-accordion-header h2:after {
+      content: '';
+      float: right;
+      color:gray;
   }
+
+    .meta-info-wrapper {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 100px;
+      margin: 20px 0;
+    }
+
+    .menu-accordion-content {
+      padding: 1rem;
+    }
+    .menu__container {
+      margin-bottom: 20px;
+      float: inline-start;
+      font-family: 'BodoniFLF Regular', serif;
+      }
+      .menu__container:hover {
+        cursor: pointer;
+    }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -367,13 +370,20 @@
                       <div class="menu__container">
                         {%- if block.settings.heading != blank -%}
                           <div x-data="{ open: true }" class="menu-accordion">
-                            <div @click="open = !open" class="menu-accordion-header">
+                            <button @click="open = !open" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext">
                                 {{- block.settings.heading -}}
-                                &nbsp;<span>&or;</span>
+                                <span class="icon-down-chevron" style="float: right;">
+                                  {% render 'Icon-down-chevron' %}
+                                </span>
                               </h2>
-                            </div>
-                            <div x-show="open" x-transition class="menu-accordion-content">
+                            </button>
+                            <div
+                              x-show="open"
+                              class="menu-accordion-content"
+                              x-transition:enter.duration.500ms
+                              x-transition:leave.duration.400ms
+                            >
                               {%- if block.settings.menu != blank -%}
                                 <ul class="footer-block__details-content list-unstyled">
                                   {%- for link in block.settings.menu.links -%}
@@ -397,13 +407,20 @@
                       <div class="menu__container">
                         {%- if block.settings.heading2 != blank -%}
                           <div x-data="{ open: true }" class="menu-accordion">
-                            <div @click="open = !open" class="menu-accordion-header">
+                            <button @click="open = !open" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext title-2">
                                 {{- block.settings.heading2 -}}
-                                &nbsp;<span>&or;</span>
+                                <span class="icon-down-chevron" style="float: right;">
+                                  {% render 'Icon-down-chevron' %}
+                                </span>
                               </h2>
-                            </div>
-                            <div x-show="open" x-transition class="menu-accordion-content">
+                            </button>
+                            <div
+                              x-show="open"
+                              class="menu-accordion-content"
+                              x-transition:enter.duration.500ms
+                              x-transition:leave.duration.400ms
+                            >
                               {%- if block.settings.menu2 != blank -%}
                                 <ul class="footer-block__details-content list-unstyled">
                                   {%- for link in block.settings.menu2.links -%}
