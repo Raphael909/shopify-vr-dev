@@ -51,6 +51,10 @@
             height:20px;
             margin-right: 10px;
          }
+         .icon-down-chevron{
+          float: right;
+          padding-right: 1rem;
+         }
 
       /** Menu Accordian Styles */
       .menu-accordion {
@@ -67,6 +71,8 @@
       cursor: pointer;
     }
     .menu-accordion-header h2 {
+      font-size: 1.5rem;
+      color: #636262;
       margin: 0;
       opacity: 0.8;
     }
@@ -457,7 +463,7 @@
                             <button @click="open = !open, scroll()" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext title-2">
                                 {{- block.settings.heading2 -}}
-                                <span class="icon-down-chevron" style="float: right;">
+                                <span class="icon-down-chevron">
                                   {% render 'Icon-down-chevron' %}
                                 </span>
                               </h2>
