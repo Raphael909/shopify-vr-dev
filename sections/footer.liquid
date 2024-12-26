@@ -124,6 +124,14 @@
       font-family: 'Quicksand', serif;
       text-decoration: none solid rgb(99, 98, 98);
     }
+
+    .footer-copyright-text{
+      text-align: center;
+      font-size: 1.25rem;
+      color: #636262;
+      background-color: #ffffff;
+      padding: 1rem 0 2rem;
+    }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -518,6 +526,7 @@
       </div>
     {%- endunless -%}
   {%- endif -%}
+  <div class="footer-copyright-text"><span>copyright@vasundrarajluxuryjewellery</span></div>
 </footer>
 
 {% schema %}
