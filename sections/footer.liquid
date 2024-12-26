@@ -369,11 +369,21 @@
                       <!-- This Section renders Menu Items - About US OR Help -->
                       <div class="menu__container">
                         {%- if block.settings.heading != blank -%}
-                          <div x-data="{ open: true }" class="menu-accordion">
-                            <button @click="open = !open" class="menu-accordion-header">
+                          <div
+                            x-data="
+                              { open: false, scroll(){
+                                  $nextTick(()=> window.scrollTo({
+                                  top: document.body.scrollHeight,
+                                  behavior: 'smooth'
+                                }))
+                              } }
+                            "
+                            class="menu-accordion"
+                          >
+                            <button @click="open = !open, scroll()" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext">
                                 {{- block.settings.heading -}}
-                                <span class="icon-down-chevron" style="float: right;">
+                                <span class="icon-down-chevron">
                                   {% render 'Icon-down-chevron' %}
                                 </span>
                               </h2>
@@ -406,8 +416,19 @@
                       <!-- This Section renders Menu Items - About US OR Help -->
                       <div class="menu__container">
                         {%- if block.settings.heading2 != blank -%}
-                          <div x-data="{ open: true }" class="menu-accordion">
-                            <button @click="open = !open" class="menu-accordion-header">
+                          <div
+                            x-data="
+                              { open: false, scroll(){
+                                  $nextTick(()=> window.scrollTo({
+                                      top: document.body.scrollHeight,
+                                       behavior: 'smooth'
+                                    }
+                                ))
+                              } }
+                            "
+                            class="menu-accordion"
+                          >
+                            <button @click="open = !open, scroll()" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext title-2">
                                 {{- block.settings.heading2 -}}
                                 <span class="icon-down-chevron" style="float: right;">
