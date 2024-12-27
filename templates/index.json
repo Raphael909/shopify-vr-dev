@@ -469,6 +469,51 @@
         "padding_bottom": 30
       }
     },
+    "newsletter_eXyKJp": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_KQQqh9": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO OUR NEWSLETTER!",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_VPTqpw": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to uncover our latest events, hidden gems, and more.</p>"
+          }
+        },
+        "paragraph_PGVxMj": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<h3>BE A PART OF THE JOURNEY!</h3>"
+          }
+        },
+        "email_form_CYEiMb": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_KQQqh9",
+        "paragraph_VPTqpw",
+        "paragraph_PGVxMj",
+        "email_form_CYEiMb"
+      ],
+      "custom_css": [
+        "h2 {font-size: 1.8rem; font-weight: 900; font-family: var(--font-heading-family);}",
+        "p {font-size: 1.3rem; color: #636362; font-family: var(--font-body-family);}",
+        "h3 {font-size: 1.5rem; font-family: var(--font-body-family);}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "image_banner_hGHXc6": {
       "type": "image-banner",
       "blocks": {
@@ -936,6 +981,7 @@
     "new_arrival_Art8kc",
     "image_banner_9WaQXn",
     "logo_list_dD44wk",
+    "newsletter_eXyKJp",
     "image_banner_hGHXc6",
     "new_collection_m3Rzxj",
     "new_arrival_7THUgd",

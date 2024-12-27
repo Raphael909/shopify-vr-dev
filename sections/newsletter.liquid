@@ -13,9 +13,48 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .newsletter-center-container {
+    border-top: 2px solid #3c001c;
+  }
+  .email-signup__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-signup__form .email-form-wrapper {
+    width: 100%;
+    margin-top: 1.8rem;
+  }
+  .email-form-wrapper input {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    border: 1px solid #cecece;
+    text-align:center;
+    font-size: 1.7rem;
+  }
+  .email-form-wrapper .submit-button--newsletter {
+    min-width: 15rem;
+    padding: 1rem;
+    border-radius: 2px;
+    color: #636262 !important;
+    background-color: #f3f3f3 !important;
+    border:1px solid #cecece !important;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .email-form-wrapper button#Subscribe {
+    padding: 1rem;
+  }
+  .email-form-wrapper .submit-button--newsletter:hover {
+    background-color: #3c001c !important;
+    color: #fff !important;
+  }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter-center-container newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -45,21 +84,21 @@
           </div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
-            {% form 'customer', class: 'newsletter-form' %}
+            {% form 'customer', class: 'email-signup__form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
-                class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="email-form-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} "
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field">
+                <div class="">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input"
+                    class=""
                     value="{{ form.email }}"
                     aria-required="true"
                     autocorrect="off"
@@ -75,17 +114,14 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' | t }}
-                  </label>
                   <button
                     type="submit"
-                    class="newsletter-form__button field__button"
+                    class="submit-button--newsletter"
                     name="commit"
                     id="Subscribe"
                     aria-label="{{ 'newsletter.button_label' | t }}"
                   >
-                    {% render 'icon-arrow' %}
+                    Submit
                   </button>
                 </div>
                 {%- if form.errors -%}
@@ -209,7 +245,7 @@
     {
       "type": "paragraph",
       "name": "t:sections.newsletter.blocks.paragraph.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "richtext",
