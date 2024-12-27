@@ -35,15 +35,14 @@
         "@media only screen and (max-width: 768px) {, .image-video-slider video {height: 686px; }}"
       ],
       "settings": {
-        "custom_class": ".image-video-slider { background: FFEFEF;}"
+        "custom_class": ""
       }
     },
     "collection_list_4JTCYd": {
       "type": "collection-list",
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}",
-        ".collection-list-wrapper {padding-bottom: 15px;}"
+        ".title-wrapper-with-link {margin-bottom: 1rem;}"
       ],
       "settings": {
         "title": "SHOP BY COLLECTION",
@@ -56,8 +55,8 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 0,
+        "padding_top": 5,
+        "padding_bottom": 2,
         "title_image": "shopify://shop_images/logo-blk-birds.png"
       }
     },
@@ -70,7 +69,7 @@
             "image": "shopify://shop_images/mobile-teeledharo-image.jpg",
             "heading": "",
             "heading_size": "h1",
-            "subheading": "a pahadi phrase that translates to, \"What an example you have set\"",
+            "subheading": "A PAHADI PHRASE THAT TRANSLATES TO, \"WHAT AN EXAMPLE YOU HAVE SET\"",
             "button_label": "",
             "link": "shopify://collections/teele-dharo",
             "button_style_secondary": false,
@@ -88,12 +87,12 @@
             "image": "shopify://shop_images/KEW4208_copy_1.jpg",
             "heading": "",
             "heading_size": "h1",
-            "subheading": "Where sunlight falls, Dreams take their Chance, Through Whispered calls.",
+            "subheading": "WHERE SUNLIGHT FALLS, DREAMS TAKE THEIR CHANCE, THROUGH WHISPERED CALLS",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -106,12 +105,12 @@
             "image": "shopify://shop_images/KEW7683copy_1.jpg",
             "heading": "",
             "heading_size": "h1",
-            "subheading": "a story of rediscovery of our relation with nature and tradition",
+            "subheading": "A STORY OF REDISCOVERY OF OUR RELATION WITH NATURE AND TRADITION",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -124,12 +123,12 @@
             "image": "shopify://shop_images/KEW6883_copy.jpg",
             "heading": "",
             "heading_size": "h1",
-            "subheading": "it whispers of your arrival, calling all distant friends into its valleys",
+            "subheading": "IT WHISPERS OF YOUR ARRIVAL, CALLING ALL DISTANT FRIENDS INTO ITS VALLEYS",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -144,11 +143,7 @@
         "slide_qVAFC9"
       ],
       "custom_css": [
-        ".slideshow__slide {height: 80vh;}",
-        ".slideshow__media {height: 58rem;}",
-        ".slideshow__text {max-width: 77%;}",
-        "p {font-size: 1.4rem; letter-spacing: 0.02rem; line-height: 1.5rem; font-weight: unset;}",
-        ".slideshow__controls {display: none;}"
+        ".slideshow__text {max-width: 75%;}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -187,66 +182,47 @@
           "settings": {
             "collection": "brooches"
           }
+        },
+        "featured_collection_rD63Ck": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bangles"
+          }
+        },
+        "featured_collection_NeBBdA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "naths"
+          }
         }
       },
       "block_order": [
         "featured_collection_gxDcKD",
         "featured_collection_YMiwLQ",
         "featured_collection_ybCNCz",
-        "featured_collection_TUVGnt"
+        "featured_collection_TUVGnt",
+        "featured_collection_rD63Ck",
+        "featured_collection_NeBBdA"
       ],
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}",
-        ".collection-list-title {padding-bottom: 15px;}",
-        ".card__content {margin-top: -6rem; z-index: 999; width: 100%; display: grid; place-items: center;}",
-        ".card__information {padding: 0.4rem 0rem; background-color: #ffffff; width: 64%; opacity: 0.78;}",
-        ".card__inner {height: 30rem;}",
-        "@media screen and (max-width: 749px) {.grid {column-gap: 0; row-gap: 0; } li.collection-list__item.grid__item.scroll-trigger.animate--slide-in {width: 47%; height: 220px; }}"
+        ".title-wrapper-with-link {margin-bottom: 3rem;}",
+        ".card__inner {width: 100%; border: 1px solid #636262; box-sizing: border-box;}"
       ],
       "settings": {
         "title": "SHOP BY CATEGORY",
         "url_1": "",
         "heading1": "",
         "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
+        "image_ratio": "portrait",
+        "columns_desktop": 1,
         "color_scheme": "",
         "show_view_all": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 36,
+        "padding_top": 5,
+        "padding_bottom": 0,
         "title_image": "shopify://shop_images/logo-blk-birds.png"
-      }
-    },
-    "featured_collection_EpWyAg": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "subtitle",
-        "collection": "earring",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "image_banner_kFFQwq": {
@@ -256,7 +232,7 @@
           "type": "heading",
           "settings": {
             "heading": "EAST MEETS WEST: CROSSING THE CULTURAL DIVIDE",
-            "heading2": "Our jewellry transcends borders, blending western lines with eastern curves- the birds in our logo and the sun in our name symbolise this harmonic fusion",
+            "heading2": "THE JEWELLRY WHICH TRANSCENDS BORDERS, BLENDING WESTERN LINES WITH EASTERN CURVES- THE BIRDS IN THE LOGO AND THE SUN IN THE NAME SYMBOLISE THIS HARMONIC FUSION",
             "heading_size": "h1"
           }
         },
@@ -273,9 +249,11 @@
         "text_kkkrBL"
       ],
       "custom_css": [
-        ".banner__heading {font-size: 17px; color: #fff !important; max-width: 77%;}",
-        "p {font-size: 14px; color: #636262; background: #fff; padding: 0 1rem; opacity: 0.7; border: 1px solid #636262;}",
-        ".banner__content-bottom {display: grid; place-items: center;}"
+        ".banner__box > h2 {color: #fff; font-size: 1.8rem;}",
+        ".banner__text p {font-size: 1.4rem; padding: 0.4rem 2rem; max-width: 80%;}",
+        ".banner__text {display: flex; justify-content: center; align-items: center;}",
+        ".banner__text p {background-color: #fff; opacity: 0.7; border: 1px solid #636262;}",
+        "@media only screen and (min-width: 750px) {.banner__box > h2 {color: #fff; font-size: 4rem; width: 80%; } .banner__text p {font-size: 2.2rem; padding: 0.4rem 6rem; max-width: 70%; } .banner__text {display: flex; justify-content: start; align-items: center; }}"
       ],
       "settings": {
         "show_text_box-1": true,
@@ -284,22 +262,21 @@
         "image": "shopify://shop_images/KEW6426copy.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-1",
         "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "collection_list_dcThPw": {
       "type": "collection-list",
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}",
-        ".collection-list-wrapper {padding-bottom: 15px;}"
+        ".title-wrapper-with-link {margin-bottom: 1rem;}"
       ],
       "settings": {
         "title": "IN THE SPOTLIGHT",
@@ -312,15 +289,20 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 36,
+        "padding_top": 5,
+        "padding_bottom": 2,
         "title_image": "shopify://shop_images/logo-blk-birds.png"
       }
     },
     "new_arrival_Art8kc": {
       "type": "New-arrival",
       "custom_css": [
-        ".card__inner {background: #fff; border: 1px solid #636262;}"
+        ".card.card--standard.card--media {background: #fff; border: 1px solid #636262;}",
+        ".card__inner {height: 100%;}",
+        ".card__content {display: grid; place-content: center;}",
+        ".card__heading {border: 1px solid #636262; padding: 0.5rem 3rem;}",
+        "@media screen and (min-width: 749px) {.card.card--standard.card--media {height: 61vh; } .card-wrapper {padding: 0 1rem; }}",
+        "@media screen and (max-width: 749px) {.card.card--standard.card--media {height: 50vh; } .card-wrapper {padding: 0 0.5rem; }}"
       ],
       "settings": {
         "title": "",
@@ -329,6 +311,28 @@
         "newBadge": true,
         "button": "",
         "link": ""
+      }
+    },
+    "collection_list_RxxxPU": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "title": "THE GOLDEN KARKHANA",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 5,
+        "padding_bottom": 2,
+        "title_image": "shopify://shop_images/logo-blk-birds.png"
       }
     },
     "image_banner_9WaQXn": {
@@ -355,25 +359,27 @@
         "text_jxXLby"
       ],
       "custom_css": [
-        ".banner__heading {font-size: 17px; color: #fff !important; max-width: 90%;}",
-        "p {font-size: 14px; color: #636262; background: #fff; padding: 0 1rem; opacity: 0.7; border: 1px solid #636262;}",
-        ".banner__content-bottom {display: grid; place-items: center;}"
+        ".banner__box > h2 {color: #fff; font-size: 1.8rem;}",
+        ".banner__text p {font-size: 1.4rem; padding: 0.4rem 2rem; max-width: 80%;}",
+        ".banner__text {display: flex; justify-content: center; align-items: center;}",
+        ".banner__text p {background-color: #fff; opacity: 0.7; border: 1px solid #636262;}",
+        "@media only screen and (min-width: 750px) {.banner__box > h2 {color: #fff; font-size: 4rem; width: 80%; } .banner__text p {font-size: 2.2rem; padding: 0.4rem 6rem; max-width: 70%; } .banner__text {display: flex; justify-content: start; align-items: center; }}"
       ],
       "settings": {
         "show_text_box-1": true,
         "my_video_background_banner": "",
-        "show_social": true,
+        "show_social": false,
         "image": "shopify://shop_images/thegldnkrkhana-image.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
         "color_scheme": "",
         "image_behavior": "ambient",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "logo_list_dD44wk": {
@@ -428,13 +434,6 @@
             "link": ""
           }
         },
-        "logo_image_zJ9cGR": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/News18.svg",
-            "link": ""
-          }
-        },
         "logo_image_gbA6r7": {
           "type": "logo_image",
           "settings": {
@@ -458,13 +457,12 @@
         "logo_image_tAV7c3",
         "logo_image_RnFb3h",
         "logo_image_h7TkeK",
-        "logo_image_zJ9cGR",
         "logo_image_gbA6r7",
         "logo_image_Q8Ycri"
       ],
       "settings": {
         "title": "",
-        "logo_width": "160px",
+        "logo_width": "200px",
         "padding_top": 30,
         "padding_bottom": 30
       }
@@ -975,10 +973,10 @@
     "collection_list_4JTCYd",
     "slideshow_LJxjfw",
     "collection_list_XHKfjF",
-    "featured_collection_EpWyAg",
     "image_banner_kFFQwq",
     "collection_list_dcThPw",
     "new_arrival_Art8kc",
+    "collection_list_RxxxPU",
     "image_banner_9WaQXn",
     "logo_list_dD44wk",
     "newsletter_eXyKJp",

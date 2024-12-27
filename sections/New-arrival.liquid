@@ -73,13 +73,46 @@ $(document).ready(function () {
                 $(this).slick({
                     arrows: false,
                     dots: false,
-                    slidesToShow: 2,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true ,
                     autoplay: false,
                     speed: 2000,
                     appendArrows: $(this).parents('.new-arrival-control').find('.new-arrival-arrows-main'),
                     autoplaySpeed: 2000,
                     prevArrow: backButton,
                     nextArrow: nextButton,
+                    responsive: [
+                      {
+                        breakpoint: 1024,
+                        settings: {
+                          slidesToShow: 4,
+                          slidesToScroll: 4                   
+                        }
+                      },
+                      {
+                        breakpoint: 749,
+                        settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 2
+                        }
+                      },
+                      {
+                        breakpoint: 400,
+                        settings: {
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          infinite: true,
+                          speed: 500,
+                          fade: true,
+                          cssEase: 'linear'
+                        }
+                      }
+                      // can unslick at a given breakpoint now by adding:
+                      // settings: "unslick"
+                      // instead of a settings object
+                    ]
+
                 });
 
                 // Reinitialize slick if images are not fully loaded
@@ -95,13 +128,13 @@ $(document).ready(function () {
     }
 
     // Initial check on page load
-    if ($(window).width() < 749) {
+    if ($(window).width() > 0) {
         initializeSlider();
     }
 
     // Re-check and handle resize events dynamically
     $(window).resize(function () {
-        if ($(window).width() < 749) {
+        if ($(window).width() > 0) {
             initializeSlider();
         } else {
             destroySlider();

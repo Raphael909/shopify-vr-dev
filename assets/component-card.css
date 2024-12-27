@@ -9,7 +9,7 @@
 }
 @media screen and (max-width: 749px) {
   .card__content {
-    height: 90px;
+    height: auto;
   }
   .card-wrapper {
     color: inherit;
@@ -161,11 +161,11 @@
   margin: var(--image-padding);
 }
 
-.card__inner {
+/* .card__inner {
   width: 100%;
   border: 1px solid #636262;
   box-sizing: border-box;
-}
+} */
 
 .card--media .card__inner .card__content {
   position: relative;
