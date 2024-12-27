@@ -1,6 +1,7 @@
-.collection-list {
-  margin-top: 0;
-  margin-bottom: 0;
+.collection-list img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fill their grid cells without distortion */
 }
 
 .collection-list-title {
@@ -51,6 +52,19 @@
   .collection-list__item a:hover {
     box-shadow: none;
   }
+
+  .collection-list{
+    display: grid; /* Enable CSS Grid */
+      gap: 10px; /* Add space between images */
+  
+  /* Desktop Layout: 3 columns, 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto);
+    margin-top: 0;
+    margin-bottom: 0;
+    place-items: center;
+  
+  }
 }
 
 @media screen and (max-width: 989px) {
@@ -60,5 +74,6 @@
 }
 
 .collection-list-view-all {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }

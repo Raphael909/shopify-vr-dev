@@ -352,7 +352,7 @@ img.testimonial-image {
 -%}
 
       
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom header-transparent{% endif %}">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if template == 'index' %} header-transparent{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -712,7 +712,18 @@ img.testimonial-image {
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
 
+{%- if template == 'index' -%}
+  <script>
+      var isHomePage = true;
+  </script>
+{%- else -%}
+  <script>
+      var isHomePage = false;
+  </script>
+{%- endif -%}
+
 {% javascript %}
+
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -721,6 +732,7 @@ img.testimonial-image {
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerWrapper = document.querySelector('.header-wrapper');
+      this.announcementBar = document.querySelector('.announcement-bar');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
       this.headerBounds = {};      
       this.setHeaderHeight();
@@ -765,13 +777,16 @@ img.testimonial-image {
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+      const announcementBarHeight = this.announcementBar ? this.announcementBar.offsetHeight : 0;
+   
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
-      if (scrollTop === 0) {
-        this.headerWrapper.classList.add('header-transparent');
-      } else {
-        this.headerWrapper.classList.remove('header-transparent');
+     
+      if(isHomePage){
+        if (scrollTop <= announcementBarHeight) {
+          this.headerWrapper.classList.remove('on-scroll');
+        } else {
+          this.headerWrapper.classList.add('on-scroll');
+        }
       }
       
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
@@ -804,7 +819,6 @@ img.testimonial-image {
     hide() {
       if (this.headerIsAlwaysSticky) return;
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
-      this.header.classList.remove('header-transparent');
       this.closeMenuDisclosure();
       this.closeSearchModal();
     }
@@ -813,7 +827,6 @@ img.testimonial-image {
       if (this.headerIsAlwaysSticky) return;
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
-      this.header.classList.remove('header-transparent');
     }
 
     reset() {

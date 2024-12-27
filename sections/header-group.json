@@ -14,27 +14,67 @@
     "announcement_bar_tb93UV": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_eik8w8": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE 1G GOLD COIN on Purchases of ₹1 Lakh+",
+            "link": ""
+          }
+        },
+        "announcement_kbBncF": {
+          "type": "announcement",
+          "settings": {
+            "text": "100% BUYBACK GUARANTEE FOR LIFE",
+            "link": ""
+          }
+        },
+        "announcement_qPM9iA": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE LIFETIME JEWELLERY CLEANING",
+            "link": ""
+          }
+        },
         "announcement_mGgdce": {
           "type": "announcement",
           "settings": {
             "text": "FREE SHIPPING IN INDIA",
             "link": ""
           }
+        },
+        "announcement_RxpQ3E": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE GOLD  PURITY CHECK",
+            "link": ""
+          }
+        },
+        "announcement_aA9iwA": {
+          "type": "announcement",
+          "settings": {
+            "text": "OLD GOLD EXCHANGE",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_mGgdce"
+        "announcement_eik8w8",
+        "announcement_kbBncF",
+        "announcement_qPM9iA",
+        "announcement_mGgdce",
+        "announcement_RxpQ3E",
+        "announcement_aA9iwA"
       ],
       "custom_css": [
-        "p {font-size: 9px; padding: 0; min-height: 0.625rem; fill: #f2f2f2; font-family: Quicksand;}"
+        "p {font-size: 1.3rem; padding: 0; min-height: 0.625rem; font-family: Quicksand; font-weight: 600;}"
       ],
       "settings": {
         "show_on_device": "mobile--device",
         "color_scheme": "scheme-1",
         "show_line_separator": false,
         "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 5,
+        "auto_rotate": false,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
@@ -105,13 +145,13 @@
         "text-col4": "TEELE DHARO",
         "url11": "shopify://collections/teele-dharo",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "enable_customer_avatar": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 0,
