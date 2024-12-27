@@ -505,13 +505,13 @@
       "custom_css": [
         "h2 {font-size: 1.8rem; font-weight: 900; font-family: var(--font-heading-family);}",
         "p {font-size: 1.3rem; color: #636362; font-family: var(--font-body-family);}",
-        "h3 {font-size: 1.4rem; font-family: var(--font-body-family);}"
+        "h3 {font-size: 1.5rem; font-family: var(--font-body-family);}"
       ],
       "settings": {
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "image_banner_hGHXc6": {

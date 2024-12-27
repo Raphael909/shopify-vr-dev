@@ -13,6 +13,9 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .newsletter-center-container {
+    border-top: 2px solid #3c001c;
+  }
   .email-signup__form {
     display: flex;
     flex-direction: column;
@@ -21,14 +24,16 @@
   }
   .email-signup__form .email-form-wrapper {
     width: 100%;
+    margin-top: 1.8rem;
   }
   .email-form-wrapper input {
     width: 100%;
-    padding: 1.2rem;
+    padding: 1.4rem;
     border-radius: 2px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     border: 1px solid #cecece;
     text-align:center;
+    font-size: 1.7rem;
   }
   .email-form-wrapper .submit-button--newsletter {
     min-width: 15rem;
@@ -49,7 +54,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter-center-container newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -240,7 +245,7 @@
     {
       "type": "paragraph",
       "name": "t:sections.newsletter.blocks.paragraph.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "richtext",
