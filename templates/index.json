@@ -300,13 +300,13 @@
         ".card.card--standard.card--media {background: #fff; border: 1px solid #636262;}",
         ".card__inner {height: 100%;}",
         ".card__content {display: grid; place-content: center;}",
-        ".card__heading {border: 1px solid #636262; padding: 0.5rem 3rem;}",
-        "@media screen and (min-width: 749px) {.card.card--standard.card--media {height: 61vh; } .card-wrapper {padding: 0 1rem; }}",
-        "@media screen and (max-width: 749px) {.card.card--standard.card--media {height: 50vh; } .card-wrapper {padding: 0 0.5rem; }}"
+        ".card__heading {border: 1px solid #636262; padding: 0.7rem 3rem;}",
+        "@media screen and (min-width: 749px) {.card.card--standard.card--media {height: 61vh; } .card-wrapper {padding: 0 1rem; } .card-information {width: 20vh; max-width: 23vh; }}",
+        "@media screen and (max-width: 749px) {.card.card--standard.card--media {height: 50vh; } .card-information {width: 18vh; max-width: 21vh; }}"
       ],
       "settings": {
         "title": "",
-        "text": "",
+        "text": "THE MOST LOVED, YOUR NEXT OBSESSION",
         "collection": "in-the-spotlight",
         "newBadge": true,
         "button": "",
