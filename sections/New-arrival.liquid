@@ -18,7 +18,24 @@
     font-family: 'Cinzel-Medium', serif;
     text-align: center;
     color: #545454;
+    }
+    .new-arrival-bottom-text {      
+      display: grid;
+      place-items: center;
+      padding-top: 1rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
 }
+
+@media screen and (min-width: 749px) {
+  .new-arrival-bottom-text {      
+    display: grid;
+    place-items: center;
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    }    
 }
 </style>
 <div class="new-arrival-controls-main">
@@ -49,6 +66,7 @@
         </div>
     </div>
 </div>
+<div class="new-arrival-bottom-text">{{ section.settings.text }}</div>
 
 <script>
 $(document).ready(function () {
@@ -71,30 +89,36 @@ $(document).ready(function () {
         $(".new-arrival-box-main").each(function () {
             if (!$(this).hasClass('slick-initialized')) {
                 $(this).slick({
-                    arrows: false,
-                    dots: false,
+                    arrows: true,
+                    dots: true,
                     slidesToShow: 4,
-                    slidesToScroll: 4,
                     infinite: true ,
                     autoplay: false,
-                    speed: 2000,
+                    swipeToSlide: true,
+                    speed: 300,
                     appendArrows: $(this).parents('.new-arrival-control').find('.new-arrival-arrows-main'),
-                    autoplaySpeed: 2000,
-                    prevArrow: backButton,
-                    nextArrow: nextButton,
+                    autoplaySpeed: 700,
+                    {% comment %} prevArrow: backButton,
+                    nextArrow: nextButton, {% endcomment %}
                     responsive: [
                       {
                         breakpoint: 1024,
                         settings: {
-                          slidesToShow: 4,
-                          slidesToScroll: 4                   
+                          slidesToShow: 3,
+                          infinite: true ,
+                          onInit: function () {
+                            $('.slick-slide').css('height', '800px'); // Set height for tablets
+                          }                   
                         }
                       },
                       {
                         breakpoint: 749,
                         settings: {
                           slidesToShow: 2,
-                          slidesToScroll: 2
+                          infinite: true ,
+                          onInit: function () {
+                            $('.slick-slide').css('height', '600px'); // Set height for tablets
+                          }
                         }
                       },
                       {
@@ -158,7 +182,7 @@ $(document).ready(function () {
       "type": "text",
       "label": "Sub Text",
       "id": "text",
-      "default": "Testimonial"
+      "default": "THE MOST LOVED, YOUR NEXT OBSESSION"
     },
     {
       "type": "collection",
