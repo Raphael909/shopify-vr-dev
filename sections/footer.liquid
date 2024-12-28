@@ -84,13 +84,22 @@
 
     .meta-info-wrapper {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
-      column-gap: 50px;
+      column-gap: 30px;
       margin: 20px 0;
     }
 
     .menu-accordion-content {
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
       padding: 1rem;
+    }
+    .menu-accordion-content[x-show] {
+      visibility: visible;
+      opacity: 1;
+      transition: all 1s ease-in-out;
     }
     .menu__container {
       margin-bottom: 20px;
@@ -430,9 +439,8 @@
                             </button>
                             <div
                               x-show="open"
+                              x-transition
                               class="menu-accordion-content"
-                              x-transition:enter.duration.500ms
-                              x-transition:leave.duration.400ms
                             >
                               {%- if block.settings.menu != blank -%}
                                 <ul class="footer-block__details-content list-unstyled">
@@ -478,9 +486,8 @@
                             </button>
                             <div
                               x-show="open"
+                              x-transition
                               class="menu-accordion-content"
-                              x-transition:enter.duration.500ms
-                              x-transition:leave.duration.400ms
                             >
                               {%- if block.settings.menu2 != blank -%}
                                 <ul class="footer-block__details-content list-unstyled">
