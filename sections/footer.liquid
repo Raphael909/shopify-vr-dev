@@ -91,15 +91,18 @@
     }
 
     .menu-accordion-content {
+      height: 0;
       overflow: hidden;
       visibility: hidden;
       opacity: 0;
       padding: 1rem;
+      transition: all 0.3s ease-in-out;
     }
-    .menu-accordion-content[x-show] {
+    .menu-accordion-content.is-active{
+      height: 250px;
       visibility: visible;
       opacity: 1;
-      transition: all 1s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
     .menu__container {
       margin-bottom: 20px;
@@ -429,7 +432,7 @@
                             "
                             class="menu-accordion"
                           >
-                            <button @click="open = !open, scroll()" class="menu-accordion-header">
+                            <button @click="open = !open" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext">
                                 {{- block.settings.heading -}}
                                 <span class="icon-down-chevron">
@@ -438,8 +441,7 @@
                               </h2>
                             </button>
                             <div
-                              x-show="open"
-                              x-transition
+                              :class="{ 'is-active': open }"
                               class="menu-accordion-content"
                             >
                               {%- if block.settings.menu != blank -%}
@@ -476,7 +478,7 @@
                             "
                             class="menu-accordion"
                           >
-                            <button @click="open = !open, scroll()" class="menu-accordion-header">
+                            <button @click="open = !open" class="menu-accordion-header">
                               <h2 class="footer-block__heading inline-richtext title-2">
                                 {{- block.settings.heading2 -}}
                                 <span class="icon-down-chevron">
@@ -485,8 +487,7 @@
                               </h2>
                             </button>
                             <div
-                              x-show="open"
-                              x-transition
+                              :class="{ 'is-active': open }"
                               class="menu-accordion-content"
                             >
                               {%- if block.settings.menu2 != blank -%}
