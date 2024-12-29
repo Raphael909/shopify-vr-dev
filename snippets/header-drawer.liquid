@@ -5,6 +5,14 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
+<style>
+  .Menu-drawer-phone{
+  font-style: 'Quicksand';
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+</style>
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -152,21 +160,30 @@
                 <h2 class="Menu-drawer-text">GET IN TOUCH</h2>
                 
                   <a href="https://www.instagram.com/vasundhrarajluxury?igsh=YjF1eW90ZXYxd2R1" target="_blank">
-                   <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo_4b90cb2f-8323-419c-a89e-3f4b5a1f20f3.png?v=1732022448" class="icon-footer1">
+                   <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo_4b90cb2f-8323-419c-a89e-3f4b5a1f20f3.png?v=1732022448" class="icon-footer1" width="25" height="25">
                   </a> 
                   <a href="https://yt.openinapp.co/teeledharo" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______2.png?v=1732022277" class="icon-footer1">
+                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______2.png?v=1732022277" class="icon-footer1" width="25" height="25">
                   </a>     
                     <a href="https://www.linkedin.com/company/vasundhra-raj/mycompany/" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______3.png?v=1732022277" class="icon-footer1">
+                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______3.png?v=1732022277" class="icon-footer1" width="25" height="25">
                     </a>    
                     <a href="" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/vecteezy_twitter-x-black-and-white-logo-transparent-background_46853019_3e40c3cb-dcbf-4beb-8777-7d1249d2b8ca.png?v=1732022625" class="icon-footer1">
+                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/vecteezy_twitter-x-black-and-white-logo-transparent-background_46853019_3e40c3cb-dcbf-4beb-8777-7d1249d2b8ca.png?v=1732022625" class="icon-footer1" width="25" height="25">
                     </a>    
                     <a href="" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______1_5114dd60-8b65-49b4-a4b3-2e0cbd17ff56.png?v=1732022527" class="icon-footer1">
+                    <img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/logo______1_5114dd60-8b65-49b4-a4b3-2e0cbd17ff56.png?v=1732022527" class="icon-footer1" width="25" height="25">
                     </a> 
-                     <a href="mailto:enquiry@vasundhraraj.com"> <h2 class="Menu-drawer-text">enquiry@vasundhraraj.com</h2></a>
+                     <a href="mailto:enquiry@vasundhraraj.com"> <h2 class="Menu-drawer-text email-text"><u>enquiry@vasundhraraj.com</u></h2></a>
+              </div>
+              <div class="Menu-drawer-phone" style="display: flex; gap: 1rem; align-items: center; justify-content: center;">
+                <a href="https://wa.me/917279888888" style="text-decoration: underline; color: inherit;" target="_blank">
+                  +91 7279888888
+                </a>
+                |
+                <a href="https://wa.me/917729888888" style="text-decoration: underline; color: inherit;" target="_blank">
+                  +91 7729888888
+                </a>
               </div>
             {%- endif -%}
             {%- if localization.available_countries or localization.available_languages -%}

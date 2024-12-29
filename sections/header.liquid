@@ -178,7 +178,7 @@ img.testimonial-image {
     margin: 0 auto;
 }
 .menu-drawer__inner-submenu {
-    background: #ffc0cb42;
+    background: #ffffff;
 }
 
 
@@ -589,6 +589,11 @@ img.testimonial-image {
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
+
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="wishlist-icon">
+        {%- liquid
+            render 'icon-heart'
+       -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid

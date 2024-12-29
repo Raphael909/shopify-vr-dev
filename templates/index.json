@@ -207,7 +207,8 @@
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
         ".title-wrapper-with-link {margin-bottom: 3rem;}",
-        ".card__inner {width: 100%; border: 1px solid #636262; box-sizing: border-box;}"
+        ".card__inner {width: 100%; border: 1px solid #636262; box-sizing: border-box;}",
+        "@media screen and (max-width: 749px) {ul li:nth-last-child(1), ul li:nth-last-child(2) {display: none; } .collection-list-view-all {margin-top: 1.5rem; }}"
       ],
       "settings": {
         "title": "SHOP BY CATEGORY",
