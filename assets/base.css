@@ -2630,9 +2630,19 @@ input[type='checkbox'] {
   grid-area: icons;
   justify-self: end;
   padding-right: 0.8rem;
-  margin-bottom: -104px;
+  /* margin-bottom: -104px; */
   }
 }
+
+@media screen and (min-width: 990px) {
+  .header__icons {
+   display: flex;
+   grid-area: icons;
+   justify-self: end;
+   padding-right: 0.8rem;
+   margin-bottom: -81px;
+   }
+ }
 /* Header icons */
 .header__icons {
   display: flex;
@@ -2685,7 +2695,13 @@ position: relative;
 }
 
 .header__icon,
-.header__icon--cart .icon {
+.header__icon--wishlist .icon {
+  height: 4.4rem;
+  width: 3.4rem;
+  padding: 3.5rem 0 0 0;
+}
+
+.header__icon--account .icon {
   height: 4.4rem;
   width: 3.4rem;
   padding: 3.5rem 0 0 0;
@@ -4389,8 +4405,10 @@ div#shopify-section-template--16225477132358__featured_blog_new_VaaPnp {
 }
   
   a.menu-drawer__account.link.focus-inset.h5.medium-hide.large-up-hide {
-    font-size: 12px;
-    margin-right: 10px;
+    font-size: 1.6rem;
+    /* margin-right: 10px; */
+    letter-spacing: .3rem;
+    font-family: 'Cinzel-Regular';
 }
   h2.image-with-text-bottom-1 strong {
     font-size: 35px;
@@ -4682,7 +4700,7 @@ div#shopify-section-template--16225477132358__testimonial_LTRcFW {
 .logoList--container ul.logo-list { display: flex; flex-wrap: wrap; list-style: none; }
 .logoList--container ul.logo-list.slick-slider { display: block; } 
 nav.menu-drawer__navigation {
-    background: #ffc0cb3b;
+    background: #ffffff;
 }
 .menu-drawer__utility-links {
     margin: 0 auto;
@@ -5510,7 +5528,13 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
     margin: 0 8%;
 }
   h2.Menu-drawer-text {
-    font-size: 14px;
+    font-size: 2.4rem;
+    font-family: 'Cinzel-Regular', serif;
+    letter-spacing: .3rem;
+}
+
+h2.Menu-drawer-text.email-text {
+  font-size: 1.2rem;
 }
 .image-video-slider-text-content1 {
     font-style: italic;
