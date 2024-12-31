@@ -42,7 +42,7 @@
         "image-press-release": "shopify://shop_images/logo_1_69898255-35b9-4d3e-b987-6787195cf440.svg",
         "image-press-content": "shopify://shop_images/thegldnkrkhana-image.jpg",
         "link2": "",
-        "section_color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-2",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -73,6 +73,37 @@
         "image-press-release": "shopify://shop_images/HB_beta_logo_1.svg",
         "image-press-content": "shopify://shop_images/shopbycategory-image-3.jpg",
         "link2": "",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "press_release_info_aRtaUL": {
+      "type": "press-release-info",
+      "blocks": {
+        "text_eg6P6h": {
+          "type": "text",
+          "settings": {
+            "release_text": "<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus eros vehicula parturient platea urna consequat.</p>"
+          }
+        },
+        "button_QNmzM4": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ MORE",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_eg6P6h",
+        "button_QNmzM4"
+      ],
+      "settings": {
+        "image-press-release": "shopify://shop_images/logo_2_ab471116-6bf8-4938-8751-05acc10976b0.svg",
+        "image-press-content": "shopify://shop_images/11-04-2024_Vasundhra_Raj1012_copy_a5aebb1a-e9a1-4fe2-b734-65e3c3da49d8.jpg",
+        "link2": "",
         "section_color_scheme": "scheme-2",
         "color_scheme": "",
         "padding_top": 0,
@@ -83,6 +114,7 @@
   "order": [
     "main",
     "press_release_info_TzWNHF",
-    "press_release_info_KGWQzW"
+    "press_release_info_KGWQzW",
+    "press_release_info_aRtaUL"
   ]
 }
