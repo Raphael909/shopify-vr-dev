@@ -17,596 +17,95 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_WXEXrh": {
-      "type": "rich-text",
+    "press_release_info_TzWNHF": {
+      "type": "press-release-info",
       "blocks": {
-        "heading_Lzh9UA": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>IN THE </strong>",
-            "heading2": "<strong>Press.</strong>",
-            "heading_size": "hxl"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Lzh9UA"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "two_image_aXqhtq": {
-      "type": "Two-image",
-      "blocks": {
-        "heading_ATXfbd": {
-          "type": "heading",
-          "settings": {
-            "heading": "“...dazzling Gold.....Rings by VasundhraRaj were perfect accessory choices...”",
-            "heading2": "“...A high jewellery line in......timelesscraftsmanship and cultural legacy.”",
-            "heading4": "“...The brand celebrates the.......adornmentand tribal women.”",
-            "heading_size": "h1"
-          }
-        },
-        "text_E36itT": {
+        "text_Qy8bda": {
           "type": "text",
           "settings": {
-            "heading4": "7 June 2024",
-            "heading3": "11 September 2024",
-            "heading5": "1 July 2024",
-            "text_style": "body"
+            "release_text": "<p>This is fantastic collection paired with awesome evening coding . Jai Mata Di, Radhe Shayam, Har Har Mahadev</p>"
           }
         },
-        "button_QhBFQF": {
+        "button_CyCfKt": {
           "type": "button",
           "settings": {
             "button_label": "Read More",
-            "button_link": "https://www.vogue.in/promotion/a-high-jewellery-line-in-uttarakhand-celebrates-timeless-craftsmanship-and-cultural-legacy",
-            "button_label2": "Read More",
-            "button_link2": "https://www.vogue.in/content/from-kiara-advani-to-kareena-kapoor-khan-heres-who-wore-what-for-ganesh-chaturthi?fbclid=PAZXh0bgNhZW0CMTEAAabgvDKk1vk5qtZ170yib4_7ulR6tNt_bjDx-6iyWbl-tXqNLszbDyrz4Ko_aem_K4rJlCHVVOG2CljG30oU0A",
-            "button_label3": "Read More",
-            "button_link3": "https://www.magzter.com/IN/Conde-Nast-India/VOGUE-India/Fashion/1748270",
-            "button_style_secondary": false
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_ATXfbd",
-        "text_E36itT",
-        "button_QhBFQF"
+        "text_Qy8bda",
+        "button_CyCfKt"
       ],
       "settings": {
-        "image": "shopify://shop_images/website_press_Recovered__page4_image.png",
-        "link2": "https://www.vogue.in/promotion/a-high-jewellery-line-in-uttarakhand-celebrates-timeless-craftsmanship-and-cultural-legacy",
-        "image2": "shopify://shop_images/website_press_Recovered__page0_image.png",
-        "link_1": "https://www.vogue.in/content/from-kiara-advani-to-kareena-kapoor-khan-heres-who-wore-what-for-ganesh-chaturthi?fbclid=PAZXh0bgNhZW0CMTEAAabgvDKk1vk5qtZ170yib4_7ulR6tNt_bjDx-6iyWbl-tXqNLszbDyrz4Ko_aem_K4rJlCHVVOG2CljG30oU0A",
-        "image3": "shopify://shop_images/Screenshot_27-11-2024_14181.jpg",
-        "link_2": "https://www.vogue.in/content/from-kiara-advani-to-kareena-kapoor-khan-heres-who-wore-what-for-ganesh-chaturthi?fbclid=PAZXh0bgNhZW0CMTEAAabgvDKk1vk5qtZ170yib4_7ulR6tNt_bjDx-6iyWbl-tXqNLszbDyrz4Ko_aem_K4rJlCHVVOG2CljG30oU0A",
-        "image5": "shopify://shop_images/website_press_Recovered__page1_image_ca8601cc-5e2f-4784-8505-f9bb2b3436b8.png",
-        "link_3": "https://www.magzter.com/IN/Conde-Nast-India/VOGUE-India/Fashion/1748270",
-        "image6": "shopify://shop_images/WhatsApp_Image_2024-10-14_at_15.49.04.png",
-        "link_4": "https://www.magzter.com/IN/Conde-Nast-India/VOGUE-India/Fashion/1748270",
-        "image4": "shopify://shop_images/website_press_Recovered__page4_image_3573abc3-693e-446c-83b2-2720710b9527.png",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "image-press-release": "shopify://shop_images/logo_1_69898255-35b9-4d3e-b987-6787195cf440.svg",
+        "image-press-content": "shopify://shop_images/thegldnkrkhana-image.jpg",
+        "link2": "",
+        "section_color_scheme": "scheme-2",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "press_text_with_image_wNCAyN": {
-      "type": "Press-text-with-image",
+    "press_release_info_KGWQzW": {
+      "type": "press-release-info",
       "blocks": {
-        "heading_e87Ygj": {
-          "type": "heading",
-          "settings": {
-            "heading": "“....Enhanced with Intricate......whimsicalcharm to any ensemble....”",
-            "heading3": "“....ELLE Exclusive: Vasundhra RajUnveils ‘Teele Dharo’......And Strength.”",
-            "heading__3": "“...Vasundhra Raj unveils new.......highjewellery line ‘Mon Ami, Mussourie’.”",
-            "heading_size": "h1"
-          }
-        },
-        "text_3nwYL4": {
+        "text_3bUwXm": {
           "type": "text",
           "settings": {
-            "text": "",
-            "heading__2": "16 July 2024",
-            "heading4": "",
-            "heading5": "asx",
-            "heading6": "15 November 2024",
-            "heading7": "11 May 2024",
-            "text_style": "body"
+            "release_text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         },
-        "button_gmxrDf": {
+        "button_B8J8rG": {
           "type": "button",
           "settings": {
-            "button_label": "Read More",
-            "button_link": "https://elle.in/mothers-day-gifting-guide/",
-            "button_label1": "Read More",
-            "button_link1": "https://www.instagram.com/p/C9WZpUdNm6T/?img_index=4",
-            "button_label2": "Read More",
-            "button_link2": "https://elle.in/vasundhra-raj-teele-dharo/",
-            "button_style_secondary": false
+            "button_label": "READ MORE",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_e87Ygj",
-        "text_3nwYL4",
-        "button_gmxrDf"
+        "text_3bUwXm",
+        "button_B8J8rG"
       ],
       "settings": {
-        "image2": "shopify://shop_images/website_press_Recovered__page5_image.png",
-        "link_2": "https://www.instagram.com/p/C9WZpUdNm6T/?img_index=4",
-        "image": "shopify://shop_images/KC00917-copy-683x1024.jpg",
-        "link_3": "https://elle.in/vasundhra-raj-teele-dharo/",
-        "image3": "shopify://shop_images/Screenshot_27-11-2024_18445.jpg",
-        "link_1": "https://elle.in/mothers-day-gifting-guide/",
-        "image_second": "shopify://shop_images/logo-svg.svg",
-        "link2": "https://www.instagram.com/p/C9WZpUdNm6T/?img_index=4",
-        "heading-title": "",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "images_with_text_Km7MkA": {
-      "type": "images-with-text",
-      "blocks": {
-        "heading_7mkjHL": {
-          "type": "heading",
-          "settings": {
-            "heading": "“...As seen in Bridal Asia’s 25th  Anniversary.......Special Issue.”",
-            "heading2": "",
-            "heading3": "13 October 2024",
-            "heading_size": "h1"
-          }
-        },
-        "text_NwFgQn": {
-          "type": "text",
-          "settings": {
-            "small_image_second": "shopify://shop_images/BA-1651142640_cac0eca0-da1d-4b55-ad39-c4b8a13cfcc1.png",
-            "heading4": "13 October 2024",
-            "text_style": "body"
-          }
-        },
-        "button_9Nq6TF": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read More",
-            "button_link": "https://www.instagram.com/p/DBECi-YSWfg/?img_index=1",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_7mkjHL",
-        "text_NwFgQn",
-        "button_9Nq6TF"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/WhatsApp_Image_2024-10-14_at_15.49.06_2.jpg",
-        "image2": "shopify://shop_images/WhatsApp_Image_2024-10-14_at_15.49.06_1.jpg",
-        "image3": "shopify://shop_images/WhatsApp_Image_2024-10-14_at_15.49.06.png",
-        "url1": "https://www.instagram.com/p/DBECi-YSWfg/",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "images_text_jqNXTT": {
-      "type": "Images-Text",
-      "blocks": {
-        "heading_BwRYQf": {
-          "type": "heading",
-          "settings": {
-            "heading__3": "“The nod mag features The gul necklaceand bajuband by Vasundhra Raj.”",
-            "heading__2": "15 November 2024",
-            "heading_3": "“Kalgi by Vasundhra raj, featuredin the september issue of Brides Today”",
-            "heading_2": "17 September 2024",
-            "heading_size": "h1"
-          }
-        },
-        "text_3fBYwE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "small_image_second": "shopify://shop_images/Screenshot_27-11-2024_101156.jpg",
-            "small_image_second2": "shopify://shop_images/Screenshot_27-11-2024_15525.jpg",
-            "small_image3": "shopify://shop_images/brides-today-logo.png",
-            "text_style": "body"
-          }
-        },
-        "button_L43J44": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read More",
-            "button_link": "https://thenodmag.com/content/diwali-handbook-craft-festive-looks",
-            "button_label1": "Read More",
-            "button_link1": "https://www.instagram.com/p/DAGqZvRSbUp/?img_index=1",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_BwRYQf",
-        "text_3fBYwE",
-        "button_L43J44"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/2festive2388_Sangita_Kilachand_888eaf0832.jpg",
-        "link": "https://thenodmag.com/content/diwali-handbook-craft-festive-looks",
-        "image2": "shopify://shop_images/website_press_Recovered__page5_image_54df0347-523a-459f-834e-375e5b41c3de.png",
-        "link1": "https://www.instagram.com/p/DAGqZvRSbUp/",
-        "heading-title": "",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "two_text_with_image_3TwT4P": {
-      "type": "Two-text-with-image",
-      "blocks": {
-        "heading_NNYwmi": {
-          "type": "heading",
-          "settings": {
-            "heading": "“....This collection takes you back....withtheir tinkling ornaments....”",
-            "heading2": "",
-            "heading3": "20 August 2024",
-            "heading4": "“....It is a Journey Through Time.....thestories they hold...”",
-            "heading5": "25 August 2024",
-            "heading_size": "h1"
-          }
-        },
-        "text_QKjYWC": {
-          "type": "text",
-          "settings": {
-            "small_image_second": "shopify://shop_images/website_press_Recovered__page1_image_706358fb-0bf3-4231-946d-5f265b0cee26.png",
-            "small_image_second2": "shopify://shop_images/Screenshot_27-11-2024_134145.jpg",
-            "link1": "https://www.newindianexpress.com/amp/story/cities/delhi/2024/Aug/22/mon-ami-mussoorie-from-the-mountains?fbclid=PAZXh0bgNhZW0CMTEAAaaq67FEI-N5zTyB0hQsaf4uRdEqoSYu8F7BX2q7pciclD-uGTzcFhfwUxs_aem_8Z7JIepS-hOAnXYle1RQHQ",
-            "heading4": "",
-            "heading2": "31 July 2024",
-            "heading5": "Image with text",
-            "text_style": "body"
-          }
-        },
-        "button_iNKL9j": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read More",
-            "button_link": "https://www.newindianexpress.com/amp/story/cities/delhi/2024/Aug/22/mon-ami-mussoorie-from-the-mountains?fbclid=PAZXh0bgNhZW0CMTEAAaaq67FEI-N5zTyB0hQsaf4uRdEqoSYu8F7BX2q7pciclD-uGTzcFhfwUxs_aem_8Z7JIepS-hOAnXYle1RQHQ",
-            "button_label1": "Read More",
-            "button_link1": "https://www.indulgexpress.com/amp/story/fashion/new-launches/2024/Aug/15/this-collection-is-an-ode-to-the-unwavering-strength-of-our-cultural-roots?fbclid=PAZXh0bgNhZW0CMTEAAaZPXBfdAqWlRJiB_-dnnSTbK6aYSqTiGQ1Nrvy9oNGmb7PfOawNcEeFShg_aem_DT7DDcfj0H6HEy1anXVBQA",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_NNYwmi",
-        "text_QKjYWC",
-        "button_iNKL9j"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Header_logo.png",
-        "link2": "https://www.indulgexpress.com/amp/story/fashion/new-launches/2024/Aug/15/this-collection-is-an-ode-to-the-unwavering-strength-of-our-cultural-roots?fbclid=PAZXh0bgNhZW0CMTEAAaZPXBfdAqWlRJiB_-dnnSTbK6aYSqTiGQ1Nrvy9oNGmb7PfOawNcEeFShg_aem_DT7DDcfj0H6HEy1anXVBQA",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "image-press-release": "shopify://shop_images/HB_beta_logo_1.svg",
+        "image-press-content": "shopify://shop_images/shopbycategory-image-3.jpg",
+        "link2": "",
         "section_color_scheme": "scheme-1",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "new_image_text_JPNMxY": {
-      "type": "New_Image_Text",
+    "press_release_info_aRtaUL": {
+      "type": "press-release-info",
       "blocks": {
-        "heading_3Q6tQx": {
-          "type": "heading",
-          "settings": {
-            "heading": "“...Take a look at our carefullycurated.....upcoming social calendar.”",
-            "heading2": "",
-            "heading3": "24 June 2024",
-            "heading4": "“...Celebrate Raksha Bandhan.....eleganceand vibrant charm....”",
-            "heading5": "17 August 2024",
-            "heading_size": "h1"
-          }
-        },
-        "text_D6eqhV": {
+        "text_eg6P6h": {
           "type": "text",
           "settings": {
-            "small_image_second": "shopify://shop_images/Screenshot_26-11-2024_1881.jpg",
-            "link2": "https://www.instagram.com/ifp.world/p/DCZLHYxNkz7/?img_index=1",
-            "small_image_second2": "shopify://shop_images/News18.svg",
-            "link3": "",
-            "heading4": "“...The Jewellery brand made......wavesamong netizens....”",
-            "heading2": "18 November 2024",
-            "heading5": "Image with text",
-            "text_style": "body"
+            "release_text": "<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus eros vehicula parturient platea urna consequat.</p>"
           }
         },
-        "button_KDP4HL": {
+        "button_QNmzM4": {
           "type": "button",
           "settings": {
-            "button_label": "Read More",
-            "button_link": "https://vasundhraraj.com/pages/web-press",
-            "button_label2": "Read More",
-            "button_link2": "https://www.instagram.com/ifp.world/p/DCZLHYxNkz7/?img_index=1",
-            "button_label1": "Read More",
-            "button_link1": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/?fbclid=PAZXh0bgNhZW0CMTEAAaYSeDQungJbsnoZBDLhaW16VMzoJuJ2v1oyb5CdBPLeLbLAe8FR1LIvpOY_aem_7AO3pHFcgZ5fTpoZPtlStA",
-            "button_style_secondary": false
+            "button_label": "READ MORE",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_3Q6tQx",
-        "text_D6eqhV",
-        "button_KDP4HL"
+        "text_eg6P6h",
+        "button_QNmzM4"
       ],
       "settings": {
-        "image": "shopify://shop_images/logo_2.svg",
-        "link1": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/?fbclid=PAZXh0bgNhZW0CMTEAAaYSeDQungJbsnoZBDLhaW16VMzoJuJ2v1oyb5CdBPLeLbLAe8FR1LIvpOY_aem_7AO3pHFcgZ5fTpoZPtlStA",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "image-press-release": "shopify://shop_images/logo_2_ab471116-6bf8-4938-8751-05acc10976b0.svg",
+        "image-press-content": "shopify://shop_images/11-04-2024_Vasundhra_Raj1012_copy_a5aebb1a-e9a1-4fe2-b734-65e3c3da49d8.jpg",
+        "link2": "",
+        "section_color_scheme": "scheme-2",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "images_with_text_new_nr3FP8": {
-      "type": "IMAGES-WITH-TEXT-New",
-      "blocks": {
-        "heading_GzGABa": {
-          "type": "heading",
-          "settings": {
-            "heading": "“....For men’s formal evening wear....or classic gold brooch...”",
-            "heading2": "",
-            "heading3": "24 June 2024",
-            "heading4": "“....Vasundhra Raj Celebrates.....musicalcampaign ‘Teele Dharo’....”",
-            "heading5": "30 July 2024",
-            "heading_size": "h1"
-          }
-        },
-        "text_MJ9Gij": {
-          "type": "text",
-          "settings": {
-            "small_image_second": "shopify://shop_images/logo_2.png",
-            "link2": "https://www.deccanchronicle.com/lifestyle/fashion-beauty/masculine-elegance-1813197?fbclid=PAZXh0bgNhZW0CMTEAAaYv5579Lo7TziMD4aS07Ies6aUTV-wjRhXIaWI3T_nedNi-8qaBdPYvO1Y_aem_sz_JgGuCC9XDeHNctXNQlg",
-            "small_image_second2": "shopify://shop_images/logo_2.png",
-            "heading4": "24 June 2024",
-            "heading2": "Image with text",
-            "heading5": "24 June 2024",
-            "text_style": "body"
-          }
-        },
-        "button_kwrq34": {
-          "type": "button",
-          "settings": {
-            "button_label1": "Read More",
-            "button_link1": "https://www.deccanchronicle.com/lifestyle/fashion-beauty/masculine-elegance-1813197?fbclid=PAZXh0bgNhZW0CMTEAAaYv5579Lo7TziMD4aS07Ies6aUTV-wjRhXIaWI3T_nedNi-8qaBdPYvO1Y_aem_sz_JgGuCC9XDeHNctXNQlg",
-            "button_label": "Read More",
-            "button_link": "https://retailjewellerindia.com/vasundhra-raj-jewellery-celebrates-uttarakhands-mountain-culture-with-musical-campaign-teele-dharo/",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_GzGABa",
-        "text_MJ9Gij",
-        "button_kwrq34"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_27-11-2024_154515.jpg",
-        "link2": "https://retailjewellerindia.com/vasundhra-raj-jewellery-celebrates-uttarakhands-mountain-culture-with-musical-campaign-teele-dharo/",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "text_with_image_Uek7ca": {
-      "type": "Text-with-image",
-      "blocks": {
-        "heading_WiRWYp": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading3": "“....Vasundhra Raj’s campaignblends....and the soul of the hills....”",
-            "heading_size": "h2"
-          }
-        },
-        "text_R3cBwP": {
-          "type": "text",
-          "settings": {
-            "heading__1": "“....For men’s formal evening wear....orclassic gold brooch...”",
-            "heading1": "31 July 2024",
-            "heading2": "",
-            "heading6": "",
-            "heading4": "20 November 2024",
-            "heading5": "",
-            "small_image_second": "shopify://shop_images/logo__1_-removebg-preview_1.png",
-            "small_image_second2": "shopify://shop_images/Screenshot_26-11-2024_155127.jpg",
-            "text_style": "body"
-          }
-        },
-        "small_image_YyCNR9": {
-          "type": "small_image",
-          "settings": {
-            "small_image": "shopify://shop_images/Logo_VR_Luxury_Svg_1_a858dc35-7c72-4446-aaae-84c8684c302f.png"
-          }
-        },
-        "button_aQmYcp": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read More",
-            "button_link": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/?fbclid=PAZXh0bgNhZW0CMTEAAaYSeDQungJbsnoZBDLhaW16VMzoJuJ2v1oyb5CdBPLeLbLAe8FR1LIvpOY_aem_7AO3pHFcgZ5fTpoZPtlStA",
-            "button_label1": "Read More",
-            "button_link1": "https://campaignindia.in/video/teele-dharo-jewellery-that-tells-uttarakhands-untold-stories/499376",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_WiRWYp",
-        "text_R3cBwP",
-        "small_image_YyCNR9",
-        "button_aQmYcp"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/WhatsApp_Image_2024-10-14_at_15.49.05_1.png",
-        "link": "https://www.manifestmagazine.in/fashion/shopping/the-best-cocktail-rings-your-digits-deserve-atm/?fbclid=PAZXh0bgNhZW0CMTEAAaYSeDQungJbsnoZBDLhaW16VMzoJuJ2v1oyb5CdBPLeLbLAe8FR1LIvpOY_aem_7AO3pHFcgZ5fTpoZPtlStA",
-        "link2": "https://www.campaignindia.in/video/teele-dharo-jewellery-that-tells-uttarakhands-untold-stories/499376",
-        "heading-title": "",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 60
-      }
-    },
-    "contact_banner_WGYrHw": {
-      "type": "contact-banner",
-      "blocks": {
-        "heading_9acMzP": {
-          "type": "heading",
-          "settings": {
-            "heading": "CONNECT WITH US",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9acMzP"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
-        "image-mob": "shopify://shop_images/Untitled_2b32175b-1c33-4678-8224-e7de7ba9502f.png",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "logo_list2_C8JGj8": {
-      "type": "logo-list2",
-      "blocks": {
-        "logo_image_FayHdE": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_628dbaf4-7bdc-410e-8e42-09a200933ae5.png",
-            "link": "",
-            "heading": "LIVE VIDEO- CALLING"
-          }
-        },
-        "logo_image_EjNtL3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/book_an_appointment_icon_f6d8c42d-0032-4c84-a1d4-c07f99cd99c3.png",
-            "link": "",
-            "heading": "BOOK AN APPOINTMENT"
-          }
-        },
-        "logo_image_Wx79hm": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/personalized_customization_c1301195-e51f-4164-b578-5bfdd65df7b9.png",
-            "link": "",
-            "heading": "PERSONAL CUSTOMIZATION"
-          }
-        },
-        "logo_image_axBbEL": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/whatsapp-xxl_2bdf7756-20ae-4fcf-b373-73af8b4b8bb1.png",
-            "link": "",
-            "heading": "WHATSAPP"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_FayHdE",
-        "logo_image_EjNtL3",
-        "logo_image_Wx79hm",
-        "logo_image_axBbEL"
-      ],
-      "settings": {
-        "title": "",
-        "button_label_1": "CONTACT US",
-        "button_link_1": "shopify://pages/contact",
-        "logo_width": "160px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -614,16 +113,8 @@
   },
   "order": [
     "main",
-    "rich_text_WXEXrh",
-    "two_image_aXqhtq",
-    "press_text_with_image_wNCAyN",
-    "images_with_text_Km7MkA",
-    "images_text_jqNXTT",
-    "two_text_with_image_3TwT4P",
-    "new_image_text_JPNMxY",
-    "images_with_text_new_nr3FP8",
-    "text_with_image_Uek7ca",
-    "contact_banner_WGYrHw",
-    "logo_list2_C8JGj8"
+    "press_release_info_TzWNHF",
+    "press_release_info_KGWQzW",
+    "press_release_info_aRtaUL"
   ]
 }
