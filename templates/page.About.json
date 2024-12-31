@@ -31,8 +31,8 @@
         "title_image": "shopify://shop_images/Screenshot_2024-12-05_102134.jpg"
       }
     },
-    "image_with_text_GAYYzX": {
-      "type": "image-with-text",
+    "image_only_edge_Drqbxb": {
+      "type": "image-only-edge",
       "settings": {
         "image": "shopify://shop_images/094A3940_1_6e69f10f-5f16-4adf-930e-b84420a11eb5.jpg",
         "link2": "",
@@ -52,6 +52,10 @@
     },
     "collection_list_Xexqe6": {
       "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+      ],
       "settings": {
         "title": "OUR VISION IS TO CREATE",
         "url_1": "",
@@ -74,7 +78,7 @@
         "img_NpJFw3": {
           "type": "img",
           "settings": {
-            "video": "shopify://files/videos/Mussoorie_Film Logo removed _da72d26f-c34d-4ab3-86ac-0ca20365a7ac.mp4",
+            "video": "shopify://files/videos/Copy of GOLDSMITH LOW RES.mp4",
             "text_color": "",
             "text": "",
             "text2": "",
@@ -91,31 +95,10 @@
       ],
       "settings": {
         "custom_class": "",
-        "heading": "“Our jewelry transcends borders, blending Western lines with Eastern curves—the birds in our logo and the sun in our name symbolize this harmonic fusion.”",
+        "heading": "“OUR JEWELRY TRANSCENDS BORDERS, BLENDING WESTERN LINES WITH EASTERN CURVES—THE BIRDS IN OUR LOGO AND THE SUN IN OUR NAME SYMBOLIZE THIS HARMONIC FUSION.”",
         "heading1": "",
-        "heading2": "an ethical and reliable brand that shines through every piece, Inviting you to experience a journey of beauty, transparency and cultural exploration.",
+        "heading2": "AN ETHICAL AND RELIABLE BRAND THAT SHINES THROUGH EVERY PIECE, INVITING YOU TO EXPERIENCE A JOURNEY OF BEAUTY, TRANSPARENCY AND CULTURAL EXPLORATION.",
         "text": ""
-      }
-    },
-    "about_banner_KkqjhR": {
-      "type": "about-banner",
-      "disabled": true,
-      "settings": {
-        "heading1": "A VISION IS TO CREATE",
-        "heading2": "an ethical and reliable brand that shines through every piece, Inviting you to experience a journey of beauty, transparency and cultural exploration.",
-        "image": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "image_2": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "image-mob": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "multirow_bL6z9p": {
@@ -164,6 +147,7 @@
     },
     "about_banner_dA7j3L": {
       "type": "about-banner",
+      "disabled": true,
       "settings": {
         "small_image1": "shopify://shop_images/6p_white.svg",
         "heading1": "Born from Passion - The journey to Vasundhra Raj Luxury",
@@ -185,10 +169,9 @@
   },
   "order": [
     "collection_list_7LQGhh",
-    "image_with_text_GAYYzX",
+    "image_only_edge_Drqbxb",
     "collection_list_Xexqe6",
     "image_video_a4gJxa",
-    "about_banner_KkqjhR",
     "multirow_bL6z9p",
     "main",
     "about_banner_dA7j3L"
