@@ -128,9 +128,9 @@
 
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: maroon;
+  background-color: #ffffff;
   color: white;
-  border: 1px solid maroon;
+  border: 1px solid #636262;
 }
 
 .shopify-payment-button__more-options {
@@ -1250,7 +1250,7 @@ a.product__text {
 @media screen and (min-width: 992px)
 {
   .product.product--small.product--left.product--thumbnail.product--mobile-show.grid.grid--1-col.grid--2-col-tablet {
-    border-bottom: 2px solid maroon;
+    border-bottom: 2px solid #636262;
     padding-bottom: 20px;
 }
 .icon-with-text--horizontal {

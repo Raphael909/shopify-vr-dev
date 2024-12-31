@@ -12,10 +12,13 @@
     visibility: hidden;
   }
   h2.drawer__heading {
-    font-size: 24px;
-    color: maroon;
+    font-size: 1.4rem;
+    color: #636262;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-family: 'Cinzel-Regular', serif;
 }
   input#Drawer-quantity-1 {
     background: white;
@@ -47,23 +50,28 @@
           onclick="this.closest('cart-drawer').close()"
           aria-label="{{ 'accessibility.close' | t }}"
         >
-         <svg
-            xmlns="http://www.w3.org/2000/svg"
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.2" 
+            overflow="visible" 
+            preserveAspectRatio="none" 
+            viewBox="0 0 24 24" 
             aria-hidden="true"
             focusable="false"
             class="icon icon-close-1"
-            fill="none"
-            viewBox="0 0 18 17"
-          >
-            <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+            width="28" height="25"><g>
+              <path xmlns:default="http://www.w3.org/2000/svg" id="times" d="M18.18,15.77c0-0.27-0.1-0.52-0.29-0.71l-3.06-3.06l3.06-3.06c0.39-0.39,0.39-1.02,0.01-1.41c0,0,0,0-0.01-0.01  l-1.41-1.41c-0.39-0.39-1.02-0.39-1.41-0.01c0,0,0,0-0.01,0.01L12,9.16L8.94,6.11C8.55,5.71,7.92,5.71,7.52,6.1c0,0,0,0-0.01,0.01  L6.11,7.52C5.72,7.9,5.71,8.54,6.1,8.93c0,0,0,0,0.01,0.01l3.06,3.06l-3.06,3.06c-0.39,0.39-0.39,1.02-0.01,1.41c0,0,0,0,0.01,0.01  l1.42,1.42c0.39,0.39,1.02,0.39,1.41,0.01c0,0,0,0,0.01-0.01L12,14.82l3.06,3.06c0.39,0.39,1.02,0.39,1.41,0.01c0,0,0,0,0.01-0.01  l1.42-1.42c0.19-0.19,0.29-0.44,0.29-0.71l0,0L18.18,15.77z" style="fill: rgb(99, 98, 98);" vector-effect="non-scaling-stroke"/>
+            </g>
           </svg>
+         
 
         </button>
       </div>
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
               <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
-             <h4 class="cart__heading1">DISCOVER YOUR CURRENT FAVOURITES!</h4>
+             <h4 class="cart__heading1">EXPLORE OUR TOP SELLING DESIGNS</h4>
             </div>
           </div>
       
@@ -101,7 +109,7 @@
                       <p class="product-price-1">{{ product1.price | money }}</p>
                       </div>
                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="close-icon">
-  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                     </div>
                   {% endif %}
@@ -125,10 +133,14 @@
                     </div>
                   {% endif %}
                    </div>
-          
+              <div style="padding-top: 1.2rem">      
               <p class="cart__login-paragraph">
-                    WHY WAIT? WHEN SO MUCH TO CHOOSE FROM
-                </p>
+                    Why wait?
+                  </p>
+                <p class="cart__login-paragraph_2">
+                  So much more to chosse from 
+              </p>
+            </div> 
                  <a href="{{ routes.all_products_collection_url }}" class="button_checkout">
                 {{ 'general.continue_shopping' | t }}
                     
@@ -169,6 +181,7 @@
           class="cart__contents cart-drawer__form"
           method="post"
         >
+          <div class="cart-with-item-heading">Items:</div>
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">

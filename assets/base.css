@@ -4171,7 +4171,7 @@ z-index: -1;
 }
 }
 .border-top {
-    border-top: 4px solid maroon;
+    border-top: 4px solid #ffffff;
 }
 .collection-title1 {
     font-size: 18px;
@@ -4636,7 +4636,7 @@ span.badge.price__badge-sale.color-scheme-4 {
 {
        a.button1.button--primary {
     color: white;
-    background: maroon;
+    background: #ffffff;
     padding: 5px;
     margin: 0;
     font-family: 'Cinzel-Medium';
@@ -4657,7 +4657,7 @@ span.badge.price__badge-sale.color-scheme-4 {
     left: 0;
     height: 100%;
     width: 100%;
-    border: 2px solid maroon;
+    border: 2px solid #636262;
 } */
 
 @media screen and (min-width: 750px) {
@@ -4720,7 +4720,7 @@ nav.menu-drawer__navigation {
 }
   h2.image-with-text__heading-top-1.rte {
     padding-bottom: 20px;
-    color: maroon;
+    color: #636262;
     margin-top: 0;
     font-weight: 600;
     font-size: 14px;
@@ -4732,14 +4732,14 @@ nav.menu-drawer__navigation {
     font-family: 'Cinzel-Medium';
     margin-bottom: 5px;
     font-weight: 600;
-    color: maroon;margin-top: 0;
+    color: #636262;margin-top: 0;
 }
   h2.image-with-text__heading-2.rte {
     font-size: 12px;
     font-family: 'Cinzel-Medium';
     margin-bottom: 5px;
     /* font-weight: 600; */
-            color: #696969eb;
+            color: #636363;
     
 }
     h2.image-with-text__heading.h1.rte {
@@ -4842,7 +4842,7 @@ a.full-unstyled-link.collection-title {
       font-size: 15px;
 }
 .header__menu-1:hover{
-  color: maroon;
+  color: black;
 }
 
 h2.header__menu-1 {
@@ -4857,7 +4857,7 @@ h2.header__menu-1 {
 }
   h2.image-with-text__heading-top-1.rte {
     padding-bottom: 20px;
-    color: maroon;
+    color: #636262;
     margin-top: 0;
     /* font-weight: 600; */
     font-size: 35px;
@@ -4869,7 +4869,7 @@ h2.header__menu-1 {
     font-family: 'Cinzel-Medium';
     margin-bottom: 5px;
     /* font-weight: 600; */
-    color: maroon;margin-top: 0;
+    color: #636262;margin-top: 0;
 }
   h2.image-with-text__heading-2.rte {
     font-size: 20px;
@@ -4950,16 +4950,16 @@ img.testimonial-img {
 }
 button.shopify-payment-button__button.shopify-payment-button__button--unbranded {
     background: #ffc0cb52;
-    color: maroon;
-    border: 1px solid maroon;
+    color: #636262;
+    border: 1px solid #636262;
     /* font-size: 20px; */
     line-height: 0;
     /* font-weight: 800; */
 }
 button#ProductSubmitButton-template--16225477296198__main {
     background: #ffc0cb52;
-    color: maroon;
-    border: 1px solid maroon;
+    color: #636262;
+    border: 1px solid #636262;
     font-size: 20px;
     line-height: 0;
     /* font-weight: 800; */
@@ -5152,10 +5152,10 @@ svg.icon.icon-minus1 {
   width: 100%
 }
   .image-with-text__text-item.text-media__2 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
  .image-with-text__text-item.grid__item.text-media__2 {
-    border-right: 2px solid maroon;
+    border-right: 2px solid #636262;
 }
       .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item {
     margin-top: 50px;
@@ -5165,7 +5165,7 @@ svg.icon.icon-minus1 {
 }    
     }
  a.button5.button--primary {
-        background: maroon;
+        background: #ffffff;
         padding: 2px 8px;
         color: white;
         margin-left: 13%;
@@ -5243,7 +5243,7 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
  @media screen and (max-width: 749px)
 {
   .border1 {
-    border: 2px solid maroon;
+    border: 2px solid #636262;
     width: 100px;
     margin: 0 auto 15px;
 }
@@ -5302,7 +5302,7 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
       span.second_text {
         font-weight: 200;
         font-size: 14px;
-        color: maroon;
+        color: #636262;
     }
   .New_img_1.image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item {
     width: 48%;
@@ -5320,16 +5320,16 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
     width: 122%;
 }
       .image-with-text__text-item.grid__item.text-media_2 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
       .image-with-text__text-item.text-media3 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
        .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item1{
         width: 68%;
     }
       .image-with-text__text-item.text-media3 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
          .contents {
     display: flex;
@@ -5340,14 +5340,14 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
     width: 74%;
 }
       .details-1 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
     padding-left: 0px;
 }
       .image-with-text__text-item.grid__item.text-media3 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
       a.button_7.button--primary {
-    background: maroon;
+    background: #ffffff;
     color: white;
     padding: 5px 20px;
     margin-left: 28px;
@@ -5364,7 +5364,7 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
   /* width: 50% */
 }
 .image-with-text__text-item.text-media_2 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
            .contents1 {
         display: flex;
@@ -5373,16 +5373,16 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
         /* margin-top: 46px; */
     }
       .image-with-text__text-item.text-media__2 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
     padding-left: 16px;
 }
       a.button_2.button--primary {
     padding: 7px 12px;
-    background: maroon;
+    background: #ffffff;
     color: white;
 }
        .image-with-text__text-item.grid__item.text-media__2 {
-    border-left: 2px solid maroon;
+    border-left: 2px solid #636262;
 }
     }
 .full-unstyled-link {
@@ -5477,7 +5477,7 @@ h2.heading__1.image-with-text__heading.inline-richtext.h1 {
     font-family: 'Cinzel-Medium', serif;
     font-style: italic;
     font-size: 14px;
-    color: maroon;
+    color: #636262;
     line-height: 1;
 } */
   h2.new-arrival-head {
@@ -5524,7 +5524,7 @@ h1#SectionHeading-template--16798407360582__collection_slider_eHKjkd {
      .new-arrival-title span {
     font-size: 14px;
     font-family: 'Cinzel-Medium', serif;
-    color: maroon;
+    color: #636262;
     margin: 0 8%;
 }
   h2.Menu-drawer-text {
@@ -5567,8 +5567,8 @@ h2.Menu-drawer-text.email-text {
 button#Subscribe {
     padding: 10px 97px 10px 40px;
     background: #ffffffb3;
-    border: 2px solid maroon;
-    color: maroon;
+    border: 2px solid #636262;
+    color: #636262;
     font-size: 18px;
     position: relative;
     text-align: center;
@@ -5607,27 +5607,27 @@ button.login {
     button.btn-1 {
     padding: 15px 38px;
     background: white;
-    color: maroon;
-    /* border: 2px solid maroon; */
+    color: #636262;
+    /* border: 2px solid #636262; */
     font-size: 20px;
     cursor: pointer;
         margin: 20px 0;
 }
   .title1 {
     font-size: 27px;
-    color: maroon;
+    color: #636262;
 }
   .orders {
     color: black;
     padding: 13px 0;
     margin: 20px 0;
-    border-bottom: 2px solid maroon;
+    border-bottom: 2px solid #636262;
     font-size: 16px;
 }
   .input_type {
     padding: 14px 30px;
     margin: 10px 0;
-    border: 1px solid maroon;
+    border: 1px solid #636262;
     width: 100%;
 }
   .banner__box.content-container.gradient {
@@ -5681,7 +5681,7 @@ button.login {
 h2.address-title {
     font-size: 35px;
     font-family: 'Cinzel-Medium', serif;
-    color: maroon;
+    color: #636262;
 .hidden {
   display: none !important;
 }
@@ -5689,12 +5689,12 @@ h2#AddressNewHeading {
     font-size: 35px;
     font-family: 'Cinzel-Medium', serif;
     text-transform: uppercase;
-    color: maroon;
+    color: #636262;
 }
   h2.address {
     font-size: 35px;
     font-family: 'Cinzel-Medium', serif;
-    color: maroon;
+    color: #636262;
 }
 @media screen and (min-width: 750px) {
    svg.icon.icon-hamburger {

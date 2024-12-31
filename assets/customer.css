@@ -667,14 +667,14 @@
     display: flex;
   
     flex-direction: column;
-    border-right: 2px solid maroon;
+    border-right: 2px solid #636262;
     padding: 0 66px 0 40px;
 }
 /* Addresses */
 .addresses li > button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  color: maroon;
+  color: #636262;
 }
 
 .addresses li > button + button,
@@ -730,7 +730,7 @@ li[data-address] {
 .addresses h2 {
   /* text-align: left; */
    font-family: 'BodoniFLF Regular', serif;
-    color: maroon;
+    color: #636262;
     text-transform: uppercase;
 }
 .customer button {
@@ -761,7 +761,7 @@ li[data-address] > h2 {
 }
 .field1 input {
     padding: 15px 39px;
-    border: 1px solid maroon;
+    border: 1px solid #636262;
     margin: 10px;
     width: 100%;
 }
@@ -795,12 +795,12 @@ button.address {
 .billing-address h2 {
     font-size: 24px;
     font-family: 'BodoniFLF Regular', serif;
-    color: maroon;
+    color: #636262;
 }
 .billing-address p {
     font-size: 12px;
     /* font-family: 'BodoniFLF Regular', serif; */
-    /* color: maroon; */
+    /* color: #636262; */
 }
 button.address {
     padding: 13px;
@@ -822,16 +822,16 @@ button.address {
 } */
      .select {
         margin: -6px 10px 10px;
-        /* border: 2px solid maroon; */
+        /* border: 2px solid #636262; */
     }
     select#AddressCountry_9429668855878 {
-        border: 1px solid maroon;
+        border: 1px solid #636262;
 }
   .buttons {
     margin-left: 10px;
 }
       select#AddressCountryNew {
-    border: 1px solid maroon;
+    border: 1px solid #636262;
     margin: 15px 10px 0 10px;
 }
   .customer .btn-1{
@@ -841,7 +841,7 @@ button.address {
   .addresses li > button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  color: maroon;
+  color: #636262;
     /* float: inline-start; */
             margin-top: 0;
 
@@ -859,6 +859,6 @@ button.address {
   .customer>h1, .customer__title {
     margin-top: 0;
     font-family: 'BodoniFLF Regular', serif;
-    color: maroon;
+    color: #636262;
 }
 }
