@@ -53,8 +53,7 @@ collection-add-to-wishlist {
   .product-add-to-cart {
     /* display: none; */
     /* position: absolute; */
-    top: 230px;
-    left: 35%;
+    
     border: none;
     background: none;
     cursor: pointer;
@@ -97,8 +96,8 @@ collection-add-to-wishlist {
 .product-add-to-cart {
     /* display: none; */
     position: absolute;
-    bottom: -17px;
-    left: 47%;
+    bottom: 24px;
+    left: 88%;
     border: none;
     background: none;
     cursor: pointer;
@@ -111,8 +110,8 @@ collection-add-to-wishlist {
         .product-add-to-cart {
         /* display: none; */
         position: absolute;
-                  top: -45px;
-        left: 38%;
+        top: -53px;
+        left: 84%;
 
         /* border: none; */
         /* background: none; */
@@ -234,7 +233,6 @@ li:hover .product-add-to-cart {
         {%- else -%}
           <div
             class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
-            <div class="loading-overlayt"><img src="https://cdn.shopify.com/s/files/1/0602/6926/4966/files/3p.png?v=1732087891" class="collection-logo"></div>
             <ul
               id="product-grid"
               data-id="{{ section.id }}"

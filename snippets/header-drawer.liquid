@@ -10,10 +10,16 @@
   font-style: 'Quicksand';
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
+  }
+  @media screen and (min-width: 990px) {
+    #header-drawer-show {
+      display: none;
+    }
+  }
 }
 </style>
 
-<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+<header-drawer id="header-drawer-show" data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
       class="header__icon header__icon--menu header__icon--summary link focus-inset"

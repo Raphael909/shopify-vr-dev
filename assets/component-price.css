@@ -8,7 +8,7 @@
 .price > * {
   display: ruby;
   vertical-align: top;
-      color:  #8D0509;
+      color:  #636262;
 }
 
 .price.price--unavailable {
