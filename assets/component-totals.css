@@ -31,7 +31,7 @@
   .totals > h2 {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
       font-size: 18px;
-    color: maroon;
+    color: #636262;
 }
 
 }
@@ -49,7 +49,7 @@
   .totals > h2 {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
       font-size: 23px;
-    color: maroon;
+    color: #636262;
 }
 
   .totals {

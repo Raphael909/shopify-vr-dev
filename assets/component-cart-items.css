@@ -223,7 +223,7 @@ cart-remove-button .icon-remove {
     display: block;
     font-size: 14px;
     /* font-family: Helvetica; */
-    color: maroon;
+    color: #636262;
     text-align: left;
 }
 
@@ -294,7 +294,7 @@ tr#CartItem-1 {
     display: block;
     font-size: 20px;
     /* font-family: Helvetica; */
-    color: maroon;
+    color: #636262;
 }
 
   .product-option {
