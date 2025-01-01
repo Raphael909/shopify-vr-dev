@@ -407,7 +407,7 @@ img.testimonial-image {
     %} -->
 
 
-<nav class="header__inline-menu">
+<nav id="header-nav-bar"class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li class="{% if link.links == blank %}no-submenu{% endif %}">
@@ -737,6 +737,7 @@ img.testimonial-image {
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerWrapper = document.querySelector('.header-wrapper');
+      this.headerLogoLeft = document.querySelector('.header--top-center');
       this.announcementBar = document.querySelector('.announcement-bar');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
       this.headerBounds = {};      
@@ -789,9 +790,15 @@ img.testimonial-image {
       if(isHomePage){
         if (scrollTop <= announcementBarHeight) {
           this.headerWrapper.classList.remove('on-scroll');
+          this.headerLogoLeft.classList.remove('header--top-center-on-scroll');
         } else {
           this.headerWrapper.classList.add('on-scroll');
-        }
+          this.headerLogoLeft.classList.add('header--top-center-on-scroll');
+        } 
+      }
+        else {
+          this.headerLogoLeft.classList.add('header--top-center-on-scroll');
+          this.headerWrapper.classList.add('on-scroll');
       }
       
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
