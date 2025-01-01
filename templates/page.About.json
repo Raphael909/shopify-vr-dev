@@ -95,7 +95,7 @@
       ],
       "custom_css": [
         "@media only screen and (min-width: 750px) {.image-with-text__text-item-2 {width: 100%; padding: 1rem 7rem 5rem; } .image-with-text__text-item-1 {width: 100%; padding: 5rem 7rem 7rem; }}",
-        " @media only screen and (max-width: 750px) {.image-with-text__text-item-2 {padding-top: 0; } }"
+        "@media only screen and (max-width: 750px) {.image-with-text__text-item-2 {padding-top: 0; }}"
       ],
       "settings": {
         "custom_class": "",
@@ -127,13 +127,18 @@
         "heading_88LJTW",
         "text_6T9Mrh"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 92%; } .rich-text__text {font-size: 20px; } .image-with-text-bottom-1 {font-size: 30px; }}",
+        "@media screen and (min-width: 750px) {.rich-text__blocks {max-width: 92%; } .rich-text__text {font-size: 20px; } .image-with-text-bottom-1 {font-size: 30px; }}",
+        "@media screen and (max-width: 749px) {.image-with-text-bottom-1 {font-size: 14px; } .rich-text__text {font-size: 12px; }}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 60
       }
     },
     "multirow_bL6z9p": {
