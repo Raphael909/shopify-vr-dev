@@ -93,12 +93,47 @@
       "block_order": [
         "img_NpJFw3"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.image-with-text__text-item-2 {width: 100%; padding: 1rem 7rem 5rem; } .image-with-text__text-item-1 {width: 100%; padding: 5rem 7rem 7rem; }}",
+        " @media only screen and (max-width: 750px) {.image-with-text__text-item-2 {padding-top: 0; } }"
+      ],
       "settings": {
         "custom_class": "",
         "heading": "“OUR JEWELRY TRANSCENDS BORDERS, BLENDING WESTERN LINES WITH EASTERN CURVES—THE BIRDS IN OUR LOGO AND THE SUN IN OUR NAME SYMBOLIZE THIS HARMONIC FUSION.”",
         "heading1": "",
         "heading2": "AN ETHICAL AND RELIABLE BRAND THAT SHINES THROUGH EVERY PIECE, INVITING YOU TO EXPERIENCE A JOURNEY OF BEAUTY, TRANSPARENCY AND CULTURAL EXPLORATION.",
         "text": ""
+      }
+    },
+    "rich_text_bNjtAx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_88LJTW": {
+          "type": "heading",
+          "settings": {
+            "heading": "BORN FROM PASSION - THE JOURNEY TO VASUNDHRA RAJ LUXURY",
+            "heading2": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_6T9Mrh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vasundhra Raj’s passion for jewelry began during her six years in Florence, Italy, where she studied Fashion Design and Business at Istituto Marangoni. Surrounded by art and culture, she was captivated by the exquisite jewelry displayed on the medieval Ponte Vecchio bridge.After returning to India in 2020, she took on the role of Chief Design Consultant for Uttarakhand with the United Nations Development Programme (UNDP). During this time, she worked closely with underprivileged communities and women from remote areas, drawing inspiration from the rich culture and crafts of Uttarakhand.This journey of cultural exploration and craftsmanship led to the creation of Vasundhra Raj, a brand founded on values of fair trade and the celebration of cultural heritage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_88LJTW",
+        "text_6T9Mrh"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "multirow_bL6z9p": {
@@ -172,6 +207,7 @@
     "image_only_edge_Drqbxb",
     "collection_list_Xexqe6",
     "image_video_a4gJxa",
+    "rich_text_bNjtAx",
     "multirow_bL6z9p",
     "main",
     "about_banner_dA7j3L"

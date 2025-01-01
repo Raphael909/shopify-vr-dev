@@ -1,53 +1,68 @@
 <style>
   @media only screen and (max-width: 768px) {
     .image-video-slider-text-btn a {
-        display: block;
-        opacity: 1;
-        visibility: visible;
+      display: block;
+      opacity: 1;
+      visibility: visible;
     }
   }
   .image-video-slider-content {
-      pointer-events: auto;
+    pointer-events: auto;
   }
   .image-video-slider-text-btn a {
-      pointer-events: auto;
-      position: relative;
-      z-index: 10;
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
   }
   .image-video-slider-text-content1 {
-      font-style: italic;
-      font-size: 23px;
-      text-align: center;
-      padding: 40px;
-      padding-bottom: 0;
-      line-height: normal;
+    font-style: italic;
+    font-size: 23px;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0;
+    line-height: normal;
   }
 </style>
 
- <div class="image-with-text__text-item-2">
-            <div class="image-with-text__content1 multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
-              {% if section.settings.small_image %}
-        <div class="section-header">
-          <img src="{{ section.settings.small_image | img_url: 'medium' }}" alt="Small Image" class="section-small2">
-        </div>
-      {% endif %}
+{% style %}
+  @media only screen and (min-width: 750px) {
+    h2.heading-text-override.rte {
+      color: #636262;
+      font-size: 2rem;
+      font-family: 'Cinzel-Regular', sans-serif;
+    }
+  }
+{% endstyle %}
 
-               {%- if section.settings.heading1 -%}
-                <h2 class="image-with-text__heading-1 {{ section.settings.heading_size }} rte"  >
-                  {{ section.settings.heading1 }}
-                </h2>
-              {%- endif -%}
-               {%- if section.settings.heading -%}
-                <h2 class="image-with-text__heading-2 {{ section.settings.heading_size }} rte" >
-                  {{ section.settings.heading2 }}
-                </h2>
-              {%- endif -%}
-              {%- if section.settings.text -%}
-                <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ section.settings.text }}</div>
-              {%- endif -%}
-              
-            </div>
-          </div>
+{% liquid
+  assign is_about_us = false
+  if request.path contains 'about'
+    assign is_about_us = true
+  endif
+%}
+<div class="image-with-text__text-item-2">
+  <div class="image-with-text__content1 multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
+    {% if section.settings.small_image %}
+      <div class="section-header">
+        <img src="{{ section.settings.small_image | img_url: 'medium' }}" alt="Small Image" class="section-small2">
+      </div>
+    {% endif %}
+
+    {%- if section.settings.heading1 -%}
+      <h2 class="image-with-text__heading-1 {{ section.settings.heading_size }} rte">
+        {{ section.settings.heading1 }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.heading -%}
+      <h2 class="image-with-text__heading-2 {{ section.settings.heading_size }} rte">
+        {{ section.settings.heading2 }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.text -%}
+      <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ section.settings.text }}</div>
+    {%- endif -%}
+  </div>
+</div>
 
 <div class="image-video-slider {{ section.settings.custom_class }}" style="display: none;">
   <div class="image-video-slider-container">
@@ -58,70 +73,91 @@
               background: {{ block.settings.text_color }};
           }
         </style>
-        
+
         {% if block.settings.video != blank or block.settings.image != blank %}
           <div class="image-video-content">
             {% if block.settings.video != blank %}
               <div class="image-video-slider-image image-video-slider-height">
-                {{ block.settings.video | video_tag: image_size: '1100x', autoplay: true, loop: section.settings.enable_video_looping, controls: true, muted: true }}
+                {{
+                  block.settings.video
+                  | video_tag:
+                    image_size: '1100x',
+                    autoplay: true,
+                    loop: section.settings.enable_video_looping,
+                    controls: true,
+                    muted: true
+                }}
               </div>
             {% else %}
               <div class="image-video-slider-image image-video-slider-height">
-                <img src="{{ block.settings.image | img_url: '2048x2048' }}" />
+                <img src="{{ block.settings.image | img_url: '2048x2048' }}">
               </div>
             {% endif %}
           </div>
         {% endif %}
-        
+
         <div class="image-video-slider-text">
           {% if block.settings.logo_image != blank %}
             <div class="image-video-slider-text-logo">
-              <img src="{{ block.settings.logo_image | img_url: '2048x2048' }}" alt="logo_icon" />
+              <img src="{{ block.settings.logo_image | img_url: '2048x2048' }}" alt="logo_icon">
             </div>
           {% endif %}
-      
+
           {% if block.settings.text != blank %}
-            <div class="image-video-slider-text-content" style="color: {{ block.settings.text_color }};">{{ block.settings.text }}</div>
+            <div class="image-video-slider-text-content" style="color: {{ block.settings.text_color }};">
+              {{ block.settings.text }}
+            </div>
           {% endif %}
-          
+
           {% if block.settings.description != blank %}
-            <div class="image-video-slider-description-content" style="color: {{ block.settings.text_color }};">{{ block.settings.description }}</div>
+            <div class="image-video-slider-description-content" style="color: {{ block.settings.text_color }};">
+              {{ block.settings.description }}
+            </div>
           {% endif %}
-          
+
           {% if block.settings.btn_first_text != blank or block.settings.btn_second_text != blank %}
-          <div class="image-video-slider-text-btn">
-            {% if block.settings.btn_first_text != blank %}
-              <div class="image-v-slider-first-btn button button--primary">
-                <a href="{% if block.settings.btn_first_url != blank %}{{ block.settings.btn_first_url }}{% else %}#{% endif %}" style="color: {{ block.settings.text_color }};">{{ block.settings.btn_first_text }}</a>
-              </div>
-            {% endif %}
-            
-            {% if block.settings.btn_second_text != blank %}
-              <div class="image-v-slider-second-btn button button--primary">
-                <a href="{% if block.settings.btn_second_url != blank %}{{ block.settings.btn_second_url }}{% else %}#{% endif %}" style="color: {{ block.settings.text_color }};">{{ block.settings.btn_second_text }}</a>
-              </div>
-            {% endif %}
-          </div>
+            <div class="image-video-slider-text-btn">
+              {% if block.settings.btn_first_text != blank %}
+                <div class="image-v-slider-first-btn button button--primary">
+                  <a
+                    href="{% if block.settings.btn_first_url != blank %}{{ block.settings.btn_first_url }}{% else %}#{% endif %}"
+                    style="color: {{ block.settings.text_color }};"
+                  >
+                    {{- block.settings.btn_first_text -}}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.btn_second_text != blank %}
+                <div class="image-v-slider-second-btn button button--primary">
+                  <a
+                    href="{% if block.settings.btn_second_url != blank %}{{ block.settings.btn_second_url }}{% else %}#{% endif %}"
+                    style="color: {{ block.settings.text_color }};"
+                  >
+                    {{- block.settings.btn_second_text -}}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
           {% endif %}
         </div>
       </div>
-      
+
       {% if block.settings.text2 != blank %}
         <div class="image-video-slider-text-content1" style="background: #ffefef;">{{ block.settings.text2 }}</div>
       {% endif %}
     {% endfor %}
   </div>
 </div>
-  <div class="image-with-text__text-item-1">
-            <div class="image-with-text__content1 multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
-
-              {%- if section.settings.heading -%}
-                <h2 class="image-with-text__head1 {{ section.settings.heading_size }} rte" style="color: maroon;margin-top: 0;margin-bottom: 0; font-weight: 500;">
-                  {{ section.settings.heading }}
-                </h2>
-              {%- endif -%}
-            </div>
-          </div>
+<div class="image-with-text__text-item-1">
+  <div class="image-with-text__content1 multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
+    {%- if section.settings.heading -%}
+      <h2 class="image-with-text__head1 {{ section.settings.heading_size }} rte {% if is_about_us %}heading-text-override{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+  </div>
+</div>
 {% schema %}
 {
   "name": "Image and Video",
@@ -136,7 +172,7 @@
       "id": "small_image",
       "label": "Small Image"
     },
-     {
+    {
       "type": "inline_richtext",
       "id": "heading",
       "label": "Heading 1"
