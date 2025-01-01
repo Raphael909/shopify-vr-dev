@@ -11,15 +11,29 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  
+
   }
-  @media screen and (min-width: 750px) {
-   .image-with-text__content.multirow-content.image-with-text__content--middle.image-with-text__content--desktop-left.image-with-text__content--mobile-left.image-with-text__content--adapt.content-container.background-transparent {
-    padding-right: 98px;
-     padding-top: 5px;
-}
-}
+  .image-with-text-override {
+    width: 100% !important;
+    padding: 0 2rem 2rem !important;
+    column-gap: 50px !important;
+    border: none !important;
+  }
+  .image-with-text-content-override {
+    padding: 0 2rem !important;
+  }
+  @media only screen and (min-width: 750px) {
+    .image-with-text-media-override {
+      max-height: 800px !important;
+    }
+  }
 {%- endstyle -%}
+{% liquid
+  assign is_about_us = false
+  if request.path contains 'about'
+    assign is_about_us = true
+  endif
+%}
 
 {%- liquid
   if section.settings.image_layout contains 'right'
@@ -56,9 +70,22 @@
         class="image-with-text1 isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {{ block.shopify_attributes }}
       >
-        <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.image_layout contains 'alternate' %}{% cycle odd_class, even_class %}{% else %}{{ odd_class }}{% endif %}">
-         <div class="image-with-text__text-item grid__item">
-            <div class="image-with-text__content multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
+        <div
+          class="
+            image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.image_layout contains 'alternate' %}{% cycle odd_class, even_class %}{% else %}{{ odd_class }}{% endif %}
+            {% if is_about_us %}
+              image-with-text-override
+            {% endif %}
+          "
+        >
+          <div class="image-with-text__text-item grid__item">
+            <div
+              class="
+                image-with-text__content multirow-content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %} {% if is_about_us %}
+                  image-with-text-content-override
+                {% endif %}
+              "
+            >
               {%- if block.settings.caption -%}
                 <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium">
                   {{ block.settings.caption | escape }}
@@ -69,18 +96,23 @@
                   {{ block.settings.heading }}
                 </h2>
               {%- endif -%}
-               {%- if block.settings.heading1 -%}
-                <h2 class="image-with-text__heading {{ section.settings.heading_size }} rte"  style="color: maroon;margin-top: 0;">
+              {%- if block.settings.heading1 -%}
+                <h2
+                  class="image-with-text__heading {{ section.settings.heading_size }} rte"
+                  style="color: maroon;margin-top: 0;"
+                >
                   {{ block.settings.heading1 }}
                 </h2>
               {%- endif -%}
-               {%- if block.settings.heading -%}
+              {%- if block.settings.heading -%}
                 <h2 class="image-with-text__heading {{ section.settings.heading_size }} rte">
                   {{ block.settings.heading2 }}
                 </h2>
               {%- endif -%}
               {%- if block.settings.text -%}
-                <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ block.settings.text }}</div>
+                <div class="image-with-text__text rte {{ section.settings.text_style }}">
+                  {{ block.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}
+                </div>
               {%- endif -%}
               {%- if block.settings.button_label != blank -%}
                 <a
@@ -98,7 +130,11 @@
           </div>
           <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
             <div
-              class="image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
+              class="
+                image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %} {% if is_about_us %}
+                  image-with-text-media-override
+                {% endif %}
+              "
               {% if section.settings.image_height == 'adapt' and block.settings.image != blank %}
                 style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
               {% endif %}
@@ -118,7 +154,6 @@
               {%- endif -%}
             </div>
           </div>
-          
         </div>
       </div>
     {%- endfor -%}
@@ -387,13 +422,13 @@
           "default": "t:sections.multirow.blocks.row.settings.heading.default",
           "label": "t:sections.multirow.blocks.row.settings.heading.label"
         },
-         {
+        {
           "type": "inline_richtext",
           "id": "heading1",
           "default": "t:sections.multirow.blocks.row.settings.heading.default",
           "label": "t:sections.multirow.blocks.row.settings.heading.label"
         },
-         {
+        {
           "type": "inline_richtext",
           "id": "heading2",
           "default": "t:sections.multirow.blocks.row.settings.heading.default",

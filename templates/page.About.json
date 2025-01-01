@@ -171,10 +171,10 @@
           "settings": {
             "image": "shopify://shop_images/KEW3824_copy_d8c6c2dc-9691-43f0-90b4-a5ac1b8d10cc.jpg",
             "caption": "",
-            "heading": "WELCOME TO THE WORLD OF",
-            "heading1": "VASUNDHRA RAJ LUXURY",
-            "heading2": "Timeless Craft, Modern Elegance",
-            "text": "<p>At Vasundhra Raj, we are dedicated to reviving the art of handcrafted jewelry while ushering in a new era of collectible heirlooms. Founded by the visionary designer Vasundhra Raj, our homegrown label celebrates cultural exploration and expression, offering an array of traditional masterpieces where authenticity is at the core of every piece.</p>",
+            "heading": "",
+            "heading1": "",
+            "heading2": "",
+            "text": "<p>At Vasundhra Raj, we are dedicated to reviving the art of handcrafted jewellery while ushering in a new era of collectible heirlooms. Founded by the visionary designer Vasundhra Raj, our homegrown label celebrates cultural exploration and expression, offering an array of traditional masterpieces where authenticity is at the core of every piece. Brand's design language defies seasons; it is evergreen, like a canvas for cultural exploration. The jewelry isn't merely an accessory, it is an investment-both monetarily and emotionally.</p><p>The making process follows a conscious research of old techniques, material exploration and more. Each piece is hallmarked and certified, guaranteeing authenticity in both the jewelry, Polki and gemstones they showcase. What sets the brand apart is a unique promise: a 100% value exchange guarantee on returns or exchanges, making each purchase a genuine investment.</p><p></p><p>At Vasundhra Raj, we offer exclusive benefits to make your jewellery shopping experience truly rewarding. Enjoy a 1g gold coin free with every purchase of 1 lakh or more. Have old gold? You can exchange it or melt it to create something new and unique. We provide a 100% buyback guarantee along with lifetime exchange and buyback value on all products purchased from us. Additionally, benefit from 100% exchange value on gold purchased from any jeweler.<br/><br/>To ensure your jewelry remains pristine, we offer lifetime maintenance, including a free gold purity check and complimentary jewelry cleaning services. The brand also offers personalization services to enable shoppers to find what they are looking for.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -182,6 +182,10 @@
       },
       "block_order": [
         "row_7K68py"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.image-with-text__grid--reverse {flex-flow: row wrap-reverse; } .image-with-text__text {font-size: 12px; font-family: Quicksand; color: #636262; text-align: center; line-height: 1.2; }}",
+        "@media screen and (min-width: 750px) {.image-with-text__text {font-size: 20px; font-family: Quicksand; color: #636262; text-align: justify; line-height: 1.2; }}"
       ],
       "settings": {
         "image_height": "large",
