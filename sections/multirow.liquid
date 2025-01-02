@@ -1,39 +1,50 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
-  }
-  .about-us-container {
-    margin-bottom: 3rem !important;
-  }
-  .image-with-text-override {
-    width: 100% !important;
-    padding: 0 2rem 2rem !important;
-    column-gap: 50px !important;
-    border: none !important;
-  }
-  .image-with-text-content-override {
-    padding: 0 2rem !important;
-  }
-  @media only screen and (min-width: 750px) {
-    .image-with-text-media-override {
-      max-height: 800px !important;
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+
     }
-  }
-  @media only screen and (max-width: 750px) {
-    .image-with-text-media-override {
-      max-height: 250px !important;
+    .about-us-container {
+      margin-bottom: 3rem !important;
     }
+    .image-with-text-override {
+      width: 100% !important;
+      padding: 0 2rem 2rem !important;
+      column-gap: 50px !important;
+      border: none !important;
+    }
+    .image-with-text-content-override {
+      padding: 0 2rem !important;
+    }
+    @media only screen and (min-width: 750px) {
+      .image-with-text-media-override {
+        max-height: 800px !important;
+      }
+    }
+    @media only screen and (max-width: 750px) {
+      .image-with-text-media-override {
+        max-height: 250px !important;
+      }
+    }
+    @media screen and (min-width: 750px) and (max-width: 1024px) {
+      .image-with-text-media-override {
+        max-height: 400px !important;
+      }
+      .image-with-text-media-item-override {
+        width: 100% !important;
+      }
+      .image-with-text__grid--reverse {
+        flex-flow: row wrap-reverse;
+      }
   }
 {%- endstyle -%}
 {% liquid
@@ -144,7 +155,13 @@
               {%- endif -%}
             </div>
           </div>
-          <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+          <div
+            class="
+              image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item {% if is_about_us %}
+                image-with-text-media-item-override
+              {% endif %}
+            "
+          >
             <div
               class="
                 image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %} {% if is_about_us %}
