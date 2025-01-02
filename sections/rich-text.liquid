@@ -11,19 +11,40 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .page-width-override{
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+  }
+  .rich-text__text {
+    font-family: 'Quicksand', sans-serif;
+    color: #636262;
+    line-height: 1.2;
+  }
+  .image-with-text-bottom-1 {
+    font-family: "Cinzel-Medium", sans-serif;
+    color: #636262;
   }
 {%- endstyle -%}
 
+{% liquid
+  assign is_about_us = false
+  if request.path contains 'about'
+    assign is_about_us = true
+  endif
+%}
+
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width {% if is_about_us%} page-width-override{% endif %}{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
               {%- if block.settings.heading -%}
-                <h2 class="image-with-text-bottom-1{{ section.settings.heading_size }} rte"style="font-family: 'Helvetica';">
-                 {{ block.settings.heading }}<span class="second_text" style="color: maroon;">{{ block.settings.heading2 }}</span>
+                <h2 class="image-with-text-bottom-1{{ section.settings.heading_size }} rte">
+                  {{ block.settings.heading -}}
+                  <span class="second_text" style="color: maroon;">{{ block.settings.heading2 }}</span>
                 </h2>
               {%- endif -%}
             {%- when 'caption' -%}
@@ -46,7 +67,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.text }}
+                {{ block.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}
               </div>
             {%- when 'button' -%}
               <div

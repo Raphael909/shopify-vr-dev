@@ -532,3 +532,4 @@ FodyWeavers.xsd
 # JetBrains temp
 .idea/*
 .vscode/settings.json
+Notes.md

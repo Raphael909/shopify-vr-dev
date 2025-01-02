@@ -9,44 +9,71 @@
  */
 {
   "sections": {
-    "banner_slide_3UJyhL": {
-      "type": "banner-slide",
-      "blocks": {
-        "slide_bW3rne": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/094A3940_2.jpg",
-            "image-mob": "shopify://shop_images/094A3940_2.jpg",
-            "heading": "OUR STORY",
-            "heading1": "All Began",
-            "heading_size": "h1",
-            "subheading": "",
-            "subheading1": "WHERE IT",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_bW3rne"
+    "collection_list_7LQGhh": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2 {font-size: 20px; }}"
       ],
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "small_image": "shopify://shop_images/Frame_93_2.png",
+        "title": "OUR STORY, WHERE IT ALL BEGAN",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 2,
+        "padding_bottom": 2,
+        "title_image": "shopify://shop_images/Screenshot_2024-12-05_102134.jpg"
+      }
+    },
+    "image_only_edge_Drqbxb": {
+      "type": "image-only-edge",
+      "settings": {
+        "image": "shopify://shop_images/094A3940_1_6e69f10f-5f16-4adf-930e-b84420a11eb5.jpg",
+        "link2": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collection_list_Xexqe6": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "title": "OUR VISION IS TO CREATE",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 2,
+        "padding_bottom": 2,
+        "title_image": "shopify://shop_images/Screenshot_2024-12-05_102134.jpg"
       }
     },
     "image_video_a4gJxa": {
@@ -55,7 +82,7 @@
         "img_NpJFw3": {
           "type": "img",
           "settings": {
-            "video": "shopify://files/videos/Mussoorie_Film Logo removed _da72d26f-c34d-4ab3-86ac-0ca20365a7ac.mp4",
+            "video": "shopify://files/videos/Copy of GOLDSMITH LOW RES.mp4",
             "text_color": "",
             "text": "",
             "text2": "",
@@ -70,34 +97,76 @@
       "block_order": [
         "img_NpJFw3"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.image-with-text__text-item-2 {width: 100%; padding: 1rem 7rem 5rem; } .image-with-text__text-item-1 {width: 100%; padding: 5rem 7rem 7rem; }}",
+        "@media only screen and (max-width: 750px) {.image-with-text__text-item-2 {padding-top: 0; }}"
+      ],
       "settings": {
         "custom_class": "",
-        "small_image": "shopify://shop_images/3p.png",
-        "heading": "“Our jewelry transcends borders, blending Western lines with Eastern curves—the birds in our logo and the sun in our name symbolize this harmonic fusion.”",
-        "heading1": "A VISION IS TO CREATE",
-        "heading2": "an ethical and reliable brand that shines through every piece, Inviting you to experience a journey of beauty, transparency and cultural exploration.",
+        "heading": "“OUR JEWELRY TRANSCENDS BORDERS, BLENDING WESTERN LINES WITH EASTERN CURVES—THE BIRDS IN OUR LOGO AND THE SUN IN OUR NAME SYMBOLIZE THIS HARMONIC FUSION.”",
+        "heading1": "",
+        "heading2": "AN ETHICAL AND RELIABLE BRAND THAT SHINES THROUGH EVERY PIECE, INVITING YOU TO EXPERIENCE A JOURNEY OF BEAUTY, TRANSPARENCY AND CULTURAL EXPLORATION.",
         "text": ""
       }
     },
-    "about_banner_KkqjhR": {
-      "type": "about-banner",
-      "disabled": true,
+    "rich_text_bNjtAx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_88LJTW": {
+          "type": "heading",
+          "settings": {
+            "heading": "BORN FROM PASSION - THE JOURNEY TO VASUNDHRA RAJ LUXURY",
+            "heading2": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_6T9Mrh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vasundhra Raj’s passion for jewelry began during her six years in Florence, Italy, where she studied Fashion Design and Business at Istituto Marangoni. Surrounded by art and culture, she was captivated by the exquisite jewelry displayed on the medieval Ponte Vecchio bridge.After returning to India in 2020, she took on the role of Chief Design Consultant for Uttarakhand with the United Nations Development Programme (UNDP). During this time, she worked closely with underprivileged communities and women from remote areas, drawing inspiration from the rich culture and crafts of Uttarakhand.This journey of cultural exploration and craftsmanship led to the creation of Vasundhra Raj, a brand founded on values of fair trade and the celebration of cultural heritage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_88LJTW",
+        "text_6T9Mrh"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 92%; } .rich-text__text {font-size: 20px; } .image-with-text-bottom-1 {font-size: 30px; }}",
+        "@media screen and (min-width: 750px) {.rich-text__blocks {max-width: 92%; } .rich-text__text {font-size: 20px; } .image-with-text-bottom-1 {font-size: 30px; }}",
+        "@media screen and (max-width: 749px) {.image-with-text-bottom-1 {font-size: 14px; } .rich-text__text {font-size: 12px; }}"
+      ],
       "settings": {
-        "heading1": "A VISION IS TO CREATE",
-        "heading2": "an ethical and reliable brand that shines through every piece, Inviting you to experience a journey of beauty, transparency and cultural exploration.",
-        "image": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "image_2": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "image-mob": "shopify://shop_images/Screenshot_2024-11-22_171642.png",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collection_list_ef9hUU": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2{font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2{font-size: 20px; } }"
+      ],
+      "settings": {
+        "title": "PROMISE OF LUXURY WITH VALUE",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 1,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 2,
+        "padding_bottom": 2,
+        "title_image": "shopify://shop_images/Screenshot_2024-12-05_102134.jpg"
       }
     },
     "multirow_bL6z9p": {
@@ -108,10 +177,10 @@
           "settings": {
             "image": "shopify://shop_images/KEW3824_copy_d8c6c2dc-9691-43f0-90b4-a5ac1b8d10cc.jpg",
             "caption": "",
-            "heading": "WELCOME TO THE WORLD OF",
-            "heading1": "VASUNDHRA RAJ LUXURY",
-            "heading2": "Timeless Craft, Modern Elegance",
-            "text": "<p>At Vasundhra Raj, we are dedicated to reviving the art of handcrafted jewelry while ushering in a new era of collectible heirlooms. Founded by the visionary designer Vasundhra Raj, our homegrown label celebrates cultural exploration and expression, offering an array of traditional masterpieces where authenticity is at the core of every piece.</p>",
+            "heading": "",
+            "heading1": "",
+            "heading2": "",
+            "text": "<p>At Vasundhra Raj, we are dedicated to reviving the art of handcrafted jewellery while ushering in a new era of collectible heirlooms. Founded by the visionary designer Vasundhra Raj, our homegrown label celebrates cultural exploration and expression, offering an array of traditional masterpieces where authenticity is at the core of every piece. Brand's design language defies seasons; it is evergreen, like a canvas for cultural exploration. The jewelry isn't merely an accessory, it is an investment-both monetarily and emotionally.</p><p>The making process follows a conscious research of old techniques, material exploration and more. Each piece is hallmarked and certified, guaranteeing authenticity in both the jewelry, Polki and gemstones they showcase. What sets the brand apart is a unique promise: a 100% value exchange guarantee on returns or exchanges, making each purchase a genuine investment.</p><p></p><p>At Vasundhra Raj, we offer exclusive benefits to make your jewellery shopping experience truly rewarding. Enjoy a 1g gold coin free with every purchase of 1 lakh or more. Have old gold? You can exchange it or melt it to create something new and unique. We provide a 100% buyback guarantee along with lifetime exchange and buyback value on all products purchased from us. Additionally, benefit from 100% exchange value on gold purchased from any jeweler.<br/><br/>To ensure your jewelry remains pristine, we offer lifetime maintenance, including a free gold purity check and complimentary jewelry cleaning services. The brand also offers personalization services to enable shoppers to find what they are looking for.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -119,6 +188,10 @@
       },
       "block_order": [
         "row_7K68py"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.image-with-text__grid--reverse {flex-flow: row wrap-reverse; } .image-with-text__text {font-size: 12px; font-family: Quicksand; color: #636262; text-align: center; line-height: 1.2; }}",
+        "@media screen and (min-width: 750px) {.image-with-text__text {font-size: 20px; font-family: Quicksand; color: #636262; text-align: justify; line-height: 1.2; margin-top: 0; }}"
       ],
       "settings": {
         "image_height": "large",
@@ -143,116 +216,16 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
-    },
-    "about_banner_dA7j3L": {
-      "type": "about-banner",
-      "settings": {
-        "small_image1": "shopify://shop_images/6p_white.svg",
-        "heading1": "Born from Passion - The journey to Vasundhra Raj Luxury",
-        "heading2": "Vasundhra Raj’s passion for jewelry began during her six years in Florence, Italy, where she studied Fashion Design and Business at Istituto Marangoni. Surrounded by art and culture, she was captivated by the exquisite jewelry displayed on the medieval Ponte Vecchio bridge.After returning to India in 2020, she took on the role of Chief Design Consultant for Uttarakhand with the United Nations Development Programme (UNDP). During this time, she worked closely with underprivileged communities and women from remote areas, drawing inspiration from the rich culture and crafts of Uttarakhand.This journey of cultural exploration and craftsmanship led to the creation of Vasundhra Raj, a brand founded on values of fair trade and the celebration of cultural heritage.",
-        "image": "shopify://shop_images/KC01625_copy.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "image-mob": "shopify://shop_images/KC01625_copy.jpg",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "contact_banner_AekJXd": {
-      "type": "contact-banner",
-      "blocks": {
-        "heading_YKhE4P": {
-          "type": "heading",
-          "settings": {
-            "heading": "CONNECT WITH US",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_YKhE4P"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
-        "image-mob": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "logo_list2_97pz9g": {
-      "type": "logo-list2",
-      "blocks": {
-        "logo_image_7hKPib": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/video_calling_icon_6dfe0d90-07ba-4829-b9c5-11b8462db0f0.png",
-            "link": "",
-            "heading": "LIVE VIDEO- CALLING"
-          }
-        },
-        "logo_image_CpMF3t": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/book_an_appointment_icon_f6d8c42d-0032-4c84-a1d4-c07f99cd99c3.png",
-            "link": "",
-            "heading": "BOOK AN APPOINTMENT"
-          }
-        },
-        "logo_image_TLCXGj": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/personalized_customization_c1301195-e51f-4164-b578-5bfdd65df7b9.png",
-            "link": "",
-            "heading": "PERSONAL CUSTOMIZATION"
-          }
-        },
-        "logo_image_MLDc6m": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/whatsapp-xxl_2bdf7756-20ae-4fcf-b373-73af8b4b8bb1.png",
-            "link": "",
-            "heading": "WHATSAPP"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_7hKPib",
-        "logo_image_CpMF3t",
-        "logo_image_TLCXGj",
-        "logo_image_MLDc6m"
-      ],
-      "settings": {
-        "title": "",
-        "button_label_1": "CONTACT US",
-        "button_link_1": "shopify://pages/contact",
-        "logo_width": "160px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
-    "banner_slide_3UJyhL",
+    "collection_list_7LQGhh",
+    "image_only_edge_Drqbxb",
+    "collection_list_Xexqe6",
     "image_video_a4gJxa",
-    "about_banner_KkqjhR",
+    "rich_text_bNjtAx",
+    "collection_list_ef9hUU",
     "multirow_bL6z9p",
-    "main",
-    "about_banner_dA7j3L",
-    "contact_banner_AekJXd",
-    "logo_list2_97pz9g"
+    "main"
   ]
 }
