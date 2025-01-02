@@ -54,7 +54,7 @@
 }
 
 .read-more {
-  color:  #8D0509;
+  color:  #636262;
   border: none;
   /* padding: 10px; */
   cursor: pointer;
@@ -75,32 +75,50 @@
     color: blue;
     font-size: 15px;
     font-family: 'Helvetica';
-    color:  #8D0509;
+    color:  #636262;
 }
 
 .read-less-des {
   display: none;
 }
     
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    }
-
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
-    .product-block {
-    display: flex;
-    gap: 23px;
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
 }
-    .product_content {
-    padding-top: 143px;
-    margin-left: -34px;
+
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+
+#MainProduct-{{ section.id }} .product-form__buttons{  
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#MainProduct-{{ section.id }} .shopify-payment-button__button--unbranded {
+  background: #fff;
+  color: #636262;
+  height: 3rem;
+  padding: 0;
+}
+
+.product-block {
+  display: flex;
+  gap: 23px;
+}
+.product_content {
+  padding-top: 143px;
+  margin-left: -34px;
       
+}
+.product-brand-info {
+  text-decoration: underline solid #636262;
+  text-underline-offset: 0.5rem;
 }
     img.product_image1 {
     width: 80%;
@@ -154,11 +172,35 @@ margin: 10px 0 0 0;
     @media screen and (max-width: 749px)
     {
       ul#Slider-Gallery-template--16225477296198__main {
-    margin-top: 13px;
-}
+      margin-top: 13px;
+      }
+      .product-size-guide {
+        display: inline-block;
+        font-size: 10px;
+        padding: 0 0.2rem;
+        border: 1px solid #636262;
+        box-sizing: border-box;
+        color: #636262;
+        margin-bottom: 1rem;
+      }
+      .product-size-guide a{
+        color: #636262;
+      }
+      .product__title {
+        margin-top: 1.5rem
+      }
+
+      .product-form__input {
+        display: flex;
+        align-items: flex-end;
+      }
+      
     }
   {%- endstyle -%}
-
+  {% comment %} <script>
+    window.productMetafields = {{ product.metafields | json }};
+    console.log(window.productMetafields);
+  </script> {% endcomment %}
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
@@ -211,15 +253,17 @@ margin: 10px 0 0 0;
                 {% render block %}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
+                  <h1>{{ product.title| escape}}&nbsp; {{ product.type | escape | upcase }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
                     </h2>
                   </a>
                 </div>
+                <div class="product-brand-info">Premium handcrafted jewellery by Vasundhra Raj</div>
+                
           {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>                  
                  {%- liquid
                       if use_variant
                         assign target = product.selected_or_first_available_variant
@@ -283,7 +327,7 @@ margin: 10px 0 0 0;
                             </span>
                           {%- else -%}
                             <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-                            <span class="price-item price-item--regular" style="font-size: 25px;">
+                            <span class="price-item price-item--regular">
                               {{ money_price }}
                             </span>
                           {%- endif -%}
@@ -296,7 +340,7 @@ margin: 10px 0 0 0;
                           {%- unless product.price_varies == false and product.compare_at_price_varies %}
                             <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
                             <span>
-                              <s class="price-item price-item--regular" style="font-size: 25px;">
+                              <s class="price-item price-item--regular">
                                 {% if settings.currency_code_enabled %}
                                   {{ compare_at_price | money_with_currency }}
                                 {% else %}
@@ -339,7 +383,8 @@ margin: 10px 0 0 0;
                       </div>
                     </div>
                     {% endunless %}
-      
+                    <div class="price-under-text">Inclusive of all taxes. Free shipping.</div>
+                    <div class="product-size-guide"><a href="/pages/sizechart">Size Guide</a></div>
                 </div>
        
                 {%- if product.quantity_price_breaks_configured? -%}
@@ -424,8 +469,17 @@ margin: 10px 0 0 0;
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+                
               {%- when 'description' -%}
 {% if product.description != blank %}
+  <div class="meta">
+    {%- for block in section.blocks -%}
+            {%- case block.type -%}
+{%- when 'icon-with-text' -%}
+                {% render 'icon-with-text', block: block %}
+              {% endcase %}
+             {% endfor %}
+</div> 
   <div class="product-description-container">
     <div class="product-description short-description">
       {{ product.description | strip_html | truncate: 100, '...' }}
@@ -973,14 +1027,7 @@ margin: 10px 0 0 0;
         </section>
       </div>
     </div>
-<div class="meta">
-    {%- for block in section.blocks -%}
-            {%- case block.type -%}
-{%- when 'icon-with-text' -%}
-                {% render 'icon-with-text', block: block %}
-              {% endcase %}
-             {% endfor %}
-</div>                     
+                    
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -1038,13 +1085,14 @@ margin: 10px 0 0 0;
 
 document.addEventListener('DOMContentLoaded', function() {
   const addToCartButtons = document.querySelectorAll('.product-add-to-cart___1');
-
+  console.log(this.product);
   addToCartButtons.forEach(button => {
     button.addEventListener('click', function(event) {
       event.preventDefault();
       const form = this.closest('form');
       const formData = new FormData(form);
       const icon = this.querySelector('.icon-car path');
+    
 
       // Change the fill color to black when added to cart
       icon.style.fill = 'black'; // Change fill color if needed

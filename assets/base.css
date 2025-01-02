@@ -1417,7 +1417,7 @@ button.shopify-payment-button__button--unbranded {
 .customer button::selection {
   background-color: rgba(var(--color-button-text), 0.3);
 }
-.button-label,
+.button-label
 {
   background: none;
 }
@@ -4236,7 +4236,7 @@ z-index: -1;
 .new-arrival-box-title { margin-top: 5px; margin-bottom: 5px; font-size: 18px; font-weight: bold; }
 .new-arrival-box-text { margin-top: 5px; margin-bottom: 5px; }
 .new-arrival-box-main .card--media .card__inner .card__content { padding: 0; }
-.card__badge.top.card__badge_custom span { background:  #8D0509; color: #fff;     margin: 0px auto 21px; }
+.card__badge.top.card__badge_custom span { background:  #fff; color: #fff;     margin: 0px auto 21px; }
 .new-arrival-title .button {display: flex; width: 100%; min-width: 175px; max-width: 150px; margin-top: 15px;}
 .custom_blog_main .title-wrapper-with-link { text-align: left; margin-left: 20px; }
 .custom_blog_main .section-header { margin-left: 20px; }
@@ -4985,7 +4985,7 @@ img.testimonial-img {
     margin: 0 auto;
 }
 button.shopify-payment-button__button.shopify-payment-button__button--unbranded {
-    background: #ffc0cb52;
+    background: #fff;
     color: #636262;
     border: 1px solid #636262;
     /* font-size: 20px; */
@@ -4993,7 +4993,7 @@ button.shopify-payment-button__button.shopify-payment-button__button--unbranded 
     /* font-weight: 800; */
 }
 button#ProductSubmitButton-template--16225477296198__main {
-    background: #ffc0cb52;
+    background: #fff;
     color: #636262;
     border: 1px solid #636262;
     font-size: 20px;
@@ -5001,7 +5001,7 @@ button#ProductSubmitButton-template--16225477296198__main {
     /* font-weight: 800; */
 }
 quantity-input.quantity {
-    background: #ffc0cb2b;
+    background: #fff;
 }
 .product__tax.caption.rte {
     display: none;
@@ -5094,7 +5094,7 @@ svg.icon.icon-minus1 {
     font-size: 18px;
 }
   .footer-block__details-content.rte p {
-    font-family: ''Cinzel-Medium', serif;
+    font-family: 'Cinzel-Medium', serif;
   font-size: 20px;
 }
   span.h4.inline-richtext {
@@ -5338,9 +5338,9 @@ h1.collection-banner__title {
     font-family: 'Cinzel-Medium', serif;
 }
 .product__title h1 {
-    /* font-family: 'Cinzel-Medium'; */
-    color: #545454;
-    font-size: 34px;
+    font-family: 'Cinzel-Medium';
+    color: #636262;
+    font-size: 1.6rem;
 }
 .product-description p {
     margin: 10px 0 0 0;
@@ -5478,7 +5478,7 @@ h2.Menu-drawer-text.email-text {
     box-shadow: none;
     color: white;
 }
-}
+
 .newsletter-form__field-wrapper {
     margin-top: 23px;
 }
