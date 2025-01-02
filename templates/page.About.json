@@ -13,7 +13,9 @@
       "type": "collection-list",
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2 {font-size: 20px; }}"
       ],
       "settings": {
         "title": "OUR STORY, WHERE IT ALL BEGAN",
@@ -54,7 +56,9 @@
       "type": "collection-list",
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2 {font-size: 20px; }}"
       ],
       "settings": {
         "title": "OUR VISION IS TO CREATE",
@@ -145,7 +149,9 @@
       "type": "collection-list",
       "custom_css": [
         ".title-wrapper--no-top-margin {margin-top: -16px;}",
-        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+        ".title-wrapper-with-link {margin-bottom: 1rem;}",
+        "h2{font-size: 30px;}",
+        "@media only screen and (max-width: 750px) {h2{font-size: 20px; } }"
       ],
       "settings": {
         "title": "PROMISE OF LUXURY WITH VALUE",
@@ -185,7 +191,7 @@
       ],
       "custom_css": [
         "@media screen and (max-width: 750px) {.image-with-text__grid--reverse {flex-flow: row wrap-reverse; } .image-with-text__text {font-size: 12px; font-family: Quicksand; color: #636262; text-align: center; line-height: 1.2; }}",
-        "@media screen and (min-width: 750px) {.image-with-text__text {font-size: 20px; font-family: Quicksand; color: #636262; text-align: justify; line-height: 1.2; }}"
+        "@media screen and (min-width: 750px) {.image-with-text__text {font-size: 20px; font-family: Quicksand; color: #636262; text-align: justify; line-height: 1.2; margin-top: 0; }}"
       ],
       "settings": {
         "image_height": "large",
