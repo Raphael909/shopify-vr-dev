@@ -9,6 +9,28 @@
  */
 {
   "sections": {
+    "collection_list_AH6XVe": {
+      "type": "collection-list",
+      "custom_css": [
+        ".title-wrapper--no-top-margin {margin-top: -16px;}",
+        ".title-wrapper-with-link {margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "title": "Product",
+        "url_1": "",
+        "heading1": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 5,
+        "padding_bottom": 2,
+        "title_image": "shopify://shop_images/logo-blk-birds.png"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -24,15 +46,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "description_kVjWBJ": {
-          "type": "description",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "none"
           }
         },
         "buy_buttons": {
@@ -42,10 +61,10 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_QUXWFK": {
-          "type": "custom_liquid",
+        "share_K6CwT6": {
+          "type": "share",
           "settings": {
-            "custom_liquid": "<style>\n.whatsapp:hover {\n    background: maroon;\n    color: white;\n}\n.whatsapp {\n    background: #ffc0cb52;\n    border: 1px solid maroon;\n    margin-top: 4px;\ncolor: MAROON;\n}\n</style>\n\n<a href=\"https://wa.me/8126456443?text=Hi,%20I%20want%20to%20order%20this%20product:%20{{ product.title | url_encode }}%20%20{{ shop.url | url_encode }}%20%2Fproducts%2F{{ product.handle | url_encode }}\" style=\"text-decoration:none;\">\n    <div class=\"whatsapp\" style=\"max-width: 53.2rem;\n    width: 100%;\n    padding: 9px;\n    text-align: center;\n    border: 1px solid maroon;\n    font-family: Helvetica;\n    /* margin: 1rem 0rem; */\n    font-size: 20px;\n    /* font-weight: 900; */\n    \">\n        <span class=\"whatsapp-btn\">Whatsapp to Purchase</span>\n    </div>\n</a>"
+            "share_label": "Share"
           }
         },
         "icon_with_text_pHcGVe": {
@@ -53,29 +72,28 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "heart",
-            "image_1": "shopify://shop_images/diamond_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24_1_f6d8f32c-2b0a-43b1-a46a-091edc068e6e.png",
-            "heading_1": "100% Certified Jwellery",
-            "icon_2": "map_pin",
-            "image_2": "shopify://shop_images/diversity_1_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24_1.png",
-            "heading_2": "Working with artisians family",
+            "image_1": "shopify://shop_images/lower-certified-diamonds.svg",
+            "heading_1": "100% CERTIFIED DIMONDS",
+            "icon_2": "eye",
+            "image_2": "shopify://shop_images/BIS_Hallmark_Black-337d10decf3e8a3c10e37257572dbc08_png.png",
+            "heading_2": "BIS HALLMARKED GOLD",
             "icon_3": "truck",
-            "image_3": "shopify://shop_images/currency_exchange_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24_1_070a4bb6-448c-418e-9fdb-0f42ef9d2c33.png",
-            "heading_3": "Lifetime buyback value"
+            "image_3": "shopify://shop_images/721534-81d2c4334fa8980aa4480e3245341ce1_png.png",
+            "heading_3": "LIFELONG BUYBACK & EXCHANGE"
           }
         },
         "icon_with_text_43kLzy": {
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
-            "icon_1": "heart",
-            "image_1": "shopify://shop_images/fair-trade_1_0efc66f7-2354-4be8-86e1-5e32b79aca80.png",
-            "heading_1": "Fair Trade practices",
-            "icon_2": "return",
-            "image_2": "shopify://shop_images/delivery-man_1_cf0509b2-ff12-4426-8d62-2189b983f0fd.png",
-            "heading_2": "Door step delivery",
+            "icon_1": "truck",
+            "image_1": "shopify://shop_images/lower-free-shipping.svg",
+            "heading_1": "FREE SHIPPING",
+            "icon_2": "recycle",
+            "image_2": "shopify://shop_images/Icon-calendar-warranty.svg",
+            "heading_2": "LIFETIME WARRANTY",
             "icon_3": "truck",
-            "image_3": "shopify://shop_images/insurance_1_f1ebcf17-646b-4084-95dc-c665b590ac6e.png",
-            "heading_3": "Insured shipping"
+            "heading_3": ""
           }
         },
         "text_N4UGKT": {
@@ -92,19 +110,18 @@
             "text_style": "body"
           }
         },
+        "description_kVjWBJ": {
+          "type": "description",
+          "settings": {}
+        },
         "collapsible_tab_qV83F3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Product Information",
             "icon": "none",
-            "content": "",
-            "page": ""
-          }
-        },
-        "product_p6FBHV": {
-          "type": "product",
-          "settings": {
-            "product": "affinity"
+            "content": "<p>sadasdasdaasdas</p>",
+            "page": "about-us"
           }
         }
       },
@@ -112,27 +129,26 @@
         "title",
         "price",
         "quantity_selector",
-        "description_kVjWBJ",
         "variant_picker",
         "buy_buttons",
-        "custom_liquid_QUXWFK",
+        "share_K6CwT6",
         "icon_with_text_pHcGVe",
         "icon_with_text_43kLzy",
         "text_N4UGKT",
-        "collapsible_tab_qV83F3",
-        "product_p6FBHV"
+        "description_kVjWBJ",
+        "collapsible_tab_qV83F3"
       ],
       "settings": {
         "enable_sticky_info": false,
         "color_scheme": "",
-        "media_size": "small",
-        "constrain_to_viewport": false,
-        "media_fit": "contain",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
         "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "hover",
         "mobile_thumbnails": "show",
-        "hide_variants": false,
+        "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 0,
         "padding_bottom": 12
@@ -159,96 +175,16 @@
     },
     "sticky_add_to_cart_WrU6Qt": {
       "type": "Sticky-add-to-cart",
+      "disabled": true,
       "settings": {
         "show_atc_threshold": 404
-      }
-    },
-    "contact_banner_9bV9H8": {
-      "type": "contact-banner",
-      "blocks": {
-        "heading_AGETQV": {
-          "type": "heading",
-          "settings": {
-            "heading": "CONNECT WITH US",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AGETQV"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
-        "image-mob": "shopify://shop_images/Untitled_4d77f79b-273c-4c4b-baed-a20de131fd7a.png",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "logo_list2_wR9pXt": {
-      "type": "logo-list2",
-      "blocks": {
-        "logo_image_tdpjeD": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/video_calling_icon_0fac063d-de29-4892-a47a-cb1951446dc4.png",
-            "link": "",
-            "heading": "LIVE VIDEO-CALLING"
-          }
-        },
-        "logo_image_XUBqMA": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/book_an_appointment_icon_8a2f2dbf-a7ee-4176-aac7-387927ea999e.png",
-            "link": "",
-            "heading": "BOOK AN APPOINTMENT"
-          }
-        },
-        "logo_image_rxNqLJ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/personalized_customization.png",
-            "link": "",
-            "heading": "PERSONAL CUSTOMIZATION"
-          }
-        },
-        "logo_image_qQw6nH": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/whatsapp-xxl.png",
-            "link": "",
-            "heading": "WHATSAPP"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_tdpjeD",
-        "logo_image_XUBqMA",
-        "logo_image_rxNqLJ",
-        "logo_image_qQw6nH"
-      ],
-      "settings": {
-        "title": "",
-        "button_label_1": "CONTACT US",
-        "button_link_1": "",
-        "logo_width": "160px",
-        "padding_top": 20,
-        "padding_bottom": 0
       }
     }
   },
   "order": [
+    "collection_list_AH6XVe",
     "main",
     "related-products",
-    "sticky_add_to_cart_WrU6Qt",
-    "contact_banner_9bV9H8",
-    "logo_list2_wR9pXt"
+    "sticky_add_to_cart_WrU6Qt"
   ]
 }

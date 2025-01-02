@@ -64,7 +64,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: #8D0509;
+  background-color: #fff;
   color: white;
 }
 
