@@ -9,16 +9,37 @@
  */
 {
   "sections": {
+    "image_only_edge_ppFKbQ": {
+      "type": "image-only-edge",
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/about_us.jpg",
+        "link2": "",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-login",
       "settings": {
-        "enable_shop_login_button": "true",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "enable_shop_login_button": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
+    "image_only_edge_ppFKbQ",
     "main"
   ]
 }
