@@ -44,11 +44,12 @@
         "paragraph_xYha6T",
         "email_form_dprtYj"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 3rem; color: #636262;}",
         ".newsletter__subheading p {font-size: 2rem; font-family: \"Quicksand\"; color: #636262;}",
         ".newsletter__subheading p strong {font-size: 3rem; font-family: \"Cinzel-Medium\"; font-weight: 400; color: #636262;}",
-        "@media screen and (max-width:750px){h2{font-size: 1.4rem; } .newsletter__subheading p{font-size:1.2rem; } .newsletter__subheading p strong {font-size: 1.7rem; }}"
+        "@media screen and (max-width: 750px) {h2 {font-size: 1.4rem; } .newsletter__subheading p {font-size: 1.2rem; } .newsletter__subheading p strong {font-size: 1.7rem; }}"
       ],
       "settings": {
         "color_scheme": "",
