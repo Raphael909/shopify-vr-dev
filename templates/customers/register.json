@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "image_only_edge_hkCNd9": {
+      "type": "image-only-edge",
+      "settings": {
+        "image": "shopify://shop_images/register-img.jpg",
+        "link2": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-register",
       "settings": {
@@ -18,6 +37,7 @@
     }
   },
   "order": [
+    "image_only_edge_hkCNd9",
     "main"
   ]
 }
