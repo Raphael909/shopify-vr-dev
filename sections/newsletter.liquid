@@ -29,28 +29,30 @@
   }
   @media screen and (min-width: 990px) {
     .email-signup__form .email-form-wrapper {
-      width: 75rem;
+      width: 65rem;
     }
   }
   .email-form-wrapper input {
     width: 100%;
-    padding: 1.2rem;
+    padding: 1.4rem;
     border-radius: 2px;
     margin-bottom: 2rem;
-    border: 1px solid #cecece;
+    border: 1px solid #636262;
     text-align:center;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-family: 'Cinzel-Regular', sans-serif;
   }
   .email-form-wrapper .submit-button--newsletter {
-    min-width: 15rem;
+    min-width: 18rem;
     padding: 0.8rem;
     border-radius: 2px;
     color: #636262 !important;
     background-color: #f3f3f3 !important;
-    border:1px solid #cecece !important;
+    border:1px solid #636262 !important;
     overflow: hidden;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    font-family: 'Cinzel-Regular', sans-serif;
   }
   .email-form-wrapper button#Subscribe {
     padding: 1rem;
@@ -58,6 +60,14 @@
   .email-form-wrapper .submit-button--newsletter:hover {
     background-color: #3c001c !important;
     color: #fff !important;
+  }
+  @media screen and (max-width: 750px) {
+    .email-form-wrapper input {
+      font-size: 1.2rem;
+    }
+    .email-form-wrapper button#Subscribe{
+      font-size: 1.2rem;
+    }
   }
 {%- endstyle -%}
 
