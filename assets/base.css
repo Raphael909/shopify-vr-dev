@@ -1839,7 +1839,8 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
-      font-family: 'Cinzel-Medium';
+  font-family: 'Quicksand';
+  font-style: italic;
 }
 
 .field__input:focus ~ .field__label,
@@ -5497,18 +5498,14 @@ button#Subscribe {
 .newsletter-form__field-wrapper {
     margin-top: 20px;
 }
-.login-det {
-    display: flex
-;
-    align-items: baseline;
-    gap: 0;
-}
+
 a.pass {
-    font-size: 12px;
-    width: 60%;
-    margin-top: 14px;
+    width: 60%; 
+    margin: auto 0;
+    font-size: 1.6rem;
+    font-family: 'Quicksand', serif; 
     font-style: italic;
-    color: #545454cc;
+    color: #636262;
 }
 button.login {
     width: 100%;
