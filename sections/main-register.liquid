@@ -11,10 +11,74 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .register-section-container{
+      max-width: 70rem !important;
+    }
+  }
+
+  .register-title {
+    font-size: 3rem;
+    font-family: 'Cinzel-Semibold', sans-serif;
+    color: #636262;
+  }
+  .register-subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem ;
+    color: #636262 ;
+    font-style: italic;
+  }
+  .form-input-fields {
+    border: 1px solid #636262 !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-style: italic !important;
+    font-size: 1.8rem !important;
+  }
+  .form-input-fields+label{
+    font-size: 1.8rem !important;
+  }
+  .submit-button {
+    margin-top: 4rem!important;
+    margin-bottom: 0.5rem!important;
+    border: 1px solid #636262   !important;
+    background-color: #f5f5f5   !important;
+    font-family:'Cinzel-Regular', sans-serif  !important;
+    font-size: 1.8rem  !important;
+  }
+  .login-account {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    color: #636262;
+    font-style: italic;
+  }
+  a.login-account__link {
+    text-decoration: underline;
+  }
+  .login-account__link span {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    .register-title {
+      font-size: 1.6rem;
+    }
+    .register-subtitle,
+    .form-input-fields,
+    .form-input-fields+label,
+    .submit-button,
+    .login-account,
+    .login-account__link,
+    .login-account__link span {
+      font-size: 1.2rem !important;
+    }
   }
 {%- endstyle -%}
 
-<div class="customer register section-{{ section.id }}-padding">
+<div class="customer register section-{{ section.id }}-padding register-section-container">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -23,10 +87,8 @@
       <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
     </symbol>
   </svg>
-  <h1 style="color: maroon;font-size: 30px;">
-    REGISTER
-  </h1>
-  <p style=" padding: 0 10px;font-style:italic;font-size: 14px; color:black;">Please fill the information below</p>
+  <h1 class="register-title">REGISTER</h1>
+  <p class="register-subtitle">Please fill the information below</p>
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
       <h2 class="form__message" tabindex="-1" autofocus>
@@ -60,6 +122,7 @@
         {% endif %}
         autocomplete="given-name"
         placeholder="{{ 'customer.register.first_name' | t }}"
+        class="form-input-fields"
       >
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
@@ -75,6 +138,7 @@
         {% endif %}
         autocomplete="family-name"
         placeholder="{{ 'customer.register.last_name' | t }}"
+        class="form-input-fields"
       >
       <label for="RegisterForm-LastName">
         {{ 'customer.register.last_name' | t }}
@@ -97,6 +161,7 @@
           aria-describedby="RegisterForm-email-error"
         {% endif %}
         placeholder="{{ 'customer.register.email' | t }}"
+        class="form-input-fields"
       >
       <label for="RegisterForm-email">
         {{ 'customer.register.email' | t }}
@@ -122,6 +187,7 @@
           aria-describedby="RegisterForm-password-error"
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
+        class="form-input-fields"
       >
       <label for="RegisterForm-password">
         {{ 'customer.register.password' | t }}
@@ -136,9 +202,13 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
-    <button class="login">
-      CREATE MY ACCOUNT
-    </button>
+    <button class="login submit-button">CREATE MY ACCOUNT</button>
+    <div class="login-account">
+      <p>Already have an account?</p>
+      <a href="{{ routes.account_login_url }}" class="login-account__link">
+        <span>{{ 'Login' }}</span>
+      </a>
+    </div>
   {%- endform -%}
 </div>
 
